@@ -645,6 +645,78 @@ body.instep .nav{display:none}
 .dsteps{margin:.3rem 0 0;padding-left:1.1rem;font-size:.88rem;color:var(--muted);display:grid;gap:2px}
 .dsteps li.ok{color:var(--ok)}
 .pday .chk{pointer-events:none}
+
+/* 17 Nov: langkah terlewat & tugas artefak */
+.skipbox{background:var(--amber-soft);border:1px solid var(--amber);border-radius:14px;padding:.8rem .9rem;margin:.7rem 0 0}
+.skipbox b{color:var(--ink)}.skipbox p{margin:.25rem 0 .5rem;font-size:.9rem;color:var(--ink)}
+.skl{list-style:none;margin:0;padding:0;display:grid;gap:.35rem}
+.skl a{display:flex;align-items:center;gap:.5rem;min-height:44px;padding:.35rem .6rem;border-radius:10px;background:var(--card);border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600;font-size:.93rem}
+.skl .chip{flex:none}
+.rsteps li.skip .rdot{background:var(--amber-soft);border-color:var(--amber);color:var(--amber);font-weight:800}
+.rsteps li.skip .rbody{border-color:var(--amber)}
+.rtasks{margin:.5rem 0 0 46px;display:grid;gap:.5rem}
+.rtasks>small{color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.72rem}
+.rtask{border:1px dashed var(--line);border-radius:12px;padding:.6rem .75rem;display:grid;gap:.2rem;background:var(--card)}
+.rtask small{color:var(--muted)}.rtask .btn{justify-self:start;margin-top:.3rem}.rtask.done{opacity:.75}
+.lastp{margin:.5rem 0 0!important}
+.q label:has(input:disabled){cursor:default}
+
+/* 17 Nov (2): jalur lanjutan, video YouTube, lab lanjutan */
+.advc{border-left:4px solid var(--berry)}
+.advc p{margin:.4rem 0 .6rem;font-size:.93rem}
+.ytl{margin:.2rem 0 1.2rem}
+.ytc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem .85rem;display:grid;gap:.55rem;margin:.5rem 0}
+.yth{display:grid;gap:3px}.yth .chip{width:max-content}.yth b{font-family:var(--head);font-size:1rem;line-height:1.3}.yth small{color:var(--muted);font-size:.86rem;line-height:1.4}
+.ytf{position:relative;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000}
+.ytf iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ytc .btnrow{margin:0}
+.flows{display:grid;gap:.5rem}
+.flow{border:1px solid var(--line);border-radius:10px;padding:.65rem .7rem;display:grid;gap:.45rem;background:var(--bg)}
+.flow .fx{display:grid;gap:2px}.flow .fx b{font-size:.93rem;line-height:1.35}.flow .fx small{color:var(--muted);font-size:.84rem}
+.flow .fb{display:grid;grid-template-columns:1fr 1fr;gap:.4rem}
+.tg{font:inherit;font-weight:700;font-size:.9rem;min-height:44px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);cursor:pointer}
+.tg.on{background:var(--teal);border-color:var(--teal);color:#fff}
+.flow.good{border-color:var(--ok)}.flow.bad{border-color:var(--bad);background:var(--bad-soft)}
+.form select.bad,.form input.bad{border-color:var(--bad);background:var(--bad-soft)}
+.alert{border:1px solid var(--line);border-radius:10px;padding:.7rem .75rem;display:grid;gap:.4rem;background:var(--bg)}
+.alert .ah b{font-family:var(--head);font-size:.95rem}
+.alert .opts,.mission .opts{display:grid;gap:.4rem}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem}
+ul.plain{margin:0;padding-left:1.1rem;font-size:.92rem;display:grid;gap:.25rem}
+.tblw{overflow-x:auto}.tbl tr.win td{background:var(--ok-soft)}
+.ansf .row2{align-items:end}
+
+/* 17 Nov (3): komponen lab 5-8 */
+.labx .mission{margin:0}
+.aq{display:grid;gap:.45rem;padding:.65rem 0;border-top:1px solid var(--line)}
+.mission .aq:first-of-type{border-top:0;padding-top:.2rem}
+.aqp{margin:0;font-weight:600;font-size:.95rem;line-height:1.4}
+.aq .opts{display:grid;gap:.4rem}
+.optc{grid-template-columns:repeat(auto-fill,minmax(132px,1fr))}
+.optc .opt{min-height:44px;padding:.5rem .6rem;font-size:.88rem}
+.flw{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;font-weight:700;font-size:.92rem}
+.flw span{background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:.25rem .5rem}
+.flw i{font-style:normal;color:var(--teal);font-weight:800}
+.zgrid{display:flex;flex-wrap:wrap;gap:.35rem}
+.zgrid .z{font-size:.82rem;font-weight:700;padding:.3rem .55rem;border-radius:8px;background:var(--soft);border:1px solid var(--line)}
+.alert2{border-left:4px solid var(--bad);background:var(--bad-soft);border-radius:8px;padding:.55rem .7rem;display:grid;gap:.15rem}
+.alert2 .t{font-family:ui-monospace,Menlo,monospace;font-size:.8rem;color:var(--muted)}
+.alert2 .s{font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.03em}
+.alert2 p{margin:0;font-size:.92rem}
+.dlist{display:grid;grid-template-columns:repeat(6,1fr);gap:.3rem}
+.dlist span{display:grid;text-align:center;background:var(--soft);border-radius:8px;padding:.3rem 0;font-weight:700;font-size:.88rem}
+.dlist small{font-weight:400;color:var(--muted);font-size:.72rem}
+.c-ideal{stroke:var(--muted);stroke-dasharray:4 4;fill:none;stroke-width:1.5}
+.c-proj{stroke:var(--teal);stroke-dasharray:5 4;fill:none;stroke-width:2}
+.evl{margin:.2rem 0;padding-left:1.1rem;font-size:.92rem;display:grid;gap:.3rem}
+.wsl{display:grid;gap:.5rem}
+.wsl label{display:grid;grid-template-columns:1fr auto;gap:.2rem .6rem;font-size:.9rem;align-items:center}
+.wsl input{grid-column:1/-1;width:100%;min-height:32px;accent-color:var(--teal)}
+.wtab{width:100%;border-collapse:collapse;font-size:.88rem;margin:.4rem 0}
+.wtab th,.wtab td{border-bottom:1px solid var(--line);padding:.4rem .35rem;text-align:center}
+.wtab th:first-child,.wtab td:first-child{text-align:left}
+.wtab .tot td{font-weight:800}.wtab .win{background:var(--ok-soft);color:var(--ok)}
+.btn.sm{min-height:40px;padding:.45rem .8rem;font-size:.88rem}
 /* ===== Versi situs: tata letak laptop, hero, transisi, pencarian ===== */
 #app>*{animation:fadeUp .28s ease both}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
@@ -1669,6 +1741,238 @@ MS=[{id:'m1',t:'Ops engineer',s:'2026-11-05',e:'2026-11-14'},{id:'m2',t:'AI fact
  NCARDS.forEach(function(c){if(by[c[0]])c[4]=by[c[0]];});
  var ord={m1:1,m2:2,m3:3,m4:4};NCARDS.sort(function(a,b){return ord[a[4]]-ord[b[4]];});})();
 
+/* 17 Nov: redaksi soal c10 nomor 2 diselaraskan dengan kalimat di pelajarannya ("dari bawah"). Kunci jawaban tetap. */
+(function(){var q=COURSES.c10&&COURSES.c10.quiz[1];if(q&&/LBNL/.test(q.q)){q.q='Pelajaran menyebut metodologi LBNL membangun estimasi "dari bawah". Pendekatan ini disebut…';q.o=['Top-down (dari total nasional ke bawah)','Bottom-up (dari data perangkat ke atas)','Survei opini','Monte Carlo saja'];q.e='Estimasi dibangun dari data pengiriman dan daya perangkat, lalu dijumlahkan ke atas. Itulah arti bottom-up.';}})();
+
+/* ===== Jalur Lanjutan (setelah onboarding): alur end-to-end, keamanan desain (NIST), SOC & SOC 2, engineering management, strategi & keputusan =====
+   Terpisah dari persiapan T-14. Tidak mengubah materi lama. Semua contoh dan data lab sintetis. */
+window.ADV={c20:1,c21:1,c22:1,c23:1,c24:1};
+SKILLS.flow='Alur end-to-end (lanjutan)';SKILLS.secadv='Keamanan desain dan SOC (lanjutan)';SKILLS.lead='Manajemen, strategi, keputusan (lanjutan)';
+Object.assign(SRC,{
+ xcsf:{f:'https://www.nist.gov/cyberframework',t:'NIST Cybersecurity Framework (CSF) 2.0'},
+ x53:{f:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final',t:'NIST SP 800-53 Rev. 5: Security and Privacy Controls'},
+ x82:{f:'https://csrc.nist.gov/pubs/sp/800/82/r3/final',t:'NIST SP 800-82 Rev. 3: Guide to Operational Technology (OT) Security'},
+ x207:{f:'https://csrc.nist.gov/pubs/sp/800/207/final',t:'NIST SP 800-207: Zero Trust Architecture'},
+ x61:{f:'https://csrc.nist.gov/pubs/sp/800/61/r3/final',t:'NIST SP 800-61 Rev. 3: Incident Response Recommendations (CSF 2.0 Community Profile)'},
+ x193:{f:'https://csrc.nist.gov/pubs/sp/800/193/final',t:'NIST SP 800-193: Platform Firmware Resiliency Guidelines'},
+ xairmf:{f:'https://www.nist.gov/itl/ai-risk-management-framework',t:'NIST AI Risk Management Framework'},
+ xcai:{f:'https://csrc.nist.gov/pubs/ir/8596/iprd',t:'NIST IR 8596 (draf awal): Cyber AI Profile'},
+ xrand:{f:'https://www.rand.org/pubs/research_reports/RRA2849-1.html',t:'RAND: Securing AI Model Weights (2024)'},
+ xattack:{f:'https://attack.mitre.org/',t:'MITRE ATT&CK'},
+ xsoc2:{f:'https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2',t:'AICPA: SOC 2 dan Trust Services Criteria'},
+ xsre1:{f:'https://sre.google/sre-book/embracing-risk/',t:'Google SRE Book: Embracing Risk (error budget)'},
+ xsre2:{f:'https://sre.google/workbook/implementing-slos/',t:'Google SRE Workbook: Implementing SLOs'},
+ xsre3:{f:'https://sre.google/sre-book/being-on-call/',t:'Google SRE Book: Being On-Call'},
+ x800:{f:'https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/',t:'NVIDIA: arsitektur daya 800 VDC untuk AI factory'},
+ x800b:{f:'https://www.storagereview.com/news/nvidia-moves-800-vdc-power-architecture-from-concept-to-production-just-dont-turn-off-ac-power-yet',t:'StorageReview (Agustus 2026): 800 VDC dari konsep ke produksi'}
+});
+
+COURSES.c20={t:'Alur kerja end-to-end AI data center',lvl:'Menengah',min:70,ic:'layers',th:'t-slate',dec:'',skill:'flow',
+ why:'Engineer yang hanya paham bagiannya akan memperbaiki gejala. Orang yang paham seluruh alur, dari megawatt sampai token, bisa menemukan di mana masalah sebenarnya lahir dan siapa yang harus diajak bicara.',
+ out:['Menjelaskan tujuh tahap siklus hidup AI data center dan pemilik tiap tahap','Menjelaskan lima tingkat commissioning dan apa yang diserahkan ke operasi','Mengikuti perjalanan beban kerja klien dari data sampai layanan','Menggambar alur operasi dari alert sampai pelajaran','Menjelaskan arah terbaru: rak berdaya sangat tinggi dan distribusi 800 VDC'],
+ src:['x800','x800b'],task:'Gambar peta alur end-to-end satu halaman untuk lokasi Anda: tujuh tahap, pemilik tiap tahap, dan tiga titik serah terima yang paling rawan.',
+ L:[
+ {t:'Peta besar: dari megawatt ke token',min:14,
+  h:`<p>AI data center bekerja seperti pabrik. Bahan bakunya listrik dan data, hasilnya token. Agar pabrik itu ada dan terus berjalan, ada tujuh tahap yang selalu berulang:</p><ol><li><strong>Rencana:</strong> lokasi, sambungan daya, air, izin, dan kontrak klien.</li><li><strong>Desain:</strong> memilih desain referensi, menghitung daya dan pendinginan, lalu mengujinya di digital twin sebelum beton dituang.</li><li><strong>Pengadaan:</strong> GPU, switch, CDU, trafo, genset. Barang dengan waktu tunggu terlama menentukan jadwal.</li><li><strong>Bangun dan pasang:</strong> gedung, MEP, lalu rack and stack dan pengabelan.</li><li><strong>Commissioning dan serah terima:</strong> membuktikan semuanya bekerja sebagai satu sistem.</li><li><strong>Operasi:</strong> menyediakan kapasitas, menjalankan, memelihara, memperbaiki.</li><li><strong>Penyegaran:</strong> generasi GPU berganti, perangkat lama dibongkar dengan aman.</li></ol><p>Tim operasi resminya masuk di tahap 6, tetapi keputusan di tahap 2 dan 3 menentukan mudah tidaknya pekerjaan Anda selama bertahun-tahun. Contohnya letak katup isolasi, jumlah suku cadang, dan apakah telemetri CDU bisa dibaca sistem pemantauan. Karena itu tim operasi yang matang ikut meninjau desain dengan satu pertanyaan: bisakah ini dioperasikan dan diperbaiki tanpa mematikan tenant?</p>`,
+  key:['Tujuh tahap: rencana, desain, pengadaan, bangun, commissioning, operasi, penyegaran','Barang dengan waktu tunggu terlama menentukan jadwal proyek','Keputusan desain menentukan beban operasi bertahun-tahun'],
+  mg:'Minta kursi di tinjauan desain. Satu catatan operabilitas di tahap desain lebih murah daripada seratus tiket di tahap operasi.',s:[]},
+ {t:'Dari bangunan ke kapasitas siap pakai: commissioning dan serah terima',min:14,
+  h:`<p>Commissioning membuktikan bahwa fasilitas bekerja sesuai desain. Industri memakai lima tingkat:</p><ol><li><strong>L1, uji pabrik:</strong> perangkat diuji di pabrik sebelum dikirim (FAT).</li><li><strong>L2, pemeriksaan di lokasi:</strong> barang datang utuh dan terpasang benar.</li><li><strong>L3, penyalaan awal:</strong> tiap perangkat dinyalakan dan diperiksa sendiri-sendiri.</li><li><strong>L4, uji fungsi:</strong> tiap sistem diuji, misalnya satu loop pendinginan dengan beban.</li><li><strong>L5, uji terpadu (IST):</strong> seluruh sistem diuji bersama, termasuk simulasi listrik padam dan pompa mati.</li></ol><p>Setelah fasilitas lulus, giliran cluster. Urutannya: validasi kabel dan topologi fabric, penyamaan firmware ke satu baseline, lalu burn-in, yaitu menjalankan beban berat berjam-jam untuk menyaring perangkat yang cacat sejak awal. Node yang lulus baru diserahkan ke scheduler.</p><p>Serah terima ke operasi bukan seremoni. Yang harus diterima: gambar as-built, hasil uji L1 sampai L5, daftar temuan yang masih terbuka, baseline firmware, runbook, daftar suku cadang, dan kontak eskalasi vendor. ORR adalah pemeriksaan terakhir bahwa tim, prosedur, dan alat siap sebelum beban klien masuk.</p>`,
+  key:['L1 pabrik, L2 lokasi, L3 penyalaan, L4 fungsi, L5 terpadu (IST)','Bring-up cluster: validasi kabel, baseline firmware, burn-in','Serah terima = dokumen, temuan terbuka, runbook, suku cadang, kontak vendor'],
+  mg:'Jangan menerima kapasitas yang temuan terbukanya tidak tertulis. Temuan tanpa pemilik dan tenggat akan menjadi insiden pertama Anda.',s:[]},
+ {t:'Perjalanan beban kerja klien: dari data ke model ke layanan',min:14,
+  h:`<p>Dari sisi klien, alurnya berbeda. Mereka tidak membeli rak, mereka membeli hasil.</p><ol><li><strong>Onboarding tenant:</strong> kontrak dan SLA, titik sambung jaringan, identitas dan hak akses, kuota.</li><li><strong>Data masuk:</strong> dataset dipindahkan ke storage berkecepatan tinggi. Jalur ini sering menjadi hambatan pertama.</li><li><strong>Training:</strong> scheduler menempatkan job di ribuan GPU. Job menulis checkpoint berkala agar bisa melanjutkan setelah gangguan.</li><li><strong>Evaluasi:</strong> model diuji. Banyak job pendek, pola bebannya tidak rata.</li><li><strong>Inference:</strong> model melayani permintaan. Yang penting adalah latensi dan ketersediaan, bukan lama job.</li></ol><p>Tiap tahap punya ukuran berbeda. Training peka terhadap satu node yang gagal karena seluruh job sinkron bisa berhenti, jadi ukurannya waktu job efektif dan waktu pulih. Inference peka terhadap latensi dan lonjakan permintaan, jadi ukurannya ketersediaan layanan dan waktu respons.</p><p>Untuk tim operasi artinya satu gangguan yang sama bisa bernilai sangat berbeda. Satu rak mati saat training besar bisa membuang jam kerja ribuan GPU. Rak yang sama saat inference mungkin hanya mengurangi kapasitas cadangan.</p>`,
+  key:['Alur klien: onboarding, data masuk, training, evaluasi, inference','Training diukur dari waktu job efektif; inference dari latensi dan ketersediaan','Dampak satu gangguan bergantung pada jenis beban yang sedang berjalan'],
+  mg:'Sebelum menjadwalkan pekerjaan, tanyakan beban apa yang sedang berjalan di rak itu. Jawabannya mengubah waktu, cara, dan komunikasi Anda.',s:[]},
+ {t:'Alur operasi: dari alert ke perbaikan ke pelajaran',min:13,
+  h:`<p>Operasi harian juga satu alur utuh. Jika satu mata rantai lemah, seluruh rantai lambat.</p><ol><li><strong>Deteksi:</strong> telemetri menghasilkan alert. Ukurannya MTTD, waktu sampai gangguan diketahui.</li><li><strong>Triase:</strong> dampak, cakupan, tren, tindakan aman, eskalasi.</li><li><strong>Mitigasi:</strong> lindungi perangkat dan tenant dulu, misalnya drain node atau batasi daya.</li><li><strong>Perbaikan:</strong> ganti komponen. Di sini rantai suku cadang dan RMA menentukan kecepatan.</li><li><strong>Verifikasi:</strong> node diuji ulang sebelum kembali ke produksi.</li><li><strong>Pelajaran:</strong> postmortem tanpa menyalahkan, lalu runbook dan aturan alert diperbaiki.</li></ol><p>Ada dua alur lain yang berjalan di sampingnya. <strong>Alur change:</strong> usulan, penilaian risiko, persetujuan, pelaksanaan di jendela yang disepakati, verifikasi, penutupan. <strong>Alur kapasitas:</strong> prakiraan kebutuhan, pemesanan, pemasangan, serah terima. Waktu tunggu perangkat bisa berbulan-bulan, jadi prakiraan yang terlambat tidak bisa dikejar dengan kerja lembur.</p><p>Cara membaca alur ini sebagai calon pemimpin: ukur waktu di tiap mata rantai, lalu perbaiki yang paling lama. Sering kali yang lambat bukan teknisinya, tetapi menunggu suku cadang atau menunggu persetujuan.</p>`,
+  key:['Deteksi, triase, mitigasi, perbaikan, verifikasi, pelajaran','Alur pendamping: change dan kapasitas','Ukur waktu tiap mata rantai, perbaiki yang paling lama'],
+  mg:'Minta data waktu per tahap untuk sepuluh insiden terakhir. Dari sana terlihat apakah masalahnya deteksi, keputusan, atau suku cadang.',s:[]},
+ {t:'Arah terbaru: rak makin padat dan distribusi 800 VDC',min:13,
+  h:`<p>Arah industri saat ini adalah daya per rak yang terus naik. Rak GPU generasi sekarang berada di kisaran 130 kW. Peta jalan vendor yang dipublikasikan sepanjang 2026 menyebut rak daya untuk kelas sekitar 145 kW, lalu 330 kW, lalu 570 kW, dengan arah jangka panjang sampai sekitar 1 MW per rak.</p><p>Pada daya sebesar itu, distribusi listrik tegangan rendah di dalam rak menjadi tidak praktis karena arus dan tembaganya terlalu besar. Jawabannya adalah distribusi <strong>800 VDC</strong>. Tahapannya, menurut publikasi vendor: mula-mula rak daya di samping rak GPU mengubah AC menjadi 800 VDC, lalu pusat daya yang menyalurkan DC lewat busway, dan dalam jangka panjang trafo solid-state yang mengubah tegangan menengah langsung menjadi 800 VDC. Sebagian besar fasilitas, termasuk pendinginan, storage, dan jaringan, tetap memakai AC.</p><p>Bagi tim operasi, perubahan ini nyata. Prosedur keselamatan listrik DC tegangan tinggi berbeda dari AC. Commissioning dan pemeliharaan butuh kompetensi dan alat ukur baru. Pendinginan cair menjadi keharusan. Jumlah titik kegagalan dan cara mengisolasinya ikut berubah.</p><p>Angka di atas adalah klaim peta jalan vendor yang dilaporkan media pada Agustus 2026. Perlakukan sebagai arah, lalu verifikasi dengan dokumen resmi sebelum dipakai untuk perencanaan.</p>`,
+  key:['Peta jalan vendor: kelas 145 kW, 330 kW, 570 kW, menuju sekitar 1 MW per rak','800 VDC mengurangi arus dan tembaga pada rak berdaya sangat tinggi','Fasilitas pendukung tetap AC; keselamatan dan kompetensi DC menjadi kebutuhan baru'],
+  mg:'Tanyakan sejak awal: generasi rak berikutnya di lokasi ini memakai distribusi apa, dan siapa yang akan dilatih untuk keselamatan DC.',s:['x800','x800b']}
+ ],
+ quiz:[
+ {q:'Tingkat commissioning yang menguji seluruh sistem bersama, termasuk simulasi listrik padam, adalah…',o:['L1, uji pabrik','L3, penyalaan awal','L5, uji terpadu (IST)','L2, pemeriksaan di lokasi'],a:2,e:'L5 atau IST menguji semua sistem sebagai satu kesatuan.'},
+ {q:'Mengapa tim operasi sebaiknya ikut meninjau desain?',o:['Agar bisa memilih vendor sendiri','Karena keputusan desain menentukan apakah fasilitas bisa dioperasikan dan diperbaiki tanpa mematikan tenant','Agar jadwal proyek lebih cepat','Karena diwajibkan oleh auditor'],a:1,e:'Operabilitas ditentukan di tahap desain. Memperbaikinya setelah beroperasi jauh lebih mahal.'},
+ {q:'Menurut pelajaran, mengapa distribusi 800 VDC muncul?',o:['Karena AC tidak lagi diizinkan','Karena pada rak berdaya sangat tinggi, arus dan tembaga distribusi tegangan rendah menjadi tidak praktis','Karena GPU hanya bisa memakai DC','Karena pendinginan cair membutuhkan DC'],a:1,e:'Tegangan lebih tinggi berarti arus lebih kecil untuk daya yang sama, sehingga kebutuhan tembaga turun.'}
+ ]};
+
+COURSES.c21={t:'Keamanan desain AI data center: fasilitas, jaringan, platform',lvl:'Lanjutan',min:75,ic:'shield',th:'t-coral',dec:'',skill:'secadv',
+ why:'Klien frontier AI menitipkan aset yang nilainya sangat besar: bobot model dan data pelatihan. Mereka menilai operator dari cara keamanan dirancang di setiap lapis, bukan dari dokumen kebijakan saja.',
+ out:['Menjelaskan aset, ancaman, dan tingkat keamanan yang dituntut klien','Menjelaskan lapis keamanan fisik dan keamanan OT fasilitas','Merancang zona jaringan dengan isolasi tenant dan management plane yang terlindung','Menjelaskan keamanan firmware, rantai pasok, dan komputasi rahasia','Memetakan kontrol ke enam fungsi NIST CSF 2.0'],
+ src:['xcsf','x53','x82','x207','x193','xrand','xairmf','xcai'],task:'Buat matriks zona dan aliran untuk satu rak GPU: zona apa saja yang menyentuhnya, aliran mana yang diizinkan, lewat perantara apa, dan kontrol NIST SP 800-53 mana yang menjadi dasarnya.',
+ L:[
+ {t:'Apa yang dilindungi, dari siapa, dan dengan peta apa',min:15,
+  h:`<p>Mulailah dari aset, bukan dari alat. Di AI data center ada empat aset utama: <strong>bobot model</strong> klien, <strong>data pelatihan</strong>, <strong>kapasitas GPU</strong> yang harus selalu tersedia, dan <strong>bidang kendali</strong>, yaitu sistem yang bisa memerintah semuanya: BMC, pengelola fabric, scheduler, dan sistem kendali fasilitas.</p><p>Lalu ancamannya. Laporan RAND tahun 2024 tentang pengamanan bobot model membagi tingkat keamanan menjadi lima, dari SL1 sampai SL5, menurut kemampuan penyerang yang ingin ditahan: SL1 untuk penyerang amatir, SL2 untuk penyerang profesional oportunis, SL3 untuk sindikat kejahatan siber dan ancaman orang dalam, SL4 untuk operasi standar lembaga siber kelas dunia, dan SL5 untuk operasi prioritas tertinggi lembaga semacam itu. Klien frontier AI makin sering memakai bahasa ini saat menilai operator.</p><p>Petanya adalah NIST CSF 2.0, yang terbit Februari 2024. Kerangka ini membagi pekerjaan keamanan menjadi enam fungsi: <strong>Govern</strong> (tata kelola), <strong>Identify</strong> (kenali aset dan risiko), <strong>Protect</strong> (lindungi), <strong>Detect</strong> (deteksi), <strong>Respond</strong> (tanggapi), dan <strong>Recover</strong> (pulihkan). Govern adalah fungsi baru di versi 2.0 dan menjadi pusatnya, karena tanpa keputusan soal selera risiko dan peran, lima fungsi lain berjalan tanpa arah.</p>`,
+  key:['Empat aset: bobot model, data pelatihan, kapasitas GPU, bidang kendali','RAND 2024: SL1 sampai SL5 menurut kemampuan penyerang','NIST CSF 2.0: Govern, Identify, Protect, Detect, Respond, Recover'],
+  mg:'Saat klien bertanya soal keamanan, jawab dengan urutan aset, ancaman, lalu kontrol per fungsi CSF. Itu bahasa yang dipakai tim keamanan mereka.',s:['xrand','xcsf']},
+ {t:'Keamanan fasilitas: fisik dan OT',min:15,
+  h:`<p>Keamanan fisik dirancang berlapis, dari luar ke dalam: batas lahan, gedung, lobi dan pos penjagaan, koridor aman, data hall, lalu sangkar atau rak. Tiap lapis menyaring orang lebih ketat. Kontrol yang lazim: kartu akses ditambah biometrik, pintu ganda yang hanya meloloskan satu orang, CCTV, pendampingan tamu dan vendor, dan penghancuran media penyimpanan di lokasi. Prinsipnya hak akses paling kecil: hanya sedikit orang yang perlu masuk data hall.</p><p>Lapis kedua adalah <strong>OT fasilitas</strong>: BMS, pemantau daya, pengendali CDU, PLC pompa dan chiller. Sistem ini dulu terpisah, sekarang terhubung jaringan. NIST SP 800-82 Rev. 3 menjadi panduannya. Pokok-pokoknya:</p><ul><li>OT berada di zona sendiri, dipisah dari jaringan kantor dan tidak terhubung langsung ke internet.</li><li>Pertukaran data dengan dunia luar lewat DMZ, bukan sambungan langsung.</li><li>Akses jarak jauh vendor dibatasi waktu, lewat perantara, memakai MFA, dan direkam.</li><li>Di OT, keselamatan dan ketersediaan didahulukan. Tambalan keamanan diuji dulu karena pengendali yang salah bisa mematikan pendinginan.</li></ul><p>Bagi AI data center, serangan ke OT adalah serangan ke ketersediaan. Orang yang bisa mengubah setpoint CDU bisa menghentikan ribuan GPU tanpa menyentuh satu server pun.</p>`,
+  key:['Fisik berlapis: lahan, gedung, lobi, koridor, data hall, rak','OT di zona sendiri, tanpa internet langsung, pertukaran data lewat DMZ','Akses vendor: terjadwal, lewat perantara, MFA, direkam'],
+  mg:'Tanyakan siapa pemilik keamanan pengendali CDU dan BMS. Jika jawabannya tidak jelas antara tim fasilitas dan tim IT, di situlah celahnya.',s:['x82']},
+ {t:'Keamanan jaringan: zona, isolasi tenant, dan management plane',min:16,
+  h:`<p>Jaringan AI data center dirancang sebagai zona dengan aturan aliran yang jelas. Zona yang umum: tepi internet, jaringan tenant, fabric komputasi antar-GPU, storage, <strong>OOB</strong> untuk manajemen (BMC, konsol switch), layanan bersama, OT fasilitas, jaringan kantor, dan zona keamanan untuk pengumpulan log.</p><p>Aturan dasarnya <strong>tolak secara default</strong>: aliran yang tidak diizinkan tertulis dianggap terlarang. Beberapa aturan yang hampir selalu berlaku:</p><ul><li><strong>Tenant tidak boleh menjangkau tenant lain.</strong> Isolasi dibuat di fabric, dengan PKey di InfiniBand atau VRF dan VXLAN di Ethernet.</li><li><strong>Host tenant tidak boleh menjangkau BMC.</strong> BMC bisa mematikan dan mem-flash server, jadi harus berada di OOB yang terpisah dari jaringan data.</li><li><strong>BMC tidak pernah terbuka ke internet.</strong> Admin masuk hanya lewat bastion dengan MFA, hak akses terbatas waktu, dan sesi direkam.</li><li><strong>OT tidak diakses langsung dari jaringan kantor.</strong> Telemetri OT keluar ke zona keamanan lewat DMZ.</li><li><strong>Log mengalir ke zona keamanan</strong> dan tidak bisa diubah dari sumbernya.</li></ul><p>Dasarnya ada di NIST SP 800-53: SC-7 (perlindungan batas), AC-4 (pengendalian aliran informasi), dan AC-17 (akses jarak jauh). NIST SP 800-207 menambahkan cara pikir zero trust: lokasi jaringan tidak memberi kepercayaan, setiap sesi diperiksa identitas dan kondisinya, dan kebijakan diputuskan di satu titik lalu ditegakkan sedekat mungkin dengan sumber daya. DPU di tiap server sering menjadi titik penegakan itu karena terpisah dari sistem operasi tenant.</p>`,
+  key:['Tolak secara default; tenant tidak menjangkau tenant lain','Host tidak menjangkau BMC; BMC hanya lewat bastion, MFA, sesi direkam','SP 800-53 SC-7, AC-4, AC-17; SP 800-207 zero trust'],
+  mg:'Uji desain dengan satu pertanyaan: jika satu node tenant dikuasai penyerang, apa saja yang bisa dijangkaunya? Jawaban yang benar adalah hanya milik tenant itu sendiri.',s:['x53','x207']},
+ {t:'Keamanan platform: firmware, rantai pasok, komputasi rahasia',min:15,
+  h:`<p>Di bawah sistem operasi ada lapisan yang jarang dilihat tetapi paling berkuasa: firmware BMC, BIOS, GPU, NIC, dan switch. NIST SP 800-193 meminta tiga kemampuan: <strong>melindungi</strong> firmware dari perubahan tidak sah, <strong>mendeteksi</strong> bila berubah, dan <strong>memulihkan</strong> ke versi tepercaya.</p><p>Praktiknya di lantai operasi:</p><ul><li>Ada <strong>baseline firmware</strong> yang disetujui. Setiap node diperiksa terhadap baseline itu sebelum masuk produksi.</li><li>Perangkat hasil <strong>RMA</strong> atau dari vendor diperlakukan sebagai belum tepercaya sampai diverifikasi. Rantai pasok adalah jalur serangan yang nyata.</li><li>Server melakukan boot terukur dan <strong>atestasi</strong>, yaitu membuktikan secara kriptografis bahwa perangkat lunak yang berjalan adalah yang seharusnya.</li><li>Media penyimpanan yang keluar gedung disanitasi atau dihancurkan, karena SSD rusak tetap bisa berisi data tenant.</li></ul><p>Lapis teratas adalah <strong>komputasi rahasia</strong>: data dan bobot model tetap terenkripsi saat diproses di dalam lingkungan eksekusi tepercaya pada CPU dan GPU, dengan kunci yang dijaga di HSM. Tujuannya agar operator sekalipun tidak bisa membaca aset tenant. Bagi klien frontier AI, ini makin sering menjadi syarat.</p><p>Semua ini bergantung pada disiplin operasi. Satu node yang dimasukkan ke produksi tanpa pemeriksaan baseline cukup untuk meruntuhkan seluruh jaminan.</p>`,
+  key:['SP 800-193: lindungi, deteksi, pulihkan firmware','Perangkat hasil RMA belum tepercaya sampai diverifikasi ke baseline','Komputasi rahasia: aset tenant terenkripsi bahkan saat diproses'],
+  mg:'Jadikan pemeriksaan baseline firmware sebagai gerbang wajib sebelum node kembali ke produksi, tanpa pengecualian saat mengejar kapasitas.',s:['x193']},
+ {t:'Dari desain ke bukti: memetakan kontrol ke NIST CSF 2.0',min:14,
+  h:`<p>Desain yang baik harus bisa dibuktikan. Cara paling sederhana adalah memetakannya ke enam fungsi CSF 2.0:</p><ul><li><strong>Govern:</strong> siapa pemilik risiko, selera risiko, peran saat insiden, persyaratan ke vendor.</li><li><strong>Identify:</strong> inventaris aset termasuk BMC, switch, dan pengendali OT; penilaian risiko.</li><li><strong>Protect:</strong> zona jaringan, MFA dan bastion, baseline firmware, akses fisik berlapis, pelatihan.</li><li><strong>Detect:</strong> pengumpulan log ke zona keamanan, aturan deteksi, pemantauan fisik.</li><li><strong>Respond:</strong> prosedur insiden, isolasi, komunikasi ke tenant. Panduannya NIST SP 800-61 Rev. 3, terbit April 2025, yang disusun mengikuti fungsi CSF.</li><li><strong>Recover:</strong> pemulihan dari image tepercaya dan verifikasi sebelum kembali ke produksi.</li></ul><p>CSF memakai dua alat bantu. <strong>Profil</strong>: gambaran kondisi sekarang dan kondisi sasaran; selisihnya menjadi rencana kerja. <strong>Tingkat</strong> (tier 1 sampai 4): seberapa terlembaga pengelolaan risikonya, dari serba dadakan sampai adaptif.</p><p>CSF menjawab apa yang harus dicapai. Untuk kontrol rincinya dipakai NIST SP 800-53 Rev. 5, yang berisi 20 keluarga kontrol. Untuk risiko khas AI ada NIST AI RMF, dan NIST sedang menyusun Cyber AI Profile yang draf awalnya terbit Desember 2025. Periksa status terbarunya sebelum dikutip.</p>`,
+  key:['Profil sekarang vs sasaran: selisihnya menjadi rencana kerja','CSF = hasil yang dituju; SP 800-53 Rev. 5 = 20 keluarga kontrol rinci','SP 800-61 Rev. 3 (April 2025) menyelaraskan respons insiden dengan CSF'],
+  mg:'Laporan keamanan satu halaman per fungsi CSF, dengan kondisi sekarang, sasaran, dan selisihnya, lebih berguna bagi pimpinan daripada daftar alat.',s:['xcsf','x53','x61','xairmf','xcai']}
+ ],
+ quiz:[
+ {q:'Fungsi yang baru ditambahkan di NIST CSF 2.0 dan menjadi pusat kerangkanya adalah…',o:['Detect','Recover','Govern','Protect'],a:2,e:'Govern ditambahkan di versi 2.0: tata kelola, selera risiko, peran, dan rantai pasok.'},
+ {q:'Mengapa host tenant tidak boleh bisa menjangkau BMC servernya?',o:['Karena BMC lambat','Karena BMC bisa mematikan dan mem-flash server, sehingga harus berada di jaringan manajemen yang terpisah','Karena BMC memakai banyak daya','Karena BMC hanya untuk vendor'],a:1,e:'BMC adalah bidang kendali. Jika terjangkau dari host, satu node yang dikuasai penyerang bisa mengambil alih perangkat keras.'},
+ {q:'Sebuah node kembali dari RMA. Langkah yang benar sebelum masuk produksi adalah…',o:['Langsung dimasukkan karena berasal dari vendor resmi','Memverifikasi firmware terhadap baseline yang disetujui','Menunggu satu minggu','Mengganti labelnya saja'],a:1,e:'Perangkat dari luar belum tepercaya sampai diverifikasi. Ini inti SP 800-193 dan keamanan rantai pasok.'}
+ ]};
+
+COURSES.c22={t:'SOC: operasi keamanan dan laporan SOC 2',lvl:'Lanjutan',min:60,ic:'lock',th:'t-violet',dec:'',skill:'secadv',
+ why:'SOC punya dua arti dan keduanya menyentuh kerja harian Anda. Security Operations Center membutuhkan telemetri dan respons dari tim operasi. Laporan SOC 2 membutuhkan bukti bahwa kontrol Anda berjalan sepanjang tahun.',
+ out:['Menjelaskan fungsi, peran, dan alat Security Operations Center','Menjelaskan alur dari log ke deteksi ke respons','Menjelaskan apa yang diaudit dalam SOC 2 dan bedanya Type I dan Type II','Menghasilkan bukti audit dari kerja operasi harian'],
+ src:['x61','xattack','xsoc2'],task:'Susun daftar 10 bukti SOC 2 yang dihasilkan kerja harian tim Anda: kontrolnya, buktinya, di mana disimpan, dan siapa pemiliknya.',
+ L:[
+ {t:'Security Operations Center: fungsi, peran, alat',min:14,
+  h:`<p>NOC menjaga layanan tetap tersedia. <strong>Security Operations Center</strong> (SOC) menjaga agar tidak ada yang menyalahgunakan sistem. Keduanya membaca telemetri yang sama dengan pertanyaan berbeda, sehingga di AI data center keduanya harus bekerja berdampingan.</p><p>Peran di dalam SOC biasanya berjenjang: analis triase yang menyaring alert, penanggap insiden yang menyelidiki dan mengisolasi, pemburu ancaman yang mencari hal yang belum memicu alert, dan perekayasa deteksi yang menulis serta memperbaiki aturan.</p><p>Alat utamanya: <strong>SIEM</strong> untuk mengumpulkan dan mengorelasikan log, <strong>SOAR</strong> untuk mengotomatiskan langkah respons yang berulang, serta sensor di server dan jaringan. Ukuran kinerjanya MTTD, waktu sampai ancaman diketahui, dan MTTR, waktu sampai ditangani.</p><p>Yang membedakan AI data center adalah sumber lognya. Selain server dan firewall, SOC perlu log dari BMC, pengelola fabric, DPU, scheduler, sistem kendali fasilitas, dan pembaca kartu akses. Banyak dari sumber ini dikelola tim operasi, bukan tim keamanan. Jika log itu tidak dikirim atau terputus, SOC buta tepat di tempat yang paling berbahaya.</p>`,
+  key:['NOC menjaga ketersediaan; SOC menjaga dari penyalahgunaan','SIEM mengorelasikan log; SOAR mengotomatiskan respons','Sumber log khas: BMC, fabric, DPU, scheduler, OT, akses fisik'],
+  mg:'Perlakukan pengiriman log ke SOC sebagai layanan produksi. Log yang terputus adalah insiden, bukan gangguan kecil.',s:[]},
+ {t:'Dari log ke deteksi ke respons',min:16,
+  h:`<p>Aturan deteksi yang baik berangkat dari cara penyerang bekerja. MITRE ATT&CK memetakannya menjadi taktik, misalnya akses awal, pergerakan lateral, dan eksfiltrasi. Untuk AI data center, kasus yang layak punya aturan deteksi antara lain: percobaan login BMC berulang, lalu lintas keluar yang tidak wajar dari storage, firmware yang berbeda dari baseline, pemindaian dari jaringan kantor ke zona OT, dan sumber log yang tiba-tiba diam.</p><p>Triase alert keamanan memakai urutan yang sama dengan triase operasi, ditambah satu pertanyaan: apakah aktivitas ini sah? Tiga kemungkinan hasilnya:</p><ul><li><strong>Insiden nyata:</strong> isolasi akun atau perangkat, amankan bukti, eskalasi.</li><li><strong>Aktivitas sah:</strong> ada tiket atau izin yang cocok. Tutup dengan rujukan tiketnya, lalu usulkan penyetelan aturan agar tidak berulang.</li><li><strong>Belum jelas:</strong> verifikasi ke pemilik sistem sebelum memutuskan.</li></ul><p>Dua kebiasaan penting. Pertama, <strong>log yang berhenti bukan tanda aman</strong>, melainkan kehilangan visibilitas yang harus ditangani sebagai gangguan. Kedua, perangkat yang integritasnya diragukan <strong>dikarantina dulu</strong> dari produksi, baru diselidiki.</p><p>NIST SP 800-61 Rev. 3 menata respons insiden mengikuti CSF: persiapan dan pembelajaran masuk Govern, Identify, dan Protect; penanganannya masuk Detect, Respond, dan Recover. Tim operasi biasanya menjadi tangan yang mengisolasi dan memulihkan, jadi peran itu harus disepakati sebelum insiden terjadi.</p>`,
+  key:['Deteksi berangkat dari taktik penyerang (MITRE ATT&CK)','Tiga hasil triase: insiden nyata, aktivitas sah, belum jelas','Log berhenti = kehilangan visibilitas; integritas diragukan = karantina dulu'],
+  mg:'Sepakati dengan SOC sejak awal: siapa yang berwenang mengisolasi node tenant, dan dalam berapa menit keputusan itu harus diambil.',s:['xattack','x61']},
+ {t:'SOC 2: apa yang diaudit',min:15,
+  h:`<p><strong>SOC 2</strong> adalah laporan auditor independen tentang kontrol sebuah organisasi layanan, memakai Trust Services Criteria dari AICPA. Ada lima kategori: <strong>Security</strong>, <strong>Availability</strong>, <strong>Confidentiality</strong>, <strong>Processing Integrity</strong>, dan <strong>Privacy</strong>. Security wajib ada; sisanya dipilih sesuai layanan. Operator data center umumnya mengambil Security dan Availability.</p><p>Kategori Security berisi sembilan kelompok kriteria umum, CC1 sampai CC9. Yang paling dekat dengan operasi:</p><ul><li><strong>CC6:</strong> akses logis dan fisik.</li><li><strong>CC7:</strong> operasi sistem, yaitu pemantauan, deteksi, dan penanganan insiden.</li><li><strong>CC8:</strong> manajemen perubahan.</li><li><strong>CC9:</strong> mitigasi risiko, termasuk vendor.</li></ul><p>Kategori Availability menambahkan pengelolaan kapasitas, perlindungan lingkungan dan cadangan, serta pengujian rencana pemulihan.</p><p>Ada dua jenis laporan. <strong>Type I</strong> menilai rancangan kontrol pada satu tanggal. <strong>Type II</strong> menilai rancangan dan efektivitas kontrol sepanjang satu periode, biasanya enam sampai dua belas bulan. Klien besar hampir selalu meminta Type II karena yang ingin mereka ketahui adalah apakah kontrol benar-benar dijalankan setiap hari.</p><p>Jangan tertukar dengan SOC 1, yang menyangkut kontrol atas pelaporan keuangan, dan SOC 3, ringkasan untuk umum.</p>`,
+  key:['Lima kategori; Security wajib, data center umumnya menambah Availability','CC6 akses, CC7 operasi sistem, CC8 perubahan, CC9 risiko dan vendor','Type I: rancangan pada satu tanggal; Type II: berjalan efektif sepanjang periode'],
+  mg:'Saat klien meminta laporan SOC 2, periksa tiga hal: jenisnya, periodenya, dan kategori yang dicakup. Laporan Type I tanpa Availability tidak menjawab kekhawatiran klien AI.',s:['xsoc2']},
+ {t:'Menjadi sumber bukti: kerja harian yang lulus audit',min:15,
+  h:`<p>Untuk Type II, auditor mengambil populasi lalu sampel. Misalnya seluruh tiket change selama periode, lalu 25 di antaranya diperiksa: apakah ada penilaian risiko, persetujuan sebelum pelaksanaan, dan bukti verifikasi. Satu sampel yang gagal dicatat sebagai pengecualian di laporan dan akan dibaca klien.</p><p>Bukti yang lazim diminta dari tim operasi:</p><ul><li>Tiket change lengkap dengan persetujuan dan hasilnya.</li><li>Tinjauan hak akses berkala, termasuk pencabutan akses orang yang pindah atau keluar.</li><li>Catatan akses fisik dan pendampingan tamu.</li><li>Catatan insiden dari deteksi sampai penutupan, dengan postmortem.</li><li>Hasil uji pemulihan dan uji cadangan daya, bertanggal dan mencatat temuan.</li><li>Catatan pemantauan kapasitas dan lingkungan.</li></ul><p>Bukti yang lemah: kebijakan yang belum disahkan, tangkapan layar satu hari untuk kontrol yang seharusnya berjalan sepanjang periode, dan pernyataan lisan. Rumusnya sederhana: yang tidak tercatat dianggap tidak terjadi.</p><p>Dua istilah perlu dikenal. <strong>CUEC</strong> adalah kontrol yang menjadi tanggung jawab klien, misalnya mengelola akun mereka sendiri. <strong>Organisasi sublayanan</strong> adalah pihak ketiga yang Anda andalkan; kontrol mereka bisa dimasukkan ke laporan atau dikecualikan dengan penjelasan.</p><p>Jika Anda terbiasa dengan ISO 27001, banyak kontrolnya beririsan. Bedanya, ISO 27001 mensertifikasi sistem manajemen, sedangkan SOC 2 Type II melaporkan hasil pengujian kontrol satu per satu.</p>`,
+  key:['Auditor menguji sampel dari populasi sepanjang periode','Bukti kuat: tiket, tinjauan akses, catatan insiden, hasil uji bertanggal','Yang tidak tercatat dianggap tidak terjadi'],
+  mg:'Rancang alur kerja agar bukti lahir dengan sendirinya dari pekerjaan. Bukti yang dikumpulkan menjelang audit hampir selalu berlubang.',s:['xsoc2']}
+ ],
+ quiz:[
+ {q:'Laporan SOC 2 yang menilai apakah kontrol berjalan efektif sepanjang satu periode adalah…',o:['Type I','Type II','SOC 1','SOC 3'],a:1,e:'Type II menilai rancangan dan efektivitas operasi sepanjang periode. Type I hanya rancangan pada satu tanggal.'},
+ {q:'Kolektor log dari zona OT berhenti mengirim data selama 45 menit. Sikap yang benar adalah…',o:['Menganggap aman karena tidak ada alert','Memperlakukannya sebagai kehilangan visibilitas dan menanganinya sebagai gangguan','Menunggu sampai besok pagi','Mematikan aturan deteksinya'],a:1,e:'Log yang berhenti bukan tanda aman. SOC menjadi buta di zona itu sampai log pulih.'},
+ {q:'Kategori Trust Services Criteria yang wajib ada di setiap laporan SOC 2 adalah…',o:['Availability','Privacy','Security','Processing Integrity'],a:2,e:'Security (kriteria umum CC1 sampai CC9) wajib. Empat kategori lain dipilih sesuai layanan.'}
+ ]};
+
+COURSES.c23={t:'Engineering management untuk tim operasi AI factory',lvl:'Lanjutan',min:70,ic:'gauge',th:'t-amber',dec:'',skill:'lead',
+ why:'Menjadi pemimpin tim operasi berarti berganti pekerjaan. Hasil Anda tidak lagi diukur dari tiket yang Anda tutup, tetapi dari keandalan sistem dan kekuatan tim yang Anda bangun.',
+ out:['Menjelaskan perubahan peran dari engineer ke manajer','Merancang cakupan shift dan on-call yang sehat','Memakai SLO dan error budget untuk memutuskan','Mengembangkan orang lewat 1:1, delegasi, dan umpan balik','Mengelola vendor, anggaran, dan laporan ke pimpinan'],
+ src:['xsre1','xsre2','xsre3'],task:'Tulis ulasan operasi mingguan satu halaman untuk tim Anda: empat ukuran, insiden, change, tiga risiko teratas, dan satu permintaan ke pimpinan.',
+ L:[
+ {t:'Dari engineer ke manajer: pekerjaan yang berubah',min:13,
+  h:`<p>Sebagai engineer, hasil kerja Anda adalah apa yang Anda selesaikan sendiri. Sebagai manajer, hasil kerja Anda adalah hasil tim Anda, ditambah hasil tim lain yang Anda pengaruhi. Itu rumusan klasik Andy Grove, dan akibatnya besar: waktu yang Anda pakai untuk mengerjakan sendiri tidak lagi menambah hasil sebanyak waktu yang Anda pakai untuk membuat tim bekerja lebih baik.</p><p>Tuas seorang manajer ada tiga:</p><ul><li><strong>Orang:</strong> merekrut, melatih, memberi umpan balik, menempatkan orang di pekerjaan yang tepat.</li><li><strong>Proses:</strong> cara kerja yang membuat hasil baik bisa diulang, seperti runbook, handover, dan tinjauan change.</li><li><strong>Teknologi:</strong> alat dan otomasi yang menghapus pekerjaan berulang.</li></ul><p>Jebakan paling umum bagi manajer baru dari jalur teknis adalah <strong>mode pahlawan</strong>: turun tangan sendiri di setiap insiden. Tim jadi tidak belajar, Anda menjadi titik kegagalan tunggal, dan pekerjaan manajerial terbengkalai. Ukurannya sederhana: apakah operasi tetap baik saat Anda cuti dua minggu?</p><p>Bagi Anda yang berlatar tata kelola dan keberlangsungan layanan, tuas proses adalah kekuatan bawaan. Yang perlu dibangun adalah kredibilitas teknis di lantai operasi, dan itu datang dari masa menjadi ops engineer yang bisa diandalkan.</p>`,
+  key:['Hasil manajer = hasil tim + hasil tim lain yang dipengaruhi','Tiga tuas: orang, proses, teknologi','Uji mode pahlawan: apakah operasi tetap baik saat Anda cuti?'],
+  mg:'Tiap minggu, catat berapa jam Anda mengerjakan sendiri dan berapa jam membuat tim lebih mampu. Geser perlahan ke yang kedua.',s:[]},
+ {t:'Merancang sistem kerja: shift, on-call, dan beban',min:14,
+  h:`<p>Operasi 24 jam bukan soal semangat, melainkan soal hitungan. Satu kursi yang harus terisi sepanjang waktu berarti 168 jam per minggu. Satu orang bekerja sekitar 40 jam per minggu, belum dikurangi cuti, sakit, dan pelatihan. Jadi satu kursi 24 jam butuh sekitar lima sampai enam orang. Tim yang lebih kecil dari itu akan menutup celah dengan lembur, dan lembur yang terus-menerus berakhir dengan kesalahan atau pengunduran diri.</p><p>Ada dua pola dasar. <strong>Shift</strong>: orang berjaga di tempat, cocok untuk pemantauan dan pekerjaan fisik. <strong>On-call</strong>: orang dipanggil bila perlu, cocok untuk keahlian yang jarang dibutuhkan. Kebanyakan lokasi memakai keduanya secara berlapis: shift sebagai lini pertama, on-call spesialis sebagai lini kedua, vendor sebagai lini ketiga.</p><p>Beberapa patokan dari praktik SRE Google yang berguna sebagai titik awal:</p><ul><li>Pekerjaan berulang yang bisa diotomasi (<strong>toil</strong>) dijaga di bawah separuh waktu tim.</li><li>Jumlah panggilan on-call dijaga rendah, sekitar dua kejadian per giliran, agar tiap kejadian sempat ditangani tuntas dan ditindaklanjuti.</li><li>Setiap panggilan harus bisa ditindaklanjuti. Alert yang tidak butuh tindakan dihapus atau diturunkan.</li></ul><p>Tugas manajer adalah mengukur beban ini, lalu memperbaikinya lewat otomasi, penyetelan alert, atau tambahan orang, dengan data sebagai dasar permintaannya.</p>`,
+  key:['Satu kursi 24 jam butuh sekitar 5 sampai 6 orang','Lini berlapis: shift, on-call spesialis, vendor','Patokan SRE: toil di bawah separuh waktu, panggilan on-call tetap rendah'],
+  mg:'Sebelum meminta tambahan orang, tunjukkan hitungan cakupan dan data panggilan tiga bulan terakhir. Angka lebih meyakinkan daripada keluhan.',s:['xsre3']},
+ {t:'SLO, error budget, dan bahasa keandalan',min:15,
+  h:`<p>Tiga istilah yang sering tertukar. <strong>SLI</strong> adalah ukurannya, misalnya persentase GPU-jam yang tersedia. <strong>SLO</strong> adalah sasaran internal untuk ukuran itu, misalnya 99,5% per 30 hari. <strong>SLA</strong> adalah janji di kontrak beserta akibatnya bila dilanggar. SLO sebaiknya lebih ketat daripada SLA agar ada jarak aman.</p><p><strong>Error budget</strong> adalah sisi lain dari SLO: bagian yang boleh gagal. Rumusnya 1 dikurangi SLO. Contoh untuk 1.000 GPU selama 30 hari: total 1.000 × 720 jam = 720.000 GPU-jam. Dengan SLO 99,5%, anggaran gagalnya 0,5%, yaitu 3.600 GPU-jam.</p><p><strong>Burn rate</strong> menunjukkan seberapa cepat anggaran terpakai dibanding laju yang wajar. Rumusnya: bagian anggaran yang sudah terpakai dibagi bagian periode yang sudah berjalan. Jika pada hari ke-10 sudah terpakai 2.160 GPU-jam, itu 60% anggaran dalam sepertiga periode. Burn rate-nya 0,6 dibagi 0,333, yaitu 1,8. Angka di atas 1 berarti anggaran akan habis sebelum periode selesai. Pada laju ini, habisnya sekitar hari ke-17.</p><p>Gunanya untuk memutuskan, bukan sekadar melapor. Selama anggaran masih longgar, tim boleh bergerak cepat dengan change. Saat burn rate tinggi atau anggaran hampir habis, kebijakannya berbalik: change berisiko ditunda, tenaga dialihkan ke pekerjaan keandalan, dan pemangku kepentingan diberi tahu. Aturan ini disepakati sebelumnya, sehingga saat sulit tidak perlu berdebat.</p>`,
+  key:['Error budget = 1 − SLO. Contoh: 99,5% dari 720.000 GPU-jam → 3.600 GPU-jam','Burn rate = bagian anggaran terpakai ÷ bagian periode berjalan','Burn rate tinggi: tunda change berisiko, utamakan keandalan, kabari pemangku kepentingan'],
+  mg:'Sepakati kebijakan error budget secara tertulis dengan pemilik bisnis. Itu mengubah perdebatan cepat versus aman menjadi pembacaan satu angka.',s:['xsre1','xsre2']},
+ {t:'Mengembangkan orang: 1:1, delegasi, umpan balik, skill matrix',min:14,
+  h:`<p>Tim operasi yang kuat tidak bergantung pada satu atau dua orang hebat. Empat kebiasaan membangunnya.</p><p><strong>Pertemuan 1:1.</strong> Rutin, singkat, dan agendanya milik anggota tim. Isinya hambatan, beban, perkembangan, dan hal yang tidak muncul di rapat tim. Pertemuan yang sering dibatalkan mengirim pesan bahwa orangnya tidak penting.</p><p><strong>Delegasi bertingkat.</strong> Delegasi bukan melempar tugas. Sebutkan tingkatnya dengan jelas: selidiki lalu laporkan, usulkan lalu tunggu persetujuan, putuskan lalu kabari, atau putuskan sendiri. Naikkan tingkatnya seiring terbuktinya kemampuan.</p><p><strong>Umpan balik SBI.</strong> Sebutkan situasinya, perilaku yang terlihat, dan dampaknya. Contoh: "Saat handover tadi malam, tiket pompa tidak mencantumkan langkah berikutnya, sehingga shift pagi kehilangan 40 menit." Spesifik, bisa diperbaiki, dan tidak menyerang pribadi.</p><p><strong>Skill matrix.</strong> Tabel keahlian per orang untuk tiap area: pendinginan, daya, fabric, scheduler, keamanan. Dari sana terlihat area yang hanya dikuasai satu orang. Itu titik kegagalan tunggal pada manusia, dan obatnya pelatihan silang serta rotasi.</p><p>Di atas semuanya ada budaya <strong>postmortem tanpa menyalahkan</strong>. Orang yang takut dihukum akan menyembunyikan kesalahan kecil, dan kesalahan kecil yang tersembunyi tumbuh menjadi insiden besar.</p>`,
+  key:['1:1 rutin dengan agenda milik anggota tim','Delegasi bertingkat: selidiki, usulkan, putuskan lalu kabari, putuskan sendiri','Skill matrix menyingkap titik kegagalan tunggal pada manusia'],
+  mg:'Buat skill matrix di bulan pertama memimpin. Itu sekaligus rencana pelatihan, rencana cuti, dan daftar risiko tim.',s:[]},
+ {t:'Mengelola ke atas dan ke samping: vendor, anggaran, laporan',min:14,
+  h:`<p>Sebagian besar hasil tim operasi bergantung pada pihak di luar tim: tim fasilitas, vendor perangkat, tenant, dan bagian keuangan.</p><p><strong>Vendor.</strong> Kecepatan perbaikan sering ditentukan vendor. Kelola dengan ukuran yang disepakati: waktu tanggap, waktu penggantian suku cadang, dan mutu perbaikan. Tinjau secara berkala dengan data, bukan kesan. Simpan suku cadang kritis di lokasi untuk komponen yang waktu tunggunya panjang.</p><p><strong>Anggaran.</strong> Kenali dua kantongnya. Capex untuk aset seperti perangkat dan suku cadang awal. Opex untuk biaya berjalan seperti listrik, kontrak pemeliharaan, dan gaji. Permintaan yang kuat selalu menyebut apa yang dibeli, masalah yang diselesaikan, dan nilainya dalam ukuran bisnis, misalnya GPU-jam yang terselamatkan.</p><p><strong>Laporan.</strong> Ulasan operasi mingguan cukup satu halaman:</p><ol><li>Empat ukuran inti: ketersediaan, waktu pulih, jumlah insiden, pemakaian error budget.</li><li>Insiden penting dan pelajarannya.</li><li>Change yang selesai dan yang akan datang.</li><li>Tiga risiko teratas beserta pemiliknya.</li><li>Satu permintaan yang jelas ke pimpinan.</li></ol><p>Pimpinan tidak butuh semua detail. Mereka butuh tahu apakah keadaan terkendali, apa yang mengancam, dan keputusan apa yang Anda perlukan dari mereka.</p>`,
+  key:['Vendor dikelola dengan ukuran: waktu tanggap, waktu penggantian, mutu','Capex untuk aset, opex untuk biaya berjalan','Ulasan mingguan: ukuran, insiden, change, risiko, satu permintaan'],
+  mg:'Akhiri setiap laporan dengan satu permintaan yang bisa dijawab ya atau tidak. Laporan tanpa permintaan hanya menjadi bacaan.',s:[]}
+ ],
+ quiz:[
+ {q:'SLO 99,5% untuk 1.000 GPU selama 30 hari (720.000 GPU-jam). Berapa error budget-nya?',o:['720 GPU-jam','3.600 GPU-jam','7.200 GPU-jam','36.000 GPU-jam'],a:1,e:'0,5% × 720.000 = 3.600 GPU-jam.'},
+ {q:'Burn rate 1,8 pada hari ke-10 berarti…',o:['Anggaran akan habis sebelum periode selesai bila laju tetap','Tim bekerja 1,8 kali lebih cepat','SLO sudah pasti tercapai','Ada 1,8 insiden per hari'],a:0,e:'Burn rate di atas 1 berarti anggaran terpakai lebih cepat daripada laju yang wajar.'},
+ {q:'Satu kursi operasi yang harus terisi 24 jam setiap hari kira-kira membutuhkan…',o:['2 orang','3 orang','5 sampai 6 orang','10 orang'],a:2,e:'168 jam per minggu dibagi sekitar 40 jam per orang, ditambah cuti, sakit, dan pelatihan.'}
+ ]};
+
+COURSES.c24={t:'Strategi dan pengambilan keputusan',lvl:'Lanjutan',min:70,ic:'scale',th:'t-teal',dec:'',skill:'lead',
+ why:'Pemimpin dinilai dari mutu keputusannya. Strategi menentukan ke mana tenaga tim diarahkan, dan cara memutuskan menentukan apakah arah itu dijalankan dengan cepat dan aman.',
+ out:['Membedakan strategi dari daftar tujuan','Mengenali jenis keputusan dan siapa yang memutuskan','Memakai expected value, biaya penundaan, dan uji sensitivitas','Memutuskan saat informasi tidak lengkap dan saat krisis','Menurunkan strategi menjadi OKR, peta jalan, dan business case'],
+ src:[],task:'Tulis satu decision record dan business case satu halaman untuk satu perbaikan operasi di lokasi Anda, dengan nilai dalam GPU-jam.',
+ L:[
+ {t:'Apa itu strategi, dan apa yang bukan',min:13,
+  h:`<p>Banyak dokumen berjudul strategi ternyata hanya daftar keinginan: ketersediaan naik, biaya turun, klien puas. Menurut Richard Rumelt, strategi yang baik punya inti tiga bagian:</p><ol><li><strong>Diagnosis:</strong> apa sebenarnya masalah yang dihadapi. Diagnosis yang baik menyederhanakan keadaan yang rumit menjadi satu tantangan yang bisa dikerjakan.</li><li><strong>Kebijakan pemandu:</strong> pendekatan yang dipilih untuk menjawab tantangan itu, termasuk apa yang sengaja tidak dikerjakan.</li><li><strong>Tindakan yang selaras:</strong> langkah nyata yang saling menguatkan, dengan pemilik dan waktu.</li></ol><p>Contoh untuk tim operasi. Diagnosis: waktu pulih node rata-rata tiga hari, dan dua pertiganya adalah waktu menunggu suku cadang. Kebijakan pemandu: memperpendek rantai suku cadang lebih dulu, dan menunda proyek otomasi lain. Tindakan: stok suku cadang kritis di lokasi, kesepakatan waktu penggantian dengan vendor, dan pelatihan teknisi untuk penggantian mandiri.</p><p>Tanda strategi yang buruk: tidak menyebut masalahnya, berisi tujuan tanpa cara, dan mencoba mengerjakan semuanya sekaligus. Strategi selalu berarti memilih, dan memilih berarti ada yang ditolak.</p>`,
+  key:['Inti strategi: diagnosis, kebijakan pemandu, tindakan yang selaras','Daftar tujuan bukan strategi','Strategi berarti memilih, termasuk apa yang tidak dikerjakan'],
+  mg:'Uji strategi tim dengan satu pertanyaan: apa yang kita putuskan untuk tidak dikerjakan tahun ini? Jika tidak ada jawabannya, itu belum strategi.',s:[]},
+ {t:'Jenis keputusan: pintu satu arah dan pintu dua arah',min:14,
+  h:`<p>Tidak semua keputusan layak diperlakukan sama. Pembedaan yang dipopulerkan Amazon berguna di sini.</p><p><strong>Pintu dua arah:</strong> keputusan yang bisa dibatalkan dengan biaya kecil. Contohnya membatasi daya satu baris selama dua jam atau menggeser jendela pemeliharaan. Putuskan cepat oleh orang yang paling dekat dengan pekerjaannya, lalu perbaiki bila salah.</p><p><strong>Pintu satu arah:</strong> keputusan yang sulit atau mahal dibatalkan. Contohnya kontrak pendinginan lima tahun dengan satu vendor atau mematikan satu data hall untuk perombakan. Di sini perlambat langkah, kumpulkan data, dan minta pendapat yang berbeda.</p><p>Kesalahan yang sering terjadi ada dua: memperlakukan pintu dua arah seperti pintu satu arah sehingga organisasi menjadi lamban, atau sebaliknya sehingga organisasi menjadi ceroboh.</p><p>Hal kedua adalah kejelasan peran. Kerangka seperti DACI membaginya menjadi penggerak, pemberi persetujuan, kontributor, dan pihak yang diberi tahu. Yang terpenting hanya ada <strong>satu</strong> pengambil keputusan. Setelah diputuskan, berlaku prinsip tidak setuju tetapi tetap menjalankan: keberatan disampaikan sebelum keputusan, bukan lewat pelaksanaan setengah hati.</p><p>Terakhir, tuliskan. <strong>Decision record</strong> yang baik berisi konteks, opsi yang dipertimbangkan, keputusan, alasan, risiko, dan pemicu tinjau ulang, yaitu kondisi yang membuat keputusan itu perlu dibuka kembali.</p>`,
+  key:['Pintu dua arah: putuskan cepat di tingkat terdekat','Pintu satu arah: perlambat, kumpulkan data, cari pendapat berbeda','Decision record: konteks, opsi, keputusan, alasan, risiko, pemicu tinjau ulang'],
+  mg:'Sebelum rapat keputusan, sebutkan dulu jenis pintunya dan siapa pengambil keputusannya. Separuh perdebatan selesai di situ.',s:[]},
+ {t:'Memutuskan dengan angka: expected value, biaya penundaan, sensitivitas',min:15,
+  h:`<p>Tiga alat sederhana membuat keputusan operasi bisa dibandingkan. Pakai satu mata uang yang sama, misalnya GPU-jam.</p><p><strong>Expected value.</strong> Nilai harapan adalah peluang dikali dampak. Contoh: pembaruan firmware punya peluang gagal 10% dengan kerugian 400 GPU-jam. Nilai harapan kerugiannya 0,10 × 400 = 40 GPU-jam. Jika menunda seminggu berarti pasti kehilangan 30 GPU-jam karena bug lama, menunda terlihat lebih murah.</p><p>Namun selalu cari opsi ketiga. Uji <strong>canary</strong> di sebagian kecil armada lebih dulu, dengan biaya 4 GPU-jam, akan menangkap masalah saat kerugiannya baru 20 GPU-jam. Nilai harapannya 4 + 0,10 × 20 = 6 GPU-jam. Canary adalah cara membeli informasi dengan harga murah.</p><p><strong>Biaya penundaan.</strong> Menunda juga keputusan dan punya harga per hari. Kapasitas yang terlambat seminggu berarti seminggu GPU-jam tidak terjual. Hitung harga itu agar "tunggu dulu" tidak terlihat gratis.</p><p><strong>Matriks berbobot dan uji sensitivitas.</strong> Untuk pilihan dengan banyak kriteria, beri bobot pada tiap kriteria dan nilai pada tiap opsi, lalu jumlahkan. Sesudah itu ubah bobotnya. Jika pemenang berganti hanya karena bobot digeser sedikit, keputusan itu peka terhadap asumsi. Catat asumsinya dan minta pemilik anggaran menyetujui bobotnya.</p><p>Angka tidak menggantikan pertimbangan. Angka memaksa asumsi ditulis sehingga bisa diperdebatkan.</p>`,
+  key:['Nilai harapan = peluang × dampak, dalam satu mata uang','Canary: membeli informasi dengan harga murah','Uji sensitivitas: bila pemenang mudah berganti, catat dan sepakati asumsinya'],
+  mg:'Minta setiap usulan menyertakan tiga opsi dan nilai harapannya. Usulan dengan satu opsi adalah permintaan persetujuan, bukan analisis.',s:[]},
+ {t:'Memutuskan saat tidak pasti dan saat krisis',min:14,
+  h:`<p>Informasi lengkap jarang tersedia. Menunggu kepastian sering lebih mahal daripada memutuskan dengan informasi secukupnya. Patokan praktisnya: bila informasi sudah sekitar 70% dan keputusannya bisa dikoreksi, putuskan.</p><p>Beberapa cara berpikir yang membantu:</p><ul><li><strong>Pre-mortem:</strong> sebelum menjalankan rencana, bayangkan rencana itu sudah gagal, lalu tanyakan apa penyebabnya. Cara dari Gary Klein ini membuat orang berani menyebut risiko yang biasanya dipendam.</li><li><strong>Lingkaran OODA:</strong> amati, orientasikan, putuskan, bertindak, lalu ulangi. Saat krisis, yang menang adalah yang memutar lingkaran ini dengan cepat dan tenang.</li><li><strong>Tindakan yang bisa dibatalkan lebih dulu:</strong> dalam insiden, pilih mitigasi yang aman dan mudah dikembalikan, seperti membatasi daya atau mengalihkan beban, sebelum tindakan yang tidak bisa ditarik.</li></ul><p>Kenali juga perangkap pikiran. Biaya tertanam: meneruskan karena sudah terlanjur banyak keluar. Bias konfirmasi: hanya mencari data yang mendukung dugaan awal. Jangkar: terpaku pada angka pertama yang didengar.</p><p>Terakhir, pisahkan mutu keputusan dari hasilnya. Keputusan yang baik bisa berakhir buruk karena nasib, dan sebaliknya. Yang dinilai adalah apakah keputusan itu masuk akal dengan informasi yang ada saat itu. Itulah gunanya decision record.</p>`,
+  key:['Informasi sekitar 70% dan bisa dikoreksi: putuskan','Pre-mortem: bayangkan rencana sudah gagal, cari penyebabnya','Saat insiden, dahulukan mitigasi yang bisa dibatalkan'],
+  mg:'Dalam insiden besar, ucapkan keputusan Anda beserta waktu tinjau ulangnya: "Kita batasi daya sekarang, tinjau lagi 15 menit." Tim butuh arah dan batas waktu.',s:[]},
+ {t:'Dari strategi ke eksekusi: OKR, peta jalan, business case',min:14,
+  h:`<p>Strategi baru berarti setelah menjadi pekerjaan terjadwal dan anggaran yang disetujui. Tiga alat menjembataninya.</p><p><strong>OKR.</strong> Satu tujuan yang jelas dengan dua sampai empat hasil kunci yang terukur. Contoh. Tujuan: perbaikan node tidak lagi tertahan suku cadang. Hasil kunci: waktu pulih rata-rata turun dari tiga hari menjadi satu hari; 90% penggantian komponen umum dikerjakan teknisi sendiri. Hasil kunci mengukur dampak, bukan kesibukan.</p><p><strong>Peta jalan tiga horizon.</strong> Sekarang: yang sedang dikerjakan dan sudah pasti. Berikutnya: yang sudah disepakati tetapi belum dimulai. Nanti: arah yang masih bisa berubah. Format ini jujur soal ketidakpastian dan menahan godaan berjanji tanggal untuk hal yang belum dipahami.</p><p><strong>Business case satu halaman.</strong> Susunannya:</p><ol><li>Masalah, dengan angka.</li><li>Opsi, minimal tiga, termasuk tidak melakukan apa-apa.</li><li>Biaya dan manfaat tiap opsi dalam ukuran yang sama.</li><li>Risiko dan cara mengatasinya.</li><li>Rekomendasi.</li><li>Permintaan: apa yang Anda perlukan dan kapan.</li></ol><p>Di sinilah seluruh jalur ini bertemu. Pemahaman alur end-to-end memberi diagnosis. Keamanan dan keandalan memberi batasan. Cara memutuskan memberi struktur. Yang tersisa adalah menuliskannya dengan jernih dan menjalankannya bersama tim.</p>`,
+  key:['OKR: satu tujuan, dua sampai empat hasil kunci yang mengukur dampak','Peta jalan: sekarang, berikutnya, nanti','Business case: masalah, opsi, biaya dan manfaat, risiko, rekomendasi, permintaan'],
+  mg:'Selalu sertakan opsi "tidak melakukan apa-apa" dengan harganya. Itu pembanding yang paling jujur untuk setiap usulan.',s:[]}
+ ],
+ quiz:[
+ {q:'Menurut Rumelt, tiga bagian inti strategi yang baik adalah…',o:['Visi, misi, nilai','Diagnosis, kebijakan pemandu, tindakan yang selaras','Tujuan, anggaran, jadwal','Kekuatan, kelemahan, peluang'],a:1,e:'Diagnosis masalah, kebijakan pemandu untuk menjawabnya, dan tindakan yang saling menguatkan.'},
+ {q:'Peluang gagal 10% dengan kerugian 400 GPU-jam. Nilai harapan kerugiannya adalah…',o:['4 GPU-jam','40 GPU-jam','400 GPU-jam','10 GPU-jam'],a:1,e:'0,10 × 400 = 40 GPU-jam.'},
+ {q:'Mana yang termasuk keputusan pintu satu arah?',o:['Menggeser jendela pemeliharaan 24 jam','Membatasi daya satu baris selama dua jam','Menandatangani kontrak pendinginan lima tahun dengan satu vendor','Mencoba aturan alert baru di satu rak'],a:2,e:'Kontrak jangka panjang sulit dan mahal dibatalkan, sehingga perlu langkah yang lebih hati-hati.'}
+ ]};
+
+PATHS.push({id:'p9',t:'Jalur lanjutan: dari ops engineer ke engineering manager',role:'Engineering Manager',d:'Dikerjakan setelah onboarding. Alur end-to-end, keamanan desain, SOC, manajemen, strategi dan keputusan.',c:['c20','c21','c22','c23','c24']});
+LVL.c20='MMMML';LVL.c21='MLLLL';LVL.c22='MLLL';LVL.c23='MLLLL';LVL.c24='MLLAA';
+LABS.push(['lab-seg','Lab 5 · Segmentasi jaringan zero trust','Putuskan 12 aliran antarzona dan tempatkan 6 aset.','L','adv'],
+ ['lab-soc','Lab 6 · Triase SOC','6 alert keamanan, pemetaan ke NIST CSF, dan bukti SOC 2.','L','adv'],
+ ['lab-slo','Lab 7 · SLO dan error budget','Hitung anggaran, burn rate, lalu putuskan.','L','adv'],
+ ['lab-dec','Lab 8 · Keputusan di bawah tekanan','Jenis pintu, nilai harapan, sensitivitas, decision record.','A','adv']);
+
+/* ---- Tambahan glosarium ---- */
+window.G_ADD=[
+['SOC','Security Operations Center / laporan SOC 2','Dua arti. Security Operations Center: tim dan fasilitas yang memantau serta menangani ancaman keamanan sepanjang waktu. SOC 2: laporan auditor independen tentang kontrol organisasi layanan.'],
+['SOC 2','System and Organization Controls 2','Laporan audit atas kontrol keamanan dan ketersediaan layanan berdasarkan Trust Services Criteria. Type I menilai rancangan, Type II menilai efektivitas sepanjang periode.',['Type II','Type I']],
+['TSC','Trust Services Criteria','Kriteria AICPA untuk SOC 2: Security, Availability, Confidentiality, Processing Integrity, Privacy.'],
+['CUEC','Complementary User Entity Controls','Kontrol yang menjadi tanggung jawab klien agar kontrol penyedia layanan efektif.'],
+['SIEM','Security Information and Event Management','Sistem yang mengumpulkan dan mengorelasikan log dari banyak sumber untuk mendeteksi ancaman.'],
+['SOAR','Security Orchestration, Automation and Response','Alat yang mengotomatiskan langkah respons keamanan yang berulang.'],
+['IDS','Intrusion Detection System','Sensor yang mendeteksi pola lalu lintas atau aktivitas mencurigakan.'],
+['MTTD','Mean Time to Detect','Rata-rata waktu dari gangguan atau serangan terjadi sampai diketahui.'],
+['MTTR','Mean Time to Restore/Respond','Rata-rata waktu sampai layanan pulih atau ancaman ditangani.'],
+['MITRE ATT&CK','Basis pengetahuan taktik penyerang','Peta taktik dan teknik penyerang yang dipakai untuk merancang aturan deteksi.'],
+['SLI','Service Level Indicator','Ukuran keandalan yang diamati, misalnya persentase GPU-jam yang tersedia.'],
+['SLO','Service Level Objective','Sasaran internal untuk satu SLI dalam satu periode, biasanya lebih ketat daripada SLA.'],
+['error budget','Anggaran kegagalan','Bagian yang boleh gagal dalam satu periode: 1 dikurangi SLO.'],
+['burn rate','Laju pemakaian error budget','Bagian anggaran yang terpakai dibagi bagian periode yang sudah berjalan. Di atas 1 berarti anggaran akan habis sebelum periode selesai.'],
+['toil','Pekerjaan berulang','Pekerjaan manual yang berulang dan bisa diotomasi. Praktik SRE menjaganya di bawah separuh waktu tim.'],
+['FAT','Factory Acceptance Test','Uji perangkat di pabrik sebelum dikirim. Commissioning tingkat L1.'],
+['bastion','Jump host','Server perantara yang menjadi satu-satunya pintu masuk admin ke jaringan manajemen, dengan MFA dan perekaman sesi.'],
+['MFA','Multi-Factor Authentication','Login dengan lebih dari satu faktor, misalnya kata sandi ditambah token.'],
+['IAM','Identity and Access Management','Pengelolaan identitas, akun, dan hak akses.'],
+['HSM','Hardware Security Module','Perangkat khusus yang menyimpan dan memakai kunci kriptografi tanpa mengeluarkannya.'],
+['atestasi','Attestation','Bukti kriptografis bahwa firmware dan perangkat lunak yang berjalan adalah versi yang seharusnya.'],
+['PKey','Partition Key','Penanda partisi di InfiniBand untuk memisahkan lalu lintas antar-tenant.'],
+['VRF','Virtual Routing and Forwarding','Tabel routing terpisah di satu perangkat, dipakai untuk mengisolasi tenant.'],
+['VXLAN','Virtual Extensible LAN','Teknik membungkus jaringan lapis 2 di atas jaringan IP, dipakai untuk segmentasi tenant.'],
+['egress','Lalu lintas keluar','Lalu lintas yang keluar dari jaringan. Dikendalikan lewat proxy dan daftar tujuan yang diizinkan.',['egress proxy']],
+['HMI','Human-Machine Interface','Layar operator untuk memantau dan mengendalikan sistem OT.'],
+['historian','Basis data riwayat OT','Basis data deret waktu untuk data proses fasilitas. Replikanya disediakan di DMZ untuk pembaca dari luar OT.'],
+['OKR','Objectives and Key Results','Satu tujuan dengan dua sampai empat hasil kunci yang terukur.'],
+['DACI','Driver, Approver, Contributors, Informed','Kerangka peran keputusan. Hanya ada satu Approver.'],
+['canary','Uji bertahap','Menerapkan perubahan ke sebagian kecil armada dulu untuk menangkap masalah saat dampaknya masih kecil.'],
+['nilai harapan','Expected value','Peluang dikali dampak, dijumlahkan untuk semua kemungkinan.',['expected value']],
+['pre-mortem','Analisis sebelum gagal','Membayangkan rencana sudah gagal, lalu mencari penyebabnya sebelum rencana dijalankan.'],
+['OODA','Observe, Orient, Decide, Act','Lingkaran keputusan cepat: amati, orientasikan, putuskan, bertindak.'],
+['capex','Capital expenditure','Belanja aset, misalnya perangkat dan suku cadang awal.'],
+['opex','Operating expenditure','Biaya berjalan, misalnya listrik, kontrak pemeliharaan, dan gaji.'],
+['skill matrix','Matriks keahlian','Tabel keahlian per orang per area untuk melihat titik kegagalan tunggal pada manusia.'],
+['decision record','Catatan keputusan','Dokumen singkat berisi konteks, opsi, keputusan, alasan, risiko, dan pemicu tinjau ulang.'],
+['800 VDC','Distribusi daya 800 volt DC','Arsitektur distribusi daya untuk rak berdaya sangat tinggi; arus lebih kecil sehingga tembaga lebih sedikit.'],
+['UFM','Unified Fabric Manager','Perangkat lunak pengelola fabric InfiniBand.']
+];
+
 
 /* Bersihkan rujukan sumber yang tidak disertakan */
 (function(){if(!window.COURSES||!window.SRC)return;Object.keys(COURSES).forEach(function(c){var C=COURSES[c];C.src=(C.src||[]).filter(function(k){return SRC[k];});C.L.forEach(function(l){if(l.s)l.s=l.s.filter(function(k){return SRC[k];});});});})();
@@ -1677,6 +1981,7 @@ MS=[{id:'m1',t:'Ops engineer',s:'2026-11-05',e:'2026-11-14'},{id:'m2',t:'AI fact
 (function(){
 'use strict';
 var L=window.LAB_IMPL={};
+function shufL(n){var a=[],i,j,t;for(i=0;i<n;i++)a.push(i);for(i=n-1;i>0;i--){j=Math.floor(Math.random()*(i+1));t=a[i];a[i]=a[j];a[j]=t;}return a;}
 function rng(seed){var s=seed>>>0;return function(){s=(s*1664525+1013904223)>>>0;return s/4294967296;};}
 function pad(n){return (n<10?'0':'')+n;}
 function head(title,lvl,desc,back){return '<a class="crumb" href="#labs">Lab simulasi</a><div class="labhead"><div class="chips"><span class="chip '+({D:'lvD',M:'lvM',L:'lvL',A:'lvA'}[lvl])+'">'+({D:'Dasar',M:'Menengah',L:'Lanjut',A:'Ahli'}[lvl])+'</span><span class="chip">Simulasi · data sintetis</span></div><h1 style="font-size:1.45rem">'+title+'</h1><p class="lead" style="margin:0">'+desc+'</p></div>';}
@@ -1810,7 +2115,7 @@ L.mon=function(app,ctx){
   h+='<div style="display:grid;gap:.6rem">'+['disk','cool','gpu'].map(function(m){return '<div class="chart"><div class="ct"><span>'+META[m][0]+'</span><span id="last-'+m+'">'+M[m][N-1]+'</span></div><div id="ch-'+m+'">'+chart(m)+'</div></div>';}).join('')+'</div>';
   h+='<div class="sec"><h2>Aturan alert</h2></div><form class="form" id="rf"><label>Metrik<select id="rm"><option value="disk">Disk /var (%)</option><option value="cool">Suhu suplai cairan (°C)</option><option value="gpu">Suhu GPU maks (°C)</option></select></label><div class="row2"><label>Ambang (lebih dari)<input id="rt" type="number" step="0.5" inputmode="decimal" value="85"></label><label>Durasi "for" (menit)<select id="rfor"><option>0</option><option>1</option><option>2</option><option>3</option><option selected>5</option><option>10</option></select></label></div><pre class="copy" id="rule"></pre><div id="res" class="out"></div></form>';
   h+='<div class="sec"><h2>Misi</h2></div><div style="display:grid;gap:.55rem">'+MIS.map(function(m,i){return '<div class="mission'+(st[i]?' ok':'')+'" id="ms'+i+'"><div class="mh"><b>'+m.t+'</b>'+(st[i]?'<span class="pill ok">Lulus</span>':'')+'</div><p>'+m.d+'</p><button type="button" class="btn sm" data-m="'+i+'">Uji aturan saat ini untuk misi ini</button><div class="fb" id="fb'+i+'"></div></div>';}).join('');
-  h+='<div class="mission'+(st[2]?' ok':'')+'" id="ms2"><div class="mh"><b>Misi 3 · Tindakan pertama</b>'+(st[2]?'<span class="pill ok">Lulus</span>':'')+'</div><p>Alert suhu suplai cairan menyala pukul 02.13 dan terus naik. Apa tindakan pertama yang paling tepat?</p><div class="opts" id="m3">'+['Restart dcgm-exporter supaya dashboard segar','Eskalasi ke on-call fasilitas untuk cek CDU/pompa, dan minta pembatasan daya GPU bila suhu terus naik','Tunggu sampai GPU mulai throttling agar yakin','Reboot node satu per satu'].map(function(o,i){return '<button type="button" class="opt" data-o="'+i+'">'+o+'</button>';}).join('')+'</div><div class="expl" id="m3e" hidden></div></div></div>';
+  h+='<div class="mission'+(st[2]?' ok':'')+'" id="ms2"><div class="mh"><b>Misi 3 · Tindakan pertama</b>'+(st[2]?'<span class="pill ok">Lulus</span>':'')+'</div><p>Alert suhu suplai cairan menyala pukul 02.13 dan terus naik. Apa tindakan pertama yang paling tepat?</p><div class="opts" id="m3">'+(function(O){return shufL(O.length).map(function(i){return '<button type="button" class="opt" data-o="'+i+'">'+O[i]+'</button>';}).join('');})(['Restart dcgm-exporter supaya dashboard segar','Batasi daya GPU di rak terdampak sesuai runbook, lalu eskalasi ke on-call fasilitas untuk cek CDU/pompa','Tunggu sampai GPU mulai throttling agar yakin','Reboot node satu per satu'])+'</div><div class="expl" id="m3e" hidden></div></div></div>';
   app.innerHTML=h;
   var rm=document.getElementById('rm'),rt=document.getElementById('rt'),rf=document.getElementById('rfor');
   function upd(){rule={m:rm.value,th:+rt.value,f:+rf.value};var e=evalRule(rule);
@@ -1823,8 +2128,8 @@ L.mon=function(app,ctx){
     if(rule.m!==m.m){fb.className='fb no';fb.textContent='Pilih metrik yang sesuai dulu.';return;}var e=evalRule(rule),ok=m.ok(e);
     fb.className='fb '+(ok?'ok':'no');fb.textContent=ok?'Lulus. Aturan tepat waktu dan tidak berisik. Di dunia nyata, ambang dan "for" seperti ini dicatat di runbook alert.':(e.first===null?'Alert tidak menyala. Turunkan ambang.':(e.first<(i===0?30:38)?'Menyala terlalu awal atau oleh lonjakan sesaat. Naikkan ambang atau tambah durasi "for".':(e.episodes>1?'Terlalu berisik. Tambah durasi "for".':'Terlambat. Turunkan ambang atau kurangi durasi "for".')));
     if(ok){st[i]=1;document.getElementById('ms'+i).classList.add('ok');saveSt();}});});
-  document.getElementById('m3').addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b||b.disabled)return;var o=+b.getAttribute('data-o');var bs=this.querySelectorAll('.opt');bs.forEach(function(x,j){x.disabled=true;if(j===1)x.classList.add('right');});if(o!==1)b.classList.add('wrong');
-    var ex=document.getElementById('m3e');ex.hidden=false;ex.textContent=(o===1?'Benar. ':'Belum tepat. ')+'Lindungi perangkat lebih dulu: cek sumber panas (CDU/pompa) dan siapkan pembatasan daya. Restart exporter atau reboot tidak menyelesaikan masalah pendinginan (Skenario A, c3).';
+  document.getElementById('m3').addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b||b.disabled)return;var o=+b.getAttribute('data-o');var bs=this.querySelectorAll('.opt');bs.forEach(function(x){x.disabled=true;if(o===1&&x===b)x.classList.add('right');});if(o!==1)b.classList.add('wrong');
+    var ex=document.getElementById('m3e');ex.hidden=false;ex.textContent=(o===1?'Benar. ':'Belum tepat. ')+'Urutannya sama dengan pelajaran triase dan Skenario A: tindakan aman dulu (pembatasan daya GPU sesuai runbook untuk melindungi perangkat), lalu eskalasi ke on-call fasilitas untuk memeriksa sumber panas (CDU/pompa). Restart exporter atau reboot tidak menyelesaikan masalah pendinginan.';
     if(o===1){st[2]=1;document.getElementById('ms2').classList.add('ok');saveSt();}else setTimeout(function(){bs.forEach(function(x){x.disabled=false;x.classList.remove('right','wrong');});},2500);});
 };
 
@@ -1837,8 +2142,8 @@ L.gpu=function(app,ctx){
       why:'Straggler memperlambat seluruh job sinkron. Isolasi node yang lambat lebih murah daripada membiarkan 71 GPU lain menunggu (c5, c14).'},
     {t:'Skenario 2 · Panas di sebagian rak',d:'Alarm suhu GPU muncul bersamaan di beberapa tray yang berbagi satu jalur manifold. Daya GPU di tray itu turun sendiri.',bad:function(t){return t>=13&&t<=15;},
       make:function(t,g,r){var x={temp:65+r()*7,pow:86+r()*9,util:94+r()*5,ecc:0};if(t>=13&&t<=15){x.temp=84+r()*6;x.pow=68+r()*5;x.util=88+r()*5;}return x;},
-      acts:['Drain satu GPU terpanas saja','Restart dcgm-exporter','Eskalasi ke fasilitas: cek aliran manifold dan CDU, minta pembatasan daya. Jangan reboot.','Reboot tray 13–15'],a:2,
-      why:'Pola panas yang mengelompok per tray/manifold menunjuk ke pendinginan, bukan ke GPU. Throttling otomatis adalah gejala, bukan akar masalah (c3).'},
+      acts:['Drain satu GPU terpanas saja','Restart dcgm-exporter','Pastikan pembatasan daya aktif di tray terdampak sesuai runbook, lalu eskalasi ke fasilitas untuk cek aliran manifold dan CDU. Jangan reboot.','Reboot tray 13–15'],a:2,
+      why:'Pola panas yang mengelompok per tray/manifold menunjuk ke pendinginan, bukan ke GPU. Throttling otomatis adalah gejala, bukan akar masalah. Urutannya sama dengan kuis triase: lindungi perangkat dulu, lalu eskalasi (c0, c3).'},
     {t:'Skenario 3 · GPU hilang dari bus',d:'Health check melaporkan Xid 79 dan error memori tak terkoreksi di satu GPU. Job di tray itu gagal.',bad:function(t,g){return t===12&&g===1;},
       make:function(t,g,r){var x={temp:64+r()*8,pow:85+r()*10,util:95+r()*4,ecc:0};if(t===12&&g===1){x.temp=0;x.pow=8;x.util=0;x.ecc=4;x.xid=79;}return x;},
       acts:['Reset GPU berulang kali sampai normal','Drain tray 12, isolasi dari scheduler, buka RMA sesuai runbook','Turunkan setpoint pendinginan','Abaikan karena hanya satu GPU'],a:1,
@@ -1859,7 +2164,7 @@ L.gpu=function(app,ctx){
     h+='<div class="seg" style="margin-top:.6rem">'+[['temp','Suhu'],['pow','Daya'],['util','Utilisasi'],['ecc','Error']].map(function(m){return '<button type="button" data-mt="'+m[0]+'" aria-pressed="'+(metric===m[0])+'">'+m[1]+'</button>';}).join('')+'</div>';
     h+='<div class="rackwrap" id="rk">'+rack()+'<div class="legend"><span>normal</span><i></i><span>perlu perhatian</span></div></div><div class="gdet" id="gd">Ketuk GPU untuk melihat detail. Ketuk lagi untuk menandai atau membatalkan tanda.</div>';
     h+='<div class="form" style="margin-top:.6rem"><label>Sorot otomatis: '+({temp:'suhu di atas',pow:'daya di bawah',util:'utilisasi di bawah',ecc:'error lebih dari'}[metric])+' <span id="thv"></span><input id="th" type="range" min="'+({temp:60,pow:40,util:40,ecc:0}[metric])+'" max="'+({temp:95,pow:100,util:100,ecc:4}[metric])+'" step="1" value="'+({temp:80,pow:75,util:80,ecc:0}[metric])+'"></label><div class="btnrow"><button type="button" class="btn ghost sm" id="auto">Tandai otomatis sesuai ambang</button><button type="button" class="btn ghost sm" id="clr">Hapus semua tanda</button></div><p class="why2" style="margin:0">Ini setara skrip Python yang membaca telemetri lalu menandai GPU di luar ambang.</p></div>';
-    h+='<div class="sec"><h2>Tindakan</h2><span class="pill" id="fc"></span></div><div class="opts" id="acts">'+s.acts.map(function(a,i){return '<button type="button" class="opt" data-a="'+i+'">'+a+'</button>';}).join('')+'</div><div class="expl" id="ae" hidden></div>';
+    h+='<div class="sec"><h2>Tindakan</h2><span class="pill" id="fc"></span></div><div class="opts" id="acts">'+shufL(s.acts.length).map(function(i){return '<button type="button" class="opt" data-a="'+i+'">'+s.acts[i]+'</button>';}).join('')+'</div><div class="expl" id="ae" hidden></div>';
     app.innerHTML=h;wire();}
   function flagCount(){var n=Object.keys(flags).length;var el=document.getElementById('fc');if(el)el.textContent=n+' GPU ditandai';}
   function wire(){flagCount();
@@ -1872,7 +2177,7 @@ L.gpu=function(app,ctx){
     document.getElementById('acts').addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b||b.disabled)return;var s=SCN[cur],a=+b.getAttribute('data-a');
       var tp=0,fp=0,tot=0;for(var t=1;t<=18;t++)for(var g=0;g<4;g++){var bad=s.bad(t,g);if(bad)tot++;if(flags[t+'.'+g]){if(bad)tp++;else fp++;}}
       var flagOk=tp>=Math.ceil(tot*0.8)&&fp<=2,actOk=a===s.a;var ex=document.getElementById('ae');ex.hidden=false;
-      this.querySelectorAll('.opt').forEach(function(x,j){x.classList.remove('right','wrong');if(j===s.a&&actOk)x.classList.add('right');});if(!actOk)b.classList.add('wrong');
+      this.querySelectorAll('.opt').forEach(function(x){x.classList.remove('right','wrong');if(+x.getAttribute('data-a')===s.a&&actOk)x.classList.add('right');});if(!actOk)b.classList.add('wrong');
       ex.innerHTML=(flagOk?'Penandaan tepat ('+tp+'/'+tot+' GPU bermasalah, '+fp+' salah tanda). ':'Penandaan belum tepat: '+tp+'/'+tot+' GPU bermasalah tertandai, '+fp+' salah tanda. Coba metrik lain. ')+(actOk?'Tindakan tepat. ':'Tindakan belum tepat. ')+(flagOk&&actOk?s.why:'');
       if(flagOk&&actOk){st[cur]=1;ctx.S.labs.gpu=ctx.S.labs.gpu||{};ctx.S.labs.gpu.ms=st;ctx.S.labs.gpu.t=Date.now();if(st[0]&&st[1]&&st[2]){ctx.done('3/3');ctx.S.labs.gpu.ms=st;ctx.toast('Lab 3 selesai');}ctx.save();
         var sb=app.querySelector('[data-s="'+cur+'"]');if(sb)sb.textContent=(cur+1)+' ✓';}});}
@@ -1938,6 +2243,237 @@ L.calc=function(app,ctx){
   ['b-l','b-t','b-m'].forEach(function(id){document.getElementById(id).addEventListener('input',function(){B();mark('b');});document.getElementById(id).addEventListener('change',function(){B();mark('b');});});
   ['c-n','c-c','c-m'].forEach(function(id){document.getElementById(id).addEventListener('input',function(){C();mark('c');});});
   A();B();C();
+};
+})();
+
+/* ===== Lab lanjutan (Jalur Lanjutan): segmentasi zero trust, triase SOC, SLO & error budget, keputusan di bawah tekanan =====
+   Semua data sintetis. Alamat IP memakai rentang privat contoh, bukan sistem nyata. */
+(function(){
+var L=window.LAB_IMPL=window.LAB_IMPL||{};
+function shuf(n){var a=[],i,j,t;for(i=0;i<n;i++)a.push(i);for(i=n-1;i>0;i--){j=Math.floor(Math.random()*(i+1));t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function head(title,lvl,desc){return '<a class="crumb" href="#labs">Lab simulasi</a><div class="labhead"><div class="chips"><span class="chip '+({M:'lvM',L:'lvL',A:'lvA'}[lvl])+'">'+({M:'Menengah',L:'Lanjut',A:'Ahli'}[lvl])+'</span><span class="chip">Jalur Lanjutan</span><span class="chip">Simulasi · data sintetis</span></div><h1 style="font-size:1.45rem">'+title+'</h1><p class="lead" style="margin:0">'+desc+'</p></div>';}
+/* angka gaya Indonesia: 1.474.560 atau 7.372,8 */
+function num(s){s=String(s||'').replace(/\s/g,'').replace(/%$/,'');if(!s)return NaN;
+  if(s.indexOf(',')>-1&&s.indexOf('.')>-1)s=s.replace(/\./g,'').replace(',','.');
+  else if(s.indexOf(',')>-1)s=s.replace(',','.');
+  else if(/^\d{1,3}(\.\d{3})+$/.test(s))s=s.replace(/\./g,'');
+  return parseFloat(s);}
+/* ---- mesin soal pilihan: satu grup = satu misi ---- */
+function grp(gid,title,intro,items){var h='<section class="mission" id="g-'+gid+'"><div class="mh"><b>'+title+'</b><span class="pill" id="gs-'+gid+'"></span></div>'+(intro?'<p>'+intro+'</p>':'');
+  items.forEach(function(it,i){var ord=it.fix?it.o.map(function(_,k){return k;}):shuf(it.o.length);
+    h+='<div class="aq" data-g="'+gid+'" data-i="'+i+'">'+(it.pre||'')+'<p class="aqp">'+it.q+'</p><div class="opts'+(it.o.length>4||it.chip?' optc':'')+'">'+ord.map(function(oi){return '<button type="button" class="opt" data-o="'+oi+'">'+it.o[oi]+'</button>';}).join('')+'</div><div class="expl" hidden></div></div>';});
+  return h+'</section>';}
+function paintQ(root,gid,items,ans){items.forEach(function(it,i){var box=root.querySelector('.aq[data-g="'+gid+'"][data-i="'+i+'"]');if(!box)return;var v=ans[i];if(v===undefined)return;
+  box.querySelectorAll('.opt').forEach(function(b){var o=+b.getAttribute('data-o');b.disabled=true;b.classList.remove('right','wrong');if(o===it.a)b.classList.add('right');else if(o===v)b.classList.add('wrong');});
+  var ex=box.querySelector('.expl');ex.hidden=false;ex.textContent=(v===it.a?'Benar. ':'Belum tepat. Jawaban yang tepat: '+it.o[it.a].replace(/<[^>]+>/g,'')+'. ')+it.e;});}
+function gScore(items,ans){var r=0,n=0;items.forEach(function(it,i){if(ans[i]!==undefined){n++;if(ans[i]===it.a)r++;}});return [r,n,items.length];}
+function setPill(gid,s,need){var el=document.getElementById('gs-'+gid);if(!el)return;el.textContent=s[0]+'/'+s[2]+(s[1]<s[2]?' · '+(s[2]-s[1])+' belum':'');el.className='pill '+(s[1]<s[2]?'':(s[0]>=need?'ok':'a'));
+  var m=document.getElementById('g-'+gid);if(m)m.classList.toggle('ok',s[1]===s[2]&&s[0]>=need);}
+/* simpan progres sebagian */
+function stOf(ctx,k){var s=ctx.S.labs[k];return (s&&s.ms)?JSON.parse(JSON.stringify(s.ms)):{};}
+function saveSt(ctx,k,ms){var s=ctx.S.labs[k]||{};s.ms=ms;s.t=Date.now();ctx.S.labs[k]=s;ctx.save();}
+function finish(ctx,k,ms,score,label){var was=ctx.S.labs[k]&&ctx.S.labs[k].done;ctx.done(score);ctx.S.labs[k].ms=ms;ctx.save();if(!was)ctx.toast(label+' selesai');}
+function resultBox(pass,lines,retry){return '<div class="box rub" style="margin-top:.8rem">'+lines.map(function(l){return '<div><span class="'+(l[1]?'y':'n')+'">'+(l[1]?'✓':'✗')+'</span><span>'+l[0]+'</span></div>';}).join('')+'</div>'+(pass?'':'<div class="btnrow"><button type="button" class="btn ghost" id="'+retry+'">Ulangi bagian yang belum lulus</button></div>');}
+
+/* ================= Lab 5: Segmentasi jaringan zero trust ================= */
+L.seg=function(app,ctx){
+  var A=['Izinkan langsung','Izinkan lewat perantara','Tolak'];
+  var FL=[
+   ['Node GPU tenant A','Storage milik tenant A','Jalur data tenant ke datanya sendiri',0,'Aliran data tenant ke partisi storage miliknya sendiri adalah jalur produksi utama. Tetap dibatasi ke partisi tenant itu saja (SP 800-53 AC-4).'],
+   ['Node GPU tenant A','Node GPU tenant B','Lewat fabric komputasi',2,'Tenant tidak boleh menjangkau tenant lain. Isolasi dibuat di fabric: PKey di InfiniBand, VRF dan VXLAN di Ethernet.'],
+   ['Node GPU tenant','BMC server itu sendiri','Dari sistem operasi host',2,'BMC bisa mematikan dan mem-flash server. Ia berada di OOB yang terpisah dan tidak terjangkau dari host tenant.'],
+   ['Laptop admin di jaringan kantor','BMC di OOB manajemen','Untuk pemeliharaan terjadwal',1,'Admin masuk lewat bastion dengan MFA, hak akses terbatas waktu, dan sesi direkam (AC-17). Tidak pernah langsung.'],
+   ['Internet','BMC','Akses jarak jauh darurat',2,'BMC tidak pernah terbuka ke internet, bahkan untuk darurat. Darurat tetap lewat bastion.'],
+   ['Vendor CDU dari luar','PLC pompa CDU di OT','Perbaikan jarak jauh',1,'Akses vendor ke OT: terjadwal sesuai tiket, lewat perantara, MFA, direkam, dan diputus setelah selesai (SP 800-82).'],
+   ['Server di jaringan kantor','HMI BMS di OT fasilitas','Melihat setpoint pendinginan',2,'Jaringan kantor tidak menjangkau OT secara langsung. Data OT yang dibutuhkan kantor disediakan lewat replika di DMZ.'],
+   ['Kolektor telemetri OT','SIEM di zona keamanan','Mengirim log dan alarm',1,'Telemetri OT keluar lewat DMZ dan kolektor, satu arah. SIEM tidak membuka koneksi balik ke OT.'],
+   ['Semua server dan switch','Kolektor log di zona keamanan','Mengirim log',0,'Pengiriman log ke zona keamanan diizinkan, satu arah, dan log tidak bisa diubah dari sumbernya (AU-9).'],
+   ['Node GPU tenant','Internet','Mengunduh paket perangkat lunak',1,'Lalu lintas keluar lewat egress proxy dengan daftar tujuan yang diizinkan. Jalur keluar bebas adalah jalan untuk eksfiltrasi data dan bobot model.'],
+   ['Scheduler di layanan bersama','Agen di node GPU','Menempatkan job',0,'Scheduler adalah bagian dari bidang kendali platform dan perlu menjangkau agen node. Aliran ini spesifik dan tercatat.'],
+   ['Wi-Fi tamu di lobi','Jaringan internal mana pun','Akses tamu dan vendor',2,'Jaringan tamu hanya menuju internet, terpisah sepenuhnya dari jaringan internal.']];
+  var Z=['Tenant','Fabric komputasi','Storage','OOB manajemen','OT fasilitas','DMZ','Zona keamanan','Kantor'];
+  var AS=[['BMC semua server GPU',3,'BMC adalah bidang kendali perangkat keras dan ditempatkan di OOB manajemen.'],
+   ['PLC pompa dan katup CDU',4,'Pengendali fisik pendinginan berada di zona OT fasilitas.'],
+   ['Kolektor SIEM',6,'Kolektor log berada di zona keamanan agar tidak bisa diubah oleh sistem yang diawasinya.'],
+   ['Replika data historian OT untuk dibaca tim IT',5,'Data OT yang perlu dibaca pihak lain disediakan lewat replika di DMZ, bukan sambungan langsung ke OT.'],
+   ['Laptop staf administrasi',7,'Perangkat pengguna umum berada di jaringan kantor.'],
+   ['Pengelola fabric (subnet manager / UFM)',3,'Pengelola fabric adalah alat manajemen dan diakses dari OOB, bukan dari jaringan tenant.']];
+  var IF=FL.map(function(f){return {pre:'<div class="flw"><span>'+f[0]+'</span><i>→</i><span>'+f[1]+'</span></div>',q:f[2],o:A,a:f[3],e:f[4],fix:1};});
+  var IA=AS.map(function(a){return {q:a[0],o:Z,a:a[1],e:a[2],fix:1,chip:1};});
+  var ms=stOf(ctx,'seg');ms.f=ms.f||{};ms.a=ms.a||{};
+  var h=head('Lab 5 · Segmentasi jaringan zero trust','L','Anda meninjau desain jaringan AI data center baru sebelum serah terima. Aturan dasarnya: semua aliran ditolak kecuali yang diizinkan tertulis. Putuskan 12 aliran, lalu tempatkan 6 aset di zona yang benar.');
+  h+='<div class="box" style="margin:.2rem 0 .8rem"><h3>Delapan zona</h3><div class="zgrid">'+Z.map(function(z,i){return '<span class="z z'+i+'">'+z+'</span>';}).join('')+'</div><p class="note" style="margin:.5rem 0 0">Perantara berarti bastion dengan MFA, DMZ, kolektor satu arah, atau egress proxy dengan daftar izin. Dasar: NIST SP 800-53 (SC-7, AC-4, AC-17), SP 800-207, SP 800-82.</p></div>';
+  h+='<div style="display:grid;gap:.7rem">'+grp('f','Misi 1 · Putuskan 12 aliran','Lulus bila minimal 10 benar.',IF)+grp('a','Misi 2 · Tempatkan 6 aset','Lulus bila minimal 5 benar.',IA)+'</div><div id="segres"></div>';
+  app.innerHTML='<div class="labx">'+h+'</div>';var R=app.firstChild;
+  function upd(){paintQ(R,'f',IF,ms.f);paintQ(R,'a',IA,ms.a);var s1=gScore(IF,ms.f),s2=gScore(IA,ms.a);setPill('f',s1,10);setPill('a',s2,5);
+    var box=document.getElementById('segres');if(s1[1]<s1[2]||s2[1]<s2[2]){box.innerHTML='';return;}
+    var pass=s1[0]>=10&&s2[0]>=5;
+    box.innerHTML='<div class="sec"><h2>Hasil: '+(s1[0]+s2[0])+'/18</h2>'+(pass?'<span class="pill ok">Lulus</span>':'<span class="pill a">Belum lulus</span>')+'</div>'+resultBox(pass,[['Aliran: '+s1[0]+'/12 (target 10)',s1[0]>=10],['Penempatan aset: '+s2[0]+'/6 (target 5)',s2[0]>=5]],'segre')+'<p class="why2">Uji akhir desain: jika satu node tenant dikuasai penyerang, apa saja yang bisa dijangkaunya? Jawaban yang benar adalah hanya milik tenant itu sendiri.</p>';
+    if(pass)finish(ctx,'seg',ms,(s1[0]+s2[0])+'/18','Lab 5');
+    var rb=document.getElementById('segre');if(rb)rb.addEventListener('click',function(){if(s1[0]<10)ms.f={};if(s2[0]<5)ms.a={};saveSt(ctx,'seg',ms);L.seg(app,ctx);window.scrollTo(0,0);});}
+  R.addEventListener('click',function(e){var b=e.target.closest('.aq .opt');if(!b||b.disabled)return;var q=b.closest('.aq'),g=q.getAttribute('data-g'),i=+q.getAttribute('data-i');(g==='f'?ms.f:ms.a)[i]=+b.getAttribute('data-o');saveSt(ctx,'seg',ms);upd();});
+  upd();
+};
+
+/* ================= Lab 6: Triase SOC, NIST CSF, bukti SOC 2 ================= */
+L.soc=function(app,ctx){
+  var D=['Insiden nyata','Aktivitas sah','Perlu verifikasi'];
+  var AL=[
+   ['02.14','SIEM','BMC node gpu-a17: 40 login gagal dalam 5 menit dari 10.20.3.17 (alamat host tenant), lalu 1 login berhasil.',0,
+     ['Blokir sumber dan nonaktifkan akun BMC yang dipakai, amankan log, eskalasi ke penanggap insiden','Reset password BMC lalu tutup alert','Reboot node agar sesi terputus','Tunggu apakah pola berulang besok'],
+     'Percobaan beruntun yang diakhiri login berhasil adalah tanda akun dibobol. Isolasi dulu, amankan bukti, eskalasi. Host tenant yang bisa menjangkau BMC juga temuan desain (Lab 5).'],
+   ['03.05','Sensor jaringan','3,2 TB keluar dari storage tenant B ke alamat internet yang tidak ada di daftar izin egress, memakai akun layanan yang sudah dinonaktifkan 7 hari lalu menurut catatan IAM.',0,
+     ['Blokir tujuan dan akun, amankan bukti, eskalasi, siapkan pemberitahuan ke tenant B sesuai kontrak','Hapus data di storage agar tidak bocor lebih jauh','Biarkan transfer selesai lalu periksa besok','Matikan seluruh cluster storage'],
+     'Tujuan di luar daftar izin dan akun yang seharusnya mati adalah pola eksfiltrasi. Menghapus data justru menghancurkan bukti dan merugikan tenant.'],
+   ['08.30','Pemantau integritas','Firmware BMC pada 3 node berbeda dari baseline. Tiket CHG-2291 yang disetujui dan dijalankan semalam mencakup ketiga node itu dan mencantumkan versi baru tersebut.',1,
+     ['Cocokkan versi dan hash dengan tiket, perbarui baseline yang disetujui, tutup alert dengan rujukan tiket','Karantina ketiga node','Tutup alert tanpa catatan','Kembalikan firmware ke versi lama'],
+     'Perubahan yang cocok dengan tiket yang disetujui adalah aktivitas sah. Tetap verifikasi hash, perbarui baseline, dan catat rujukannya sebagai bukti.'],
+   ['09.12','SIEM','Kolektor log zona OT tidak mengirim data selama 45 menit. Tidak ada change terjadwal.',2,
+     ['Tangani sebagai kehilangan visibilitas: periksa kolektor dan jalurnya, kabari tim OT, pantau manual sampai pulih','Anggap aman karena tidak ada alert dari OT','Matikan aturan deteksi OT agar tidak berisik','Restart PLC pompa'],
+     'Log yang berhenti bukan tanda aman. Penyebabnya belum diketahui, jadi verifikasi sambil memulihkan visibilitas.'],
+   ['11.40','IDS','Pemindaian port dari laptop 10.50.8.44 di jaringan kantor ke subnet OT fasilitas. Tidak ada jadwal uji penetrasi.',0,
+     ['Isolasi laptop dari jaringan, eskalasi, periksa apakah ada koneksi yang berhasil ke OT','Kirim email ke pemilik laptop besok pagi','Matikan seluruh jaringan OT','Tambahkan laptop ke daftar izin'],
+     'Pemindaian ke OT tanpa jadwal uji adalah pengintaian. Isolasi sumbernya, lalu pastikan tidak ada yang tembus. Mematikan OT justru menghentikan pendinginan.'],
+   ['14.02','Bastion','Vendor CDU masuk ke PLC pompa lewat bastion dengan MFA, di dalam jendela akses yang disetujui di tiket CHG-2307. Sesi direkam.',1,
+     ['Pastikan aktivitas sesuai cakupan tiket dan rekaman tersimpan, lalu tutup dengan rujukan tiket','Putuskan sesi vendor segera','Buka akses langsung tanpa bastion agar vendor lebih cepat','Tutup alert tanpa catatan'],
+     'Akses vendor yang terjadwal, lewat perantara, ber-MFA, dan direkam adalah pola yang benar. Rekaman dan tiketnya menjadi bukti audit.'],
+   ['02.40','Kontrol akses fisik','Kartu teknisi on-call shift malam membuka pintu data hall 3. Tidak ada tiket kerja tercatat untuk data hall 3 malam ini.',2,
+     ['Konfirmasi ke supervisor shift dan teknisinya, periksa CCTV, minta tiket dibuat bila pekerjaannya sah','Cabut semua akses teknisi itu','Anggap sah karena dia on-call','Kunci data hall 3 sampai pagi'],
+     'Orangnya berwenang, tetapi tidak ada tiket. Verifikasi dulu sebelum menyimpulkan. Hasilnya dicatat karena akses fisik diaudit (SOC 2 CC6).']];
+  var IT=[];AL.forEach(function(a,i){var pre='<div class="alert2"><span class="t">'+a[0]+' WIB</span><span class="s">'+a[1]+'</span><p>'+a[2]+'</p></div>';
+    IT.push({pre:pre,q:'Alert '+(i+1)+' · Klasifikasi',o:D,a:a[3],e:a[3]===0?'Ada tanda penyalahgunaan yang jelas.':(a[3]===1?'Ada izin atau tiket yang cocok.':'Belum cukup bukti untuk menyimpulkan.'),fix:1});
+    IT.push({q:'Alert '+(i+1)+' · Tindakan pertama',o:a[4],a:0,e:a[5]});});
+  var F=['Govern','Identify','Protect','Detect','Respond','Recover'];
+  var IC=[['Menetapkan pemilik risiko dan selera risiko untuk bobot model tenant',0],['Inventaris BMC, switch, dan pengendali OT beserta pemiliknya',1],['MFA dan bastion untuk semua akses ke BMC',2],['Aturan SIEM untuk login BMC gagal berulang',3],['Mengisolasi node yang dikompromikan dan mengabari tenant',4],['Memulihkan node dari image tepercaya lalu memverifikasi baseline sebelum kembali ke produksi',5]].map(function(c){return {q:c[0],o:F,a:c[1],e:'Fungsi '+F[c[1]]+' dalam NIST CSF 2.0.',fix:1,chip:1};});
+  var IS=[{q:'Kontrol CC8 (manajemen perubahan) untuk laporan Type II periode 12 bulan. Bukti terkuat adalah…',o:['Dokumen kebijakan change yang belum disahkan','Populasi tiket change selama periode, masing-masing dengan penilaian risiko, persetujuan sebelum pelaksanaan, dan verifikasi','Tangkapan layar satu tiket hari ini','Pernyataan lisan manajer operasi'],a:1,e:'Type II menguji sampel dari populasi sepanjang periode.'},
+   {q:'Kontrol CC6 (akses logis). Bukti terkuat bahwa akses orang yang keluar dicabut tepat waktu adalah…',o:['Tinjauan akses berkala bertanggal, plus daftar orang keluar yang dicocokkan dengan waktu pencabutan akunnya','Daftar akun aktif hari ini','Kebijakan pengelolaan akses','Email pengingat ke bagian SDM'],a:0,e:'Yang diuji adalah apakah kontrol berjalan, dengan tanggal dan pencocokan.'},
+   {q:'Kategori Availability. Bukti terkuat untuk pengujian pemulihan adalah…',o:['Rencana DR yang lengkap','Laporan uji pemulihan bertanggal dengan hasil, temuan, dan tindak lanjutnya','Foto genset di lokasi','Sertifikat ISO 27001'],a:1,e:'Rencana saja tidak membuktikan bahwa pemulihan pernah diuji.'}];
+  var ms=stOf(ctx,'soc');ms.t=ms.t||{};ms.c=ms.c||{};ms.s=ms.s||{};
+  var h=head('Lab 6 · Triase SOC, NIST CSF, dan bukti SOC 2','L','Anda membantu SOC pada satu hari kerja. Ada tujuh alert dari berbagai sumber. Klasifikasikan masing-masing dan pilih tindakan pertamanya. Setelah itu petakan kontrol ke NIST CSF 2.0 dan pilih bukti SOC 2 yang paling kuat.');
+  h+='<div style="display:grid;gap:.7rem">'+grp('t','Misi 1 · Tujuh alert','Satu alert dihitung benar bila klasifikasi dan tindakan pertamanya sama-sama tepat.',IT)+grp('c','Misi 2 · Petakan ke NIST CSF 2.0','Enam kontrol, enam fungsi.',IC)+grp('s','Misi 3 · Bukti SOC 2','Pilih bukti yang akan diterima auditor.',IS)+'</div><div id="socres"></div>';
+  app.innerHTML='<div class="labx">'+h+'</div>';var R=app.firstChild;
+  function alertsRight(){var r=0;for(var i=0;i<AL.length;i++)if(ms.t[2*i]===IT[2*i].a&&ms.t[2*i+1]===IT[2*i+1].a)r++;return r;}
+  function upd(){paintQ(R,'t',IT,ms.t);paintQ(R,'c',IC,ms.c);paintQ(R,'s',IS,ms.s);
+    var st=gScore(IT,ms.t),sc=gScore(IC,ms.c),ss=gScore(IS,ms.s),ar=alertsRight();
+    setPill('t',[ar,Math.floor(st[1]/2),AL.length],6);setPill('c',sc,5);setPill('s',ss,2);
+    var box=document.getElementById('socres');if(st[1]<st[2]||sc[1]<sc[2]||ss[1]<ss[2]){box.innerHTML='';return;}
+    var tot=ar+sc[0]+ss[0],pass=tot>=13;
+    box.innerHTML='<div class="sec"><h2>Skor '+tot+'/16</h2>'+(pass?'<span class="pill ok">Lulus</span>':'<span class="pill a">Target 13</span>')+'</div>'+resultBox(pass,[['Alert ditangani tepat: '+ar+'/7',ar>=6],['Pemetaan NIST CSF: '+sc[0]+'/6',sc[0]>=5],['Bukti SOC 2: '+ss[0]+'/3',ss[0]>=2]],'socre')+'<p class="why2">Pola yang perlu melekat: aktivitas sah dibuktikan dengan tiket, insiden diisolasi dulu lalu diselidiki, dan visibilitas yang hilang ditangani sebagai gangguan.</p>';
+    if(pass)finish(ctx,'soc',ms,tot+'/16','Lab 6');
+    var rb=document.getElementById('socre');if(rb)rb.addEventListener('click',function(){if(ar<6)ms.t={};if(sc[0]<5)ms.c={};if(ss[0]<2)ms.s={};if(tot<13&&ar>=6&&sc[0]>=5&&ss[0]>=2){ms.t={};}saveSt(ctx,'soc',ms);L.soc(app,ctx);window.scrollTo(0,0);});}
+  R.addEventListener('click',function(e){var b=e.target.closest('.aq .opt');if(!b||b.disabled)return;var q=b.closest('.aq'),g=q.getAttribute('data-g'),i=+q.getAttribute('data-i');ms[g][i]=+b.getAttribute('data-o');saveSt(ctx,'soc',ms);upd();});
+  upd();
+};
+
+/* ================= Lab 7: SLO dan error budget ================= */
+L.slo=function(app,ctx){
+  var GPU=2048,DAYS=30,SLO=99.5,TOT=GPU*24*DAYS,BUD=TOT*(1-SLO/100);
+  var daily=[180,240,95,610,320,150,410,520,260,610,530,498];/* GPU-jam hilang per hari, jumlah 4.423 */
+  var used=daily.reduce(function(a,b){return a+b;},0),DAY=daily.length;
+  var BR=(used/BUD)/(DAY/DAYS),rate=used/DAY,ex=DAY+(BUD-used)/rate;
+  var N=[['n1','Total GPU-jam dalam periode',TOT,0,'GPU × 24 jam × 30 hari.','GPU-jam'],
+   ['n2','Error budget periode ini',BUD,4,'(1 − SLO) × total GPU-jam. Pembulatan ke bilangan bulat diterima.','GPU-jam'],
+   ['n3','Burn rate pada hari ke-12',BR,0.05,'(anggaran terpakai ÷ anggaran) ÷ (hari berjalan ÷ 30).',''],
+   ['n4','Pada laju rata-rata sejauh ini, anggaran habis di hari ke berapa?',ex,1,'Sisa anggaran ÷ rata-rata pemakaian per hari, ditambah 12.','hari ke-'],
+   ['n5','Alert "pembakaran cepat" menyala bila burn rate 14,4 bertahan 1 jam. Berapa persen anggaran 30 hari yang terpakai dalam satu jam itu?',14.4/720*100,0.1,'Burn rate × (1 jam ÷ 720 jam) × 100%. Patokan ini dipakai di SRE Workbook Google.','%']];
+  var IQ=[{q:'Besok ada change firmware fabric pada 512 GPU. Melihat burn rate di atas, keputusan yang tepat adalah…',o:['Jalankan sesuai rencana karena SLA belum dilanggar','Tunda change berisiko, jalankan canary kecil bila perbaikannya mendesak, alihkan tenaga ke penyebab utama downtime, dan kabari pemangku kepentingan','Turunkan SLO menjadi 99% agar tidak terlampaui','Jalankan change di semua GPU sekaligus supaya cepat selesai'],a:1,e:'Burn rate di atas 1 berarti anggaran akan habis sebelum periode selesai. Kebijakan error budget membalik prioritas ke keandalan.'},
+   {q:'SLA di kontrak 99,0%, SLO internal 99,5%. Mengapa SLO dibuat lebih ketat?',o:['Agar ada jarak aman: tim bereaksi sebelum janji kontrak terlanggar','Agar laporan terlihat lebih baik','Karena SLO wajib sama dengan SLA','Agar denda kontrak lebih kecil'],a:0,e:'SLO adalah sasaran internal yang memberi waktu bereaksi sebelum SLA dilanggar.'}];
+  var ms=stOf(ctx,'slo');ms.n=ms.n||{};ms.q=ms.q||{};
+  function fmt(v,d){return v.toLocaleString('id-ID',{maximumFractionDigits:d===undefined?1:d});}
+  function chart(){var W=340,H=170,P=34,mx=BUD*1.15;function X(d){return P+d*(W-P-8)/DAYS;}function Y(v){return H-20-v/mx*(H-34);}
+    var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Pemakaian error budget kumulatif">';
+    [0,0.5,1].forEach(function(f){var y=Y(BUD*f);g+='<line class="c-grid" x1="'+P+'" x2="'+(W-8)+'" y1="'+y+'" y2="'+y+'"/><text class="c-lab" x="2" y="'+(y+3)+'">'+Math.round(f*100)+'%</text>';});
+    g+='<line class="c-th" x1="'+P+'" x2="'+(W-8)+'" y1="'+Y(BUD)+'" y2="'+Y(BUD)+'"/>';
+    g+='<polyline class="c-ideal" points="'+X(0)+','+Y(0)+' '+X(DAYS)+','+Y(BUD)+'"/>';
+    var c=0,pts=[X(0)+','+Y(0)];daily.forEach(function(v,i){c+=v;pts.push(X(i+1).toFixed(1)+','+Y(c).toFixed(1));});
+    g+='<polyline class="c-line" points="'+pts.join(' ')+'"/>';
+    g+='<polyline class="c-proj" points="'+X(DAY)+','+Y(used)+' '+X(Math.min(ex,DAYS))+','+Y(BUD)+'"/>';
+    [0,10,20,30].forEach(function(d){g+='<text class="c-lab" x="'+(X(d)-6)+'" y="'+(H-4)+'">h'+d+'</text>';});
+    return g+'</svg>';}
+  var h=head('Lab 7 · SLO dan error budget','L','Armada '+fmt(GPU,0)+' GPU. Periode 30 hari. SLO ketersediaan '+fmt(SLO)+'% dihitung dalam GPU-jam. Hari ini hari ke-12. Hitung anggaran dan laju pemakaiannya, lalu putuskan.');
+  h+='<div class="chart"><div class="ct"><span>Pemakaian error budget kumulatif</span><span>'+fmt(used,0)+' GPU-jam terpakai</span></div>'+chart()+'<p class="note" style="margin:.3rem .2rem 0">Garis merah: batas anggaran. Garis putus abu-abu: laju wajar. Garis putus biru: proyeksi pada laju sekarang.</p></div>';
+  h+='<div class="box" style="margin:.7rem 0"><h3>Data harian (GPU-jam hilang)</h3><div class="dlist">'+daily.map(function(v,i){return '<span><small>h'+(i+1)+'</small>'+fmt(v,0)+'</span>';}).join('')+'</div></div>';
+  h+='<section class="mission" id="g-n"><div class="mh"><b>Misi 1 · Lima hitungan</b><span class="pill" id="gs-n"></span></div><p>Ketik angkanya. Format 1.474.560 atau 7.372,8 sama-sama diterima.</p>'+N.map(function(n){return '<div class="aq" data-n="'+n[0]+'"><p class="aqp">'+n[1]+'</p><form class="ans" data-n="'+n[0]+'"><input inputmode="decimal" autocomplete="off" aria-label="'+n[1]+'" value="'+(ms.n[n[0]]!==undefined?ms.n[n[0]]:'')+'"><button class="btn sm" type="submit">Periksa</button></form><div class="fb" id="fb-'+n[0]+'"></div></div>';}).join('')+'</section>';
+  h+='<div style="margin-top:.7rem">'+grp('q','Misi 2 · Putuskan','Angka hanya berguna bila mengubah keputusan.',IQ)+'</div><div id="slores"></div>';
+  app.innerHTML='<div class="labx">'+h+'</div>';var R=app.firstChild;
+  function okN(n){var v=num(ms.n[n[0]]);return !isNaN(v)&&Math.abs(v-n[2])<=n[3];}
+  function upd(){var r=0,t=0;N.forEach(function(n){var fb=document.getElementById('fb-'+n[0]);if(ms.n[n[0]]===undefined){fb.textContent='';return;}t++;var ok=okN(n);if(ok)r++;
+      fb.className='fb '+(ok?'ok':'no');fb.textContent=ok?'Benar. '+n[4]+' Hasil: '+(n[5]==='hari ke-'?'hari ke-'+fmt(n[2],1):fmt(n[2],2)+(n[5]?' '+n[5]:'')):'Belum tepat. Petunjuk: '+n[4];});
+    setPill('n',[r,t,N.length],5);paintQ(R,'q',IQ,ms.q);var sq=gScore(IQ,ms.q);setPill('q',sq,2);
+    var box=document.getElementById('slores');if(r<N.length||sq[1]<sq[2]){box.innerHTML=(t===N.length&&r<N.length)?'<p class="note">Perbaiki hitungan yang belum tepat, lalu tekan Periksa lagi.</p>':'';return;}
+    var pass=sq[0]===2;
+    box.innerHTML='<div class="sec"><h2>Skor '+(r+sq[0])+'/7</h2>'+(pass?'<span class="pill ok">Lulus</span>':'<span class="pill a">Target 7</span>')+'</div>'+resultBox(pass,[['Hitungan: '+r+'/5',r===5],['Keputusan: '+sq[0]+'/2',sq[0]===2]],'slore')+'<p class="why2">Ringkasnya: burn rate '+fmt(BR,2)+' berarti anggaran habis sekitar hari ke-'+Math.round(ex)+', sebelum periode selesai. Kebijakan error budget yang disepakati sebelumnya menentukan apa yang terjadi berikutnya.</p>';
+    if(pass)finish(ctx,'slo',ms,(r+sq[0])+'/7','Lab 7');
+    var rb=document.getElementById('slore');if(rb)rb.addEventListener('click',function(){ms.q={};saveSt(ctx,'slo',ms);L.slo(app,ctx);});}
+  R.addEventListener('submit',function(e){var f=e.target.closest('form.ans');if(!f)return;e.preventDefault();ms.n[f.getAttribute('data-n')]=f.querySelector('input').value.trim();saveSt(ctx,'slo',ms);upd();});
+  R.addEventListener('click',function(e){var b=e.target.closest('.aq .opt');if(!b||b.disabled)return;var q=b.closest('.aq');ms.q[+q.getAttribute('data-i')]=+b.getAttribute('data-o');saveSt(ctx,'slo',ms);upd();});
+  upd();
+};
+
+/* ================= Lab 8: Keputusan di bawah tekanan ================= */
+L.dec=function(app,ctx){
+  var DO=['Pintu dua arah','Pintu satu arah'];
+  var I1=[['Menggeser jendela pemeliharaan dari Selasa ke Kamis',0,'Mudah dibatalkan. Putuskan cepat di tingkat terdekat.'],
+   ['Kontrak suplai CDU lima tahun dengan satu vendor',1,'Mengikat lama dan mahal dibatalkan.'],
+   ['Mencoba ambang alert baru di 2 rak selama seminggu',0,'Eksperimen kecil yang mudah dikembalikan.'],
+   ['Mengubah desain distribusi daya satu data hall dari AC ke 800 VDC',1,'Perubahan fisik besar yang hampir tidak bisa dibatalkan.'],
+   ['Membatasi daya satu baris selama 2 jam saat suhu cairan naik',0,'Mitigasi yang bisa dicabut kapan saja.']].map(function(x){return {q:x[0],o:DO,a:x[1],e:x[2],fix:1};});
+  var I2=[{q:'Dari hitungan Anda, opsi dengan nilai harapan kerugian terkecil adalah…',o:['A · Semua sekaligus malam ini','B · Tunda seminggu','C · Canary dulu di 32 GPU'],a:2,e:'C sekitar 10 GPU-jam, B 35 GPU-jam pasti ditambah risiko yang tetap ada, A 48 GPU-jam. Canary membeli informasi dengan harga murah.',fix:1}];
+  var V=['X','Y','Z'],K=[['biaya','Biaya'],['andal','Keandalan'],['kirim','Waktu kirim'],['lokal','Dukungan lokal']];
+  var SC={X:{biaya:5,andal:3,kirim:4,lokal:2},Y:{biaya:3,andal:5,kirim:3,lokal:4},Z:{biaya:4,andal:4,kirim:2,lokal:5}};
+  var W0={biaya:25,andal:40,kirim:20,lokal:15},W1={biaya:40,andal:25,kirim:20,lokal:15};
+  var I3=[{q:'Dengan bobot awal (biaya 25, keandalan 40, waktu kirim 20, dukungan 15), vendor dengan skor tertinggi adalah…',o:['Vendor X','Vendor Y','Vendor Z'],a:1,e:'Y unggul karena keandalan berbobot paling besar.',fix:1},
+   {q:'Bagian keuangan mengusulkan bobot biaya 40 dan keandalan 25. Siapa pemenangnya sekarang?',o:['Vendor X','Vendor Y','Vendor Z'],a:0,e:'X menjadi pemenang. Pergeseran bobot yang tidak besar mengubah hasil.',fix:1},
+   {q:'Apa kesimpulan yang tepat?',o:['Pilih X karena paling murah','Keputusan ini peka terhadap bobot biaya dan keandalan. Catat asumsinya dan sepakati bobotnya dengan pemilik anggaran dan pemilik risiko sebelum memutuskan','Matriks berbobot tidak berguna','Pilih vendor dengan dukungan lokal terbaik'],a:1,e:'Uji sensitivitas tidak memilih pemenang. Ia menunjukkan asumsi mana yang harus diputuskan dengan sadar.'}];
+  var I4=[{q:'Pukul 02.10: pompa utama CDU B mati, pompa cadangan gagal mengambil alih, suhu suplai cairan naik sekitar 0,4 °C per menit, 8 rak berisi job training dua tenant. Informasi masih sebagian. Keputusan pertama Anda sebagai pemimpin insiden adalah…',o:['Batasi daya GPU di 8 rak itu sekarang (bisa dibatalkan), eskalasi ke fasilitas, dan umumkan waktu tinjau ulang 15 menit','Matikan 8 rak sekarang juga','Tunggu data lengkap dari vendor CDU sebelum bertindak','Pindahkan semua job ke data hall lain malam ini'],a:0,e:'Saat tidak pasti dan waktu sempit, dahulukan tindakan yang aman dan bisa dibatalkan, beri arah, dan tetapkan kapan meninjau ulang.'}];
+  var RF=[['konteks','Konteks','Apa yang terjadi, angka, dan batasannya'],['opsi','Opsi yang dipertimbangkan','Minimal dua, termasuk tidak melakukan apa-apa'],['keputusan','Keputusan','Apa yang diputuskan dan oleh siapa'],['alasan','Alasan','Mengapa opsi ini, dengan angka bila ada'],['risiko','Risiko dan mitigasi','Apa yang bisa salah dan cara mengatasinya'],['pemicu','Pemicu tinjau ulang','Kondisi atau tanggal yang membuat keputusan ini dibuka lagi']];
+  var RUB=[['Konteks memuat angka',function(d){return (d.konteks||'').length>=25&&/\d/.test(d.konteks);}],
+   ['Minimal dua opsi',function(d){var t=(d.opsi||'');return t.length>=25&&(t.split(/\n|;|\batau\b|,|\d[.)]/i).filter(function(x){return x.trim().length>2;}).length>=2);}],
+   ['Keputusan dan pengambil keputusannya jelas',function(d){return (d.keputusan||'').length>=20;}],
+   ['Alasan dijelaskan',function(d){return (d.alasan||'').length>=30;}],
+   ['Risiko dengan mitigasi',function(d){return (d.risiko||'').length>=25&&/mitigasi|atasi|cegah|kurangi|rollback|kembalikan|canary|batasi|cadangan/i.test(d.risiko);}],
+   ['Pemicu tinjau ulang terukur',function(d){return /\d/.test(d.pemicu||'')||/(jika|bila|apabila)/i.test(d.pemicu||'');}]];
+  var ms=stOf(ctx,'dec');ms.c=ms.c||{};ms.e=ms.e||{};ms.v=ms.v||{};ms.w=ms.w||{};ms.k=ms.k||{};ms.r=ms.r||{};ms.wt=ms.wt||JSON.parse(JSON.stringify(W0));
+  var KEYD='akademi-ops-decrec',DR={};try{DR=JSON.parse(localStorage.getItem(KEYD)||'{}')||{};}catch(e){}
+  function score(v,w){var s=0,t=0;K.forEach(function(k){s+=SC[v][k[0]]*w[k[0]];t+=w[k[0]];});return t?s/t*100/5:0;}
+  function matrix(){var w=ms.wt,best=null;V.forEach(function(v){if(best===null||score(v,w)>score(best,w))best=v;});
+    return '<table class="wtab"><thead><tr><th>Kriteria</th><th>Bobot</th>'+V.map(function(v){return '<th>'+v+'</th>';}).join('')+'</tr></thead><tbody>'+K.map(function(k){return '<tr><td>'+k[1]+'</td><td>'+w[k[0]]+'</td>'+V.map(function(v){return '<td>'+SC[v][k[0]]+'</td>';}).join('')+'</tr>';}).join('')+
+      '<tr class="tot"><td colspan="2">Skor (0–100)</td>'+V.map(function(v){return '<td'+(v===best?' class="win"':'')+'>'+score(v,w).toFixed(1)+'</td>';}).join('')+'</tr></tbody></table>';}
+  var h=head('Lab 8 · Keputusan di bawah tekanan','A','Empat jenis keputusan yang akan Anda hadapi sebagai pemimpin operasi: mengenali jenis keputusan, menghitung nilai harapan, menguji sensitivitas, dan memutuskan saat krisis. Ditutup dengan menulis decision record.');
+  h+='<div style="display:grid;gap:.7rem">'+grp('c','Misi 1 · Pintu satu arah atau dua arah?','Lulus bila minimal 4 dari 5 benar.',I1);
+  h+='<section class="mission" id="g-e"><div class="mh"><b>Misi 2 · Nilai harapan</b><span class="pill" id="gs-e"></span></div><p>Pembaruan firmware untuk 1.024 GPU. Hitung dalam GPU-jam.</p><ul class="evl"><li><b>A · Semua sekaligus malam ini.</b> Peluang gagal 8%, kerugian bila gagal 600 GPU-jam.</li><li><b>B · Tunda seminggu.</b> Kerugian pasti 35 GPU-jam akibat bug lama. Risiko pembaruan tetap ada minggu depan.</li><li><b>C · Canary dulu di 32 GPU.</b> Biaya canary 6 GPU-jam. Bila firmware bermasalah (8%), canary menangkapnya saat kerugian baru 50 GPU-jam.</li></ul>'+
+   [['eA','Nilai harapan kerugian opsi A',48],['eC','Nilai harapan kerugian opsi C',10]].map(function(n){return '<div class="aq"><p class="aqp">'+n[1]+'</p><form class="ans" data-e="'+n[0]+'"><input inputmode="decimal" autocomplete="off" aria-label="'+n[1]+'" value="'+(ms.v[n[0]]!==undefined?ms.v[n[0]]:'')+'"><button class="btn sm" type="submit">Periksa</button></form><div class="fb" id="fb-'+n[0]+'"></div></div>';}).join('')+
+   grp('e2','','',I2).replace('<section class="mission" id="g-e2"><div class="mh"><b></b><span class="pill" id="gs-e2"></span></div>','<div>').replace(/<\/section>$/,'</div>')+'</section>';
+  h+='<section class="mission" id="g-w"><div class="mh"><b>Misi 3 · Matriks berbobot dan uji sensitivitas</b><span class="pill" id="gs-w"></span></div><p>Memilih vendor CDU untuk data hall baru. Nilai tiap vendor 1 sampai 5. Geser bobotnya dan lihat apakah pemenangnya berubah.</p><div class="wsl">'+K.map(function(k){return '<label>'+k[1]+' <b id="wv-'+k[0]+'">'+ms.wt[k[0]]+'</b><input type="range" min="0" max="50" step="5" data-w="'+k[0]+'" value="'+ms.wt[k[0]]+'" aria-label="Bobot '+k[1]+'"></label>';}).join('')+'</div><div class="btnrow"><button type="button" class="btn ghost sm" id="w0">Bobot awal</button><button type="button" class="btn ghost sm" id="w1">Usulan keuangan</button></div><div id="mx">'+matrix()+'</div>'+
+   grp('w2','','',I3).replace('<section class="mission" id="g-w2"><div class="mh"><b></b><span class="pill" id="gs-w2"></span></div>','<div>').replace(/<\/section>$/,'</div>')+'</section>';
+  h+=grp('k','Misi 4 · Keputusan saat krisis','',I4);
+  h+='<section class="mission" id="g-r"><div class="mh"><b>Misi 5 · Decision record</b><span class="pill" id="gs-r"></span></div><p>Tulis decision record untuk salah satu keputusan di lab ini, misalnya pemilihan vendor CDU atau pembaruan firmware. Lulus bila minimal 5 dari 6 butir rubrik terpenuhi.</p><form class="form" id="drf">'+RF.map(function(f){return '<label>'+f[1]+'<textarea id="dr-'+f[0]+'" placeholder="'+f[2]+'">'+ctx.esc(DR[f[0]]||'')+'</textarea></label>';}).join('')+'<button class="btn" type="submit">Nilai decision record</button></form><div id="drres"></div></section></div><div id="decres"></div>';
+  app.innerHTML='<div class="labx">'+h+'</div>';var R=app.firstChild;
+  function readDR(){var d={};RF.forEach(function(f){d[f[0]]=document.getElementById('dr-'+f[0]).value;});return d;}
+  function drScore(d){return RUB.map(function(r){return [r[0],r[1](d)];});}
+  function okE(k,v){var x=num(ms.v[k]);return !isNaN(x)&&Math.abs(x-v)<=0.5;}
+  function upd(){paintQ(R,'c',I1,ms.c);paintQ(R,'e2',I2,ms.e);paintQ(R,'w2',I3,ms.w);paintQ(R,'k',I4,ms.k);
+    var s1=gScore(I1,ms.c);setPill('c',s1,4);
+    var eRes=[['eA',48,'0,08 × 600'],['eC',10,'6 + 0,08 × 50']].map(function(n){var fb=document.getElementById('fb-'+n[0]);if(ms.v[n[0]]===undefined){fb.textContent='';return null;}var ok=okE(n[0],n[1]);fb.className='fb '+(ok?'ok':'no');fb.textContent=ok?'Benar: '+n[2]+' = '+n[1]+' GPU-jam.':'Belum tepat. Petunjuk: peluang × kerugian, ditambah biaya pasti bila ada.';return ok;});
+    var se=gScore(I2,ms.e),eOk=eRes[0]===true&&eRes[1]===true&&se[0]===1,eDone=eRes[0]!==null&&eRes[1]!==null&&se[1]===1;
+    setPill('e',[(eRes[0]?1:0)+(eRes[1]?1:0)+se[0],(eRes[0]!==null?1:0)+(eRes[1]!==null?1:0)+se[1],3],3);
+    var s3=gScore(I3,ms.w);setPill('w',s3,3);var s4=gScore(I4,ms.k);setPill('k',s4,1);
+    var dr=ms.r.sc;setPill('r',[dr===undefined?0:dr,dr===undefined?0:6,6],5);
+    var box=document.getElementById('decres');var all=s1[1]===5&&eDone&&s3[1]===3&&s4[1]===1&&dr!==undefined;if(!all){box.innerHTML='';return;}
+    var parts=[['Jenis pintu: '+s1[0]+'/5',s1[0]>=4],['Nilai harapan dan pilihan',eOk],['Uji sensitivitas: '+s3[0]+'/3',s3[0]===3],['Keputusan krisis',s4[0]===1],['Decision record: '+dr+'/6',dr>=5]];
+    var pass=parts.every(function(p){return p[1];}),sc=parts.filter(function(p){return p[1];}).length;
+    box.innerHTML='<div class="sec"><h2>Hasil '+sc+'/5 misi</h2>'+(pass?'<span class="pill ok">Lulus</span>':'<span class="pill a">Semua misi harus lulus</span>')+'</div>'+resultBox(pass,parts,'decre')+'<p class="why2">Yang dinilai pada keputusan adalah mutu prosesnya dengan informasi yang ada saat itu. Decision record membuat proses itu bisa diperiksa ulang.</p>';
+    if(pass)finish(ctx,'dec',ms,sc+'/5','Lab 8');
+    var rb=document.getElementById('decre');if(rb)rb.addEventListener('click',function(){if(s1[0]<4)ms.c={};if(!eOk){ms.e={};ms.v={};}if(s3[0]<3)ms.w={};if(s4[0]<1)ms.k={};if(dr<5)delete ms.r.sc;saveSt(ctx,'dec',ms);L.dec(app,ctx);window.scrollTo(0,0);});}
+  R.addEventListener('click',function(e){var b=e.target.closest('.aq .opt');if(!b||b.disabled)return;var q=b.closest('.aq'),g=q.getAttribute('data-g'),i=+q.getAttribute('data-i');var map={c:'c',e2:'e',w2:'w',k:'k'};ms[map[g]][i]=+b.getAttribute('data-o');saveSt(ctx,'dec',ms);upd();});
+  R.addEventListener('submit',function(e){var f=e.target.closest('form.ans');if(f){e.preventDefault();ms.v[f.getAttribute('data-e')]=f.querySelector('input').value.trim();saveSt(ctx,'dec',ms);upd();return;}
+    if(e.target.id==='drf'){e.preventDefault();var d=readDR();try{localStorage.setItem(KEYD,JSON.stringify(d));}catch(err){}var rows=drScore(d),sc=rows.filter(function(r){return r[1];}).length;ms.r.sc=sc;saveSt(ctx,'dec',ms);
+      document.getElementById('drres').innerHTML='<div class="box rub" style="margin-top:.6rem">'+rows.map(function(r){return '<div><span class="'+(r[1]?'y':'n')+'">'+(r[1]?'✓':'✗')+'</span><span>'+r[0]+'</span></div>';}).join('')+'</div><p class="why2">Rubrik ini hanya memeriksa kelengkapan. Mutu isinya tetap perlu ditinjau oleh atasan atau rekan.</p>';upd();}});
+  var tm;R.addEventListener('input',function(e){if(e.target.matches('input[type=range]')){var k=e.target.getAttribute('data-w');ms.wt[k]=+e.target.value;document.getElementById('wv-'+k).textContent=ms.wt[k];document.getElementById('mx').innerHTML=matrix();saveSt(ctx,'dec',ms);return;}
+    if(e.target.closest('#drf')){clearTimeout(tm);tm=setTimeout(function(){try{localStorage.setItem(KEYD,JSON.stringify(readDR()));}catch(err){}},500);}});
+  function setW(w){ms.wt=JSON.parse(JSON.stringify(w));K.forEach(function(k){var el=R.querySelector('input[data-w="'+k[0]+'"]');el.value=w[k[0]];document.getElementById('wv-'+k[0]).textContent=w[k[0]];});document.getElementById('mx').innerHTML=matrix();saveSt(ctx,'dec',ms);}
+  document.getElementById('w0').addEventListener('click',function(){setW(W0);});document.getElementById('w1').addEventListener('click',function(){setW(W1);});
+  upd();
 };
 })();
 </script>
@@ -2062,9 +2598,60 @@ var G=[
 ['firmware','Perangkat lunak tertanam','Program dasar di dalam perangkat keras. Harus dijaga versi dan keasliannya.',['Firmware']],
 ['DSX','Arsitektur AI factory NVIDIA','Rancangan yang menyatukan komputasi, jaringan, daya, pendinginan, dan operasi sebagai satu sistem.'],
 ['Ops','Corp Engineering Operations','Tim operasi rekayasa tempat Anda ditempatkan di Perusahaan AI Data Center.'],
+['SOC 2','System and Organization Controls 2','Laporan auditor independen tentang kontrol sebuah organisasi layanan, memakai Trust Services Criteria dari AICPA.'],
+['SOC','Security Operations Center','Tim dan fasilitas yang memantau, mendeteksi, dan menanggapi ancaman keamanan sepanjang waktu. Jangan tertukar dengan laporan SOC 2.'],
+['Trust Services Criteria','Kriteria layanan tepercaya','Lima kategori penilaian SOC 2: Security, Availability, Confidentiality, Processing Integrity, Privacy.'],
+['Type II','Laporan SOC 2 Type II','Menilai rancangan dan efektivitas kontrol sepanjang satu periode, biasanya 6 sampai 12 bulan.'],
+['Type I','Laporan SOC 2 Type I','Menilai rancangan kontrol pada satu tanggal saja.'],
+['CUEC','Complementary User Entity Controls','Kontrol yang menjadi tanggung jawab klien agar kontrol penyedia layanan efektif.'],
+['SIEM','Security Information and Event Management','Sistem yang mengumpulkan log dari banyak sumber dan mengorelasikannya menjadi alert keamanan.'],
+['SOAR','Security Orchestration, Automation and Response','Alat yang mengotomatiskan langkah respons keamanan yang berulang.'],
+['MITRE ATT&CK','Basis pengetahuan taktik dan teknik penyerang','Peta cara kerja penyerang, dipakai untuk merancang aturan deteksi.'],
+['MTTD','Mean Time To Detect','Rata-rata waktu sejak gangguan terjadi sampai diketahui.'],
+['MTTR','Mean Time To Respond/Repair','Rata-rata waktu sejak diketahui sampai ditangani atau pulih.'],
+['MFA','Multi-Factor Authentication','Masuk dengan lebih dari satu bukti identitas, misalnya kata sandi ditambah kode dari perangkat.'],
+['bastion','Server perantara akses','Satu-satunya pintu masuk admin ke zona sensitif. Semua sesi lewat sini dan direkam.'],
+['PKey','Partition Key','Penanda partisi di InfiniBand yang memisahkan lalu lintas antar-tenant.'],
+['VRF','Virtual Routing and Forwarding','Tabel rute terpisah di perangkat yang sama, dipakai untuk memisahkan jaringan tenant.'],
+['VXLAN','Virtual Extensible LAN','Cara membuat jaringan virtual terpisah di atas jaringan fisik yang sama.'],
+['HSM','Hardware Security Module','Perangkat khusus yang menyimpan kunci kriptografi agar tidak bisa disalin.'],
+['atestasi','Attestation','Bukti kriptografis bahwa perangkat menjalankan perangkat lunak dan firmware yang seharusnya.'],
+['baseline','Konfigurasi acuan yang disetujui','Versi firmware dan pengaturan resmi. Perangkat dibandingkan dengan acuan ini sebelum masuk produksi.',['Baseline']],
+['komputasi rahasia','Confidential computing','Data tetap terenkripsi bahkan saat diproses, di dalam lingkungan eksekusi tepercaya.',['Komputasi rahasia']],
+['eksfiltrasi','Pencurian data keluar','Pemindahan data ke luar tanpa izin, misalnya bobot model.'],
+['SP 800-53','NIST Special Publication 800-53','Katalog kontrol keamanan dan privasi. Revisi 5 berisi 20 keluarga kontrol.'],
+['SP 800-82','NIST Special Publication 800-82','Panduan keamanan untuk teknologi operasional (OT).'],
+['SP 800-207','NIST Special Publication 800-207','Arsitektur zero trust.'],
+['SP 800-61','NIST Special Publication 800-61','Rekomendasi respons insiden. Revisi 3 selaras dengan CSF 2.0.'],
+['SP 800-193','NIST Special Publication 800-193','Pedoman ketahanan firmware: lindungi, deteksi, pulihkan.'],
+['AI RMF','AI Risk Management Framework','Kerangka NIST untuk mengelola risiko sistem AI.'],
+['SLO','Service Level Objective','Sasaran internal untuk suatu ukuran layanan, misalnya ketersediaan 99,5% per 30 hari.'],
+['SLI','Service Level Indicator','Ukuran yang dipakai menilai layanan, misalnya persentase GPU-jam yang tersedia.'],
+['error budget','Anggaran gagal','Bagian yang boleh gagal tanpa melanggar SLO. Rumusnya 1 dikurangi SLO.',['Error budget']],
+['burn rate','Laju pemakaian anggaran','Seberapa cepat error budget terpakai dibanding laju wajar. Di atas 1 berarti habis sebelum periode selesai.',['Burn rate']],
+['toil','Pekerjaan berulang','Pekerjaan manual yang berulang dan bisa diotomasi, tanpa nilai jangka panjang.'],
+['on-call','Siaga panggilan','Giliran dipanggil bila ada gangguan di luar jam kerja biasa.',['On-call']],
+['canary','Uji di sebagian kecil','Menerapkan perubahan di sebagian kecil armada dulu untuk menangkap masalah sebelum meluas.',['Canary']],
+['decision record','Catatan keputusan','Dokumen singkat berisi konteks, opsi, keputusan, alasan, risiko, dan pemicu tinjau ulang.',['Decision record']],
+['DACI','Driver, Approver, Contributors, Informed','Pembagian peran dalam keputusan: penggerak, pemberi persetujuan, kontributor, pihak yang diberi tahu.'],
+['OKR','Objectives and Key Results','Satu tujuan dengan beberapa hasil kunci yang terukur.'],
+['OODA','Observe, Orient, Decide, Act','Lingkaran amati, orientasikan, putuskan, bertindak untuk keputusan cepat.'],
+['pre-mortem','Bedah sebelum gagal','Membayangkan rencana sudah gagal, lalu mencari penyebabnya sebelum dijalankan.',['Pre-mortem']],
+['SBI','Situation, Behavior, Impact','Cara memberi umpan balik: sebutkan situasi, perilaku yang terlihat, dan dampaknya.'],
+['skill matrix','Matriks keahlian','Tabel keahlian per orang per area, untuk melihat titik kegagalan tunggal pada manusia.',['Skill matrix']],
+['postmortem','Tinjauan pascainsiden','Analisis setelah insiden untuk mencari pelajaran, tanpa menyalahkan orang.',['Postmortem']],
+['capex','Capital expenditure','Belanja modal untuk aset, misalnya perangkat.',['Capex']],
+['opex','Operating expenditure','Biaya berjalan, misalnya listrik, pemeliharaan, dan gaji.',['Opex']],
+['FAT','Factory Acceptance Test','Uji perangkat di pabrik sebelum dikirim.'],
+['digital twin','Kembaran digital','Model simulasi fasilitas untuk menguji rancangan sebelum dibangun.'],
+['as-built','Gambar sesuai terpasang','Gambar yang mencerminkan kondisi nyata setelah pembangunan, bukan rencana awal.'],
+['800 VDC','Distribusi arus searah 800 volt','Cara menyalurkan daya ke rak berdaya sangat tinggi dengan arus dan tembaga lebih kecil.'],
+['busway','Jalur busbar','Rel penghantar daya di atas atau di bawah baris rak.'],
+['nilai harapan','Expected value','Peluang dikali dampak. Dipakai untuk membandingkan opsi yang hasilnya tidak pasti.',['Nilai harapan','Expected value']],
 ['rank','Proses peserta job','Satu proses dalam job paralel. Jika satu rank gagal, seluruh job sinkron ikut berhenti.'],
 ['node','Simpul komputasi','Satu server atau tray dalam cluster.',['Node']]
 ];
+(function(){if(!window.G_ADD)return;var have={};G.forEach(function(g){[g[0]].concat(g[3]||[]).forEach(function(k){have[k.toLowerCase()]=1;});});window.G_ADD.forEach(function(g){if(!have[g[0].toLowerCase()]){G.push(g);have[g[0].toLowerCase()]=1;}});})();
 var GI={},GRE=null;
 (function(){var keys=[];G.forEach(function(g,i){[g[0]].concat(g[3]||[]).forEach(function(k){GI[k]=i;keys.push(k);});});
   keys.sort(function(a,b){return b.length-a.length;});
@@ -2139,7 +2726,7 @@ function vidSvg(v){var h='<svg viewBox="0 0 360 246" class="vsvg" role="img" ari
   v.n.forEach(function(n){h+='<g class="vn" data-n="'+n.id+'"><rect x="'+n.x+'" y="'+n.y+'" width="'+n.w+'" height="'+n.h+'" rx="6"/><text x="'+(n.x+n.w/2)+'" y="'+(n.y+(n.s?n.h/2-2:n.h/2+4))+'" text-anchor="middle" class="vl">'+esc(n.l)+'</text>'+(n.s?'<text x="'+(n.x+n.w/2)+'" y="'+(n.y+n.h/2+10)+'" text-anchor="middle" class="vs">'+esc(n.s)+'</text>':'')+'</g>';});
   return h+'</svg>';}
 var vTimer=null;
-function vVideos(){app.innerHTML='<div class="sec" style="margin-top:.4rem"><h2>Video penjelasan</h2></div><p class="lead">Animasi bertahap dengan teks penjelasan. Berjalan sendiri, bisa dijeda, dan bisa digeser maju-mundur. Tanpa suara, jadi aman ditonton di kereta.</p><div class="mlist" style="margin-top:.8rem">'+VID.map(function(v){return '<a href="#vid-'+v.id+'"><span><b>'+esc(v.t)+'</b><small>'+esc(v.sub)+' · '+v.st.length+' adegan · ±1 menit</small>'+(S().vid[v.id]?'<span class="chips" style="margin-top:4px"><span class="chip lvD">Sudah ditonton</span></span>':'')+'</span></a>';}).join('')+'</div>';}
+function vVideos(){app.innerHTML='<div class="sec" style="margin-top:.4rem"><h2>Video penjelasan</h2></div><p class="lead">Animasi bertahap dengan teks penjelasan. Berjalan sendiri, bisa dijeda, dan bisa digeser maju-mundur. Tanpa suara, jadi aman ditonton di kereta.</p><div class="mlist" style="margin-top:.8rem">'+VID.map(function(v){return '<a href="#vid-'+v.id+'"><span><b>'+esc(v.t)+'</b><small>'+esc(v.sub)+' · '+v.st.length+' adegan · ±1 menit</small>'+(S().vid[v.id]?'<span class="chips" style="margin-top:4px"><span class="chip lvD">Sudah ditonton</span></span>':'')+'</span></a>';}).join('')+'</div><h3 class="mhd">Video YouTube pilihan</h3><p class="note" style="margin:0 0 .6rem">Video pihak ketiga yang ditanam di pelajaran terkait. Perlu sambungan internet.</p>'+Object.keys(YT).map(ytCard).join('');wireYt(app);}
 function videoHtml(v){return '<div class="vplayer" data-vid="'+v.id+'"><div class="vbar">'+v.st.map(function(_,k){return '<i data-k="'+k+'"><b></b></i>';}).join('')+'</div><div class="vstage">'+vidSvg(v)+'<button type="button" class="vhit l vprev" aria-label="Adegan sebelumnya"></button><button type="button" class="vhit r vnext" aria-label="Adegan berikutnya"></button></div><div class="vcap" aria-live="polite"><b class="vct"></b><p class="vcp"></p></div><div class="vctl"><button type="button" class="btn ghost vback">‹ Mundur</button><button type="button" class="btn vpp">Putar</button><button type="button" class="btn ghost vfwd">Maju ›</button></div><div class="legendv"><span><i class="k-pw"></i>daya</span><span><i class="k-cl"></i>cairan dingin</span><span><i class="k-ht"></i>panas</span><span><i class="k-nw"></i>data</span><span><i class="k-nv"></i>NVLink</span></div></div>';}
 function vidText(v){return v.st.map(function(x){return x[0]+' '+x[1];}).join(' ')+' '+v.n.map(function(n){return n.l;}).join(' ');}
 function wireVideo(root,v,autoplay,onEnd){var pl=root.querySelector('.vplayer[data-vid="'+v.id+'"]');if(!pl)return;
@@ -2163,14 +2750,31 @@ function vVideo(id){var v=VID.filter(function(x){return x.id===id;})[0];if(!v){v
   app.innerHTML='<a class="crumb" href="#course-'+v.c[0]+'">'+esc(COURSES[v.c[0]].t)+'</a><h1 style="font-size:1.35rem;margin:.2rem 0 .6rem">'+esc(v.t)+'</h1>'+videoHtml(v)+'<div id="vafter"></div>';
   wireVideo(app,v,true,function(){document.getElementById('vafter').innerHTML='<div class="btnrow" style="margin-top:.8rem"><a class="btn" href="'+after()+'">Lanjut ke langkah berikutnya</a></div>';});}
 /* Sisipan di dalam pelajaran: video, anatomi, lab */
-var LX={'c1.1':{v:'nvl72',a:['rack']},'c13.0':{a:['rack','tray']},'c3.0':{a:['tray']},'c3.1':{v:'cool',a:['cdu']},'c2.0':{v:'power'},'c5.0':{v:'fail'},'c0.1':{lab:['mon']},'c0.2':{lab:['term','ticket']},'c14.1':{lab:['gpu']},'c1.3':{lab:['calc']},'c2.1':{lab:['calc']},'c5.3':{lab:['calc']},'c5.2':{lab:['gpu']}};
-function lessonTop(id,i){var x=LX[id+'.'+i];if(!x||!x.v)return '';var v=VID.filter(function(q){return q.id===x.v;})[0];
-  return '<section class="lvid"><div class="lvh"><span class="chip lvA">Video · ±1 menit</span><b>'+esc(v.t)+'</b><small>Tonton dulu untuk membayangkan cara kerjanya, lalu baca materinya.</small></div>'+videoHtml(v)+'</section>';}
+var YT={
+ TRc0z_qcze0:['Building Gigawatt-Scale AI Factories With Digital Twins','NVIDIA','2 mnt','Bagaimana AI factory dirancang dan diuji di digital twin sebelum dibangun.'],
+ XIyTs2Rr0sE:['AI Hypercomputer: Behind the scenes at a Google Cloud data center','Google Cloud','2 mnt','Tur singkat: pendinginan, jaringan, storage, dan chip untuk beban AI dalam satu fasilitas.'],
+ Jf8EPSBZU7Y:['Inside the World\'s Largest AI Supercluster xAI Colossus','ServeTheHome','±14 mnt','Tur lantai produksi: rak GPU berpendingin cair, CDU, jaringan, storage, dan daya. Video bersponsor, tonton sebagai gambaran fisik.'],
+ xxazt2DOvgU:['What is a CDU in a Liquid Cooled AI Data Center?','Cyfuture Cloud','±2 mnt','Penjelasan singkat fungsi CDU pada pendinginan cair langsung ke chip.'],
+ pPPiaGU12Og:['The NIST Cybersecurity Framework (CSF) 2.0','NIST','','Animasi pengantar resmi CSF 2.0 dan fungsi baru Govern.'],
+ kd33UVZhnAA:['Google Data Center Security: 6 Layers Deep','Google Cloud Tech','','Enam lapis keamanan fisik sebuah data center, dari luar sampai ke dalam.'],
+ MfgAt5fHT6Y:['What is a SOC (Security Operations Center)?','Eye on Tech','3 mnt','Fungsi SOC dan perannya mendeteksi ancaman sepanjang waktu.'],
+ tEylFyxbDLE:['SLIs, SLOs, SLAs, oh my!','Google Cloud Tech','±8 mnt','Beda SLI, SLO, dan SLA, dijelaskan tim SRE Google.'],
+ Ksx22Ey9Wcc:['NIST\'s Zero Trust Architecture (Analyst Chat)','KuppingerCole Analysts','','Diskusi analis tentang NIST SP 800-207: prinsip zero trust dan cara membacanya untuk desain.'],
+ '1zURUZtPAE0':['The AI Factory: Infrastructure for Intelligence (Jensen Huang)','Cisco','','Konteks strategi industri: komputasi, jaringan, dan perangkat lunak sebagai satu sistem. Cukup tonton sebagian.']
+};
+function canEmbed(){return /^https?:$/.test(location.protocol)&&!window.claude&&!/claude/i.test(location.hostname);}
+function ytCard(id){var y=YT[id];if(!y)return '';return '<div class="ytc" data-yt="'+id+'"><div class="yth"><span class="chip lvA">Video YouTube'+(y[2]?' · '+y[2]:'')+'</span><b>'+esc(y[0])+'</b><small>'+esc(y[1])+' · '+esc(y[3])+'</small></div><div class="ytf" hidden></div><div class="btnrow">'+(canEmbed()?'<button type="button" class="btn ytp">▶ Putar di sini</button>':'')+'<a class="btn ghost" href="https://www.youtube.com/watch?v='+id+'" target="_blank" rel="noopener">Buka di YouTube</a></div></div>';}
+function ytBlock(ids){return '<section class="lvid ytl"><div class="lvh"><span class="chip lvA">Video pendukung</span><small>Berbahasa Inggris. Aktifkan teks terjemahan di pemutar bila perlu.'+(canEmbed()?'':' Di tampilan ini video dibuka di YouTube.')+'</small></div>'+ids.map(ytCard).join('')+'</section>';}
+function wireYt(root){root.querySelectorAll('.ytc .ytp').forEach(function(b){b.addEventListener('click',function(){var c=b.closest('.ytc'),f=c.querySelector('.ytf');if(navigator.onLine===false){C.toast('Perlu sambungan internet untuk memutar video');return;}
+  f.hidden=false;f.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+c.getAttribute('data-yt')+'?rel=0&autoplay=1" title="Video YouTube" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';b.remove();});});}
+var LX={'c20.0':{yt:['TRc0z_qcze0','XIyTs2Rr0sE']},'c20.1':{yt:['Jf8EPSBZU7Y']},'c21.0':{yt:['pPPiaGU12Og']},'c21.1':{yt:['kd33UVZhnAA']},'c21.2':{lab:['seg'],yt:['Ksx22Ey9Wcc']},'c20.4':{yt:['xxazt2DOvgU']},'c22.0':{yt:['MfgAt5fHT6Y']},'c22.1':{lab:['soc']},'c23.2':{yt:['tEylFyxbDLE'],lab:['slo']},'c24.0':{yt:['1zURUZtPAE0']},'c24.2':{lab:['dec']},'c1.1':{v:'nvl72',a:['rack']},'c13.0':{a:['rack','tray']},'c3.0':{a:['tray']},'c3.1':{v:'cool',a:['cdu'],yt:['xxazt2DOvgU']},'c2.0':{v:'power'},'c5.0':{v:'fail'},'c0.1':{lab:['mon']},'c0.2':{lab:['term','ticket']},'c14.1':{lab:['gpu']},'c1.3':{lab:['calc']},'c2.1':{lab:['calc']},'c5.3':{lab:['calc']},'c5.2':{lab:['gpu']}};
+function lessonTop(id,i){var x=LX[id+'.'+i];if(!x)return '';if(!x.v)return x.yt?ytBlock(x.yt):'';var v=VID.filter(function(q){return q.id===x.v;})[0];
+  return '<section class="lvid"><div class="lvh"><span class="chip lvA">Video · ±1 menit</span><b>'+esc(v.t)+'</b><small>Tonton dulu untuk membayangkan cara kerjanya, lalu baca materinya.</small></div>'+videoHtml(v)+'</section>'+(x.yt?ytBlock(x.yt):'');}
 function lessonMid(id,i){var x=LX[id+'.'+i];if(!x||(!x.a&&!x.lab))return '';var h='<section class="box lprac"><h3>Praktikkan sekarang</h3><div class="pracl">';
   (x.a||[]).forEach(function(a){var A=ANAT.filter(function(q){return q.id===a;})[0];h+='<a href="#anat-'+a+'"><span class="chip lvA">Anatomi</span><b>'+esc(A.t)+'</b><small>Ketuk tiap bagian, lalu coba mode tebak</small></a>';});
   (x.lab||[]).forEach(function(l){h+='<a href="#lab-'+l+'"><span class="chip lvL">Lab</span><b>'+esc(LABN[l][0])+'</b><small>Simulasi ± '+LABN[l][1]+' menit</small></a>';});
   return h+'</div></section>';}
-function wireLesson(id,i){var x=LX[id+'.'+i];if(x&&x.v)wireVideo(app,VID.filter(function(q){return q.id===x.v;})[0],false);}
+function wireLesson(id,i){var x=LX[id+'.'+i];if(x&&x.v)wireVideo(app,VID.filter(function(q){return q.id===x.v;})[0],false);if(x&&x.yt)wireYt(app);}
 /* ================= ANATOMI INTERAKTIF ================= */
 function R(x,y,w,h,f,rx,ex){return '<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="'+f+'" rx="'+(rx||0)+'"'+(ex||'')+'/>';}
 var CU='#C8875A',CU2='#E3B48E',PCB='#2E6B50',PCB2='#3F8A66',MET='#C9CFD4',MET2='#9FA8AF',DK='#2A3238',BLK='#15191C';
@@ -2263,7 +2867,8 @@ function anatSvg(A,st){var W=A.vb[0],H=A.vb[1],h='<svg viewBox="0 0 '+W+' '+H+'"
   return h+'</svg>';}
 function vAnatomy(){app.innerHTML='<div class="sec" style="margin-top:.4rem"><h2>Anatomi perangkat interaktif</h2><a href="#gallery">Foto asli</a></div><p class="lead">Gambar teknik dengan panah dan nomor. Ketuk bagian mana pun untuk penjelasan, saring per fungsi, lalu uji diri dengan mode tebak.</p><div class="mlist" style="margin-top:.8rem">'+ANAT.map(function(a){return '<a href="#anat-'+a.id+'"><span><b>'+esc(a.t)+'</b><small>'+a.parts.length+' bagian · '+esc(a.sub)+'</small>'+(S().an[a.id]?'<span class="chips" style="margin-top:4px"><span class="chip lvD">Selesai</span></span>':'')+'</span></a>';}).join('')+'</div>';}
 function vAnat(id){var A=ANAT.filter(function(x){return x.id===id;})[0];if(!A){vAnatomy();return;}
-  var sel=null,layer=null,mode='jelajah',seen={},quiz=null,zoom=false;
+  var sel=null,layer=null,mode='jelajah',seen={},quiz=null,zoom=false,need=Math.ceil(A.parts.length*0.6);
+  (function(){var sv=(S().anp||{})[A.id]||{};for(var z in sv)if(sv[z])seen[z]=1;})();
   var h='<a class="crumb" href="#anatomy">Anatomi perangkat</a><h1 style="font-size:1.35rem;margin:.2rem 0 .2rem">'+esc(A.t)+'</h1><p class="note" style="margin:0 0 .6rem">'+esc(A.sub)+'</p>';
   h+='<div class="seg"><button type="button" data-md="jelajah" aria-pressed="true">Jelajah</button><button type="button" data-md="tebak" aria-pressed="false">Mode tebak</button></div>';
   h+='<div class="chipsx" id="lay"><button type="button" data-l="" class="on">Semua</button>'+A.layers.map(function(l){return '<button type="button" data-l="'+l[0]+'">'+l[1]+'</button>';}).join('')+'</div>';
@@ -2276,11 +2881,11 @@ function vAnat(id){var A=ANAT.filter(function(x){return x.id===id;})[0];if(!A){v
     var ad=document.getElementById('ad');
     if(mode==='tebak'){ad.innerHTML=quiz&&quiz.left.length?'<b>Ketuk bagian ini:</b><p class="aq">'+esc(A.parts[quiz.cur].name)+'</p><small>'+quiz.ok+' benar · '+quiz.miss+' salah · sisa '+quiz.left.length+'</small>':'<b>Selesai.</b><p>'+quiz.ok+' benar dari '+A.parts.length+', '+quiz.miss+' kali salah ketuk.</p>';}
     else if(sel!==null){var p=A.parts[sel];ad.innerHTML='<div class="chips"><span class="chip lvM">'+(sel+1)+'</span><span class="chip">'+esc((A.layers.filter(function(l){return l[0]===p.layer;})[0]||['',''])[1])+'</span></div><b>'+esc(p.name)+'</b><p>'+esc(p.d)+'</p><p class="aops"><b>Operasi:</b> '+esc(p.o)+'</p>';}
-    else ad.innerHTML='<p class="note" style="margin:0">Ketuk bagian pada gambar atau pilih dari daftar. '+Object.keys(seen).length+' dari '+A.parts.length+' bagian sudah dilihat.</p>';
+    else ad.innerHTML='<p class="note" style="margin:0">Ketuk bagian pada gambar atau pilih dari daftar. '+Object.keys(seen).length+' dari '+A.parts.length+' bagian sudah dilihat'+(S().an[A.id]?' · anatomi ini sudah selesai.':' · buka '+need+' bagian atau tuntaskan mode tebak untuk menyelesaikan.')+'</p>';
     document.getElementById('al').innerHTML=mode==='tebak'?'':A.parts.map(function(p,i){if(layer&&p.layer!==layer)return '';return '<button type="button" data-i="'+i+'" class="'+(sel===i?'on':'')+'"><span class="no"'+(seen[i]?' style="background:var(--ok)"':'')+'>'+(i+1)+'</span><span><b>'+esc(p.name)+'</b></span></button>';}).join('');}
   function done(){if(!S().an[A.id]){S().an[A.id]=1;C.markSeen();C.save();C.toast('Anatomi selesai');}document.getElementById('aafter').innerHTML='<div class="btnrow" style="margin-top:.8rem"><a class="btn" href="'+after()+'">Lanjut ke langkah berikutnya</a></div>';}
   function pick(i,scroll){if(mode==='tebak'){if(!quiz||!quiz.left.length)return;if(i===quiz.cur){quiz.ok++;quiz.left.shift();C.toast('Benar');if(quiz.left.length)quiz.cur=quiz.left[0];else done();}else{quiz.miss++;C.toast('Bukan itu. Coba lagi.');}paint();return;}
-    sel=i;seen[i]=1;paint();if(Object.keys(seen).length>=Math.ceil(A.parts.length*0.6))done();
+    sel=i;seen[i]=1;var st0=S();st0.anp=st0.anp||{};st0.anp[A.id]=seen;C.save();paint();if(Object.keys(seen).length>=need)done();
     if(scroll){var g=svg.querySelector('.pt[data-p="'+i+'"]');if(g&&g.scrollIntoView)document.getElementById('aw').scrollIntoView({block:'nearest',behavior:'smooth'});var aw=document.getElementById('aw'),p=A.parts[i];aw.scrollLeft=Math.max(0,p.a[0]/A.vb[0]*aw.scrollWidth-aw.clientWidth/2);}}
   svg.addEventListener('click',function(e){var g=e.target.closest('[data-p]');if(g)pick(+g.getAttribute('data-p'));});
   document.getElementById('al').addEventListener('click',function(e){var b=e.target.closest('[data-i]');if(b)pick(+b.getAttribute('data-i'),true);});
@@ -2288,7 +2893,7 @@ function vAnat(id){var A=ANAT.filter(function(x){return x.id===id;})[0];if(!A){v
   app.querySelectorAll('[data-md]').forEach(function(b){b.addEventListener('click',function(){mode=b.getAttribute('data-md');app.querySelectorAll('[data-md]').forEach(function(x){x.setAttribute('aria-pressed',x===b);});
     if(mode==='tebak'){var o=A.parts.map(function(_,i){return i;}).sort(function(){return Math.random()-.5;});quiz={left:o,cur:o[0],ok:0,miss:0};sel=null;layer=null;document.getElementById('lay').querySelectorAll('button').forEach(function(x,k){x.classList.toggle('on',k===0);});}paint();});});
   document.getElementById('zm').addEventListener('click',function(){zoom=!zoom;document.getElementById('ain').style.minWidth=(zoom?A.minw*1.7:A.minw)+'px';this.textContent=zoom?'Perkecil':'Perbesar';});
-  paint();}
+  paint();if(S().an[A.id])done();}
 
 /* ================= PETA JALAN ================= */
 var ROAD=[
@@ -2311,45 +2916,98 @@ var ROAD=[
  ['read','scen','Latihan tiga skenario tabletop',20],['read','qbank','Pilih 5 pertanyaan untuk minggu pertama',10],
  ['task','t4','Artefak #4: rencana 30-60-90 sebagai ops engineer','Fokus ke kualitas kerja ops dan bukti kinerja. Siapkan log kinerja mingguan.'],['prac'],['read','day1','Checklist dan perkenalan 60 detik',15]]}
 ];
-var LABN={term:['Lab 1 · Terminal triase',40],mon:['Lab 2 · Monitoring dan alert',30],gpu:['Lab 3 · Rak NVL72 72 GPU',30],ticket:['Lab 4 · Tiket dan handover',30],calc:['Kalkulator AI factory',15]};
+var LABN={term:['Lab 1 · Terminal triase',40],mon:['Lab 2 · Monitoring dan alert',30],gpu:['Lab 3 · Rak NVL72 72 GPU',30],ticket:['Lab 4 · Tiket dan handover',30],calc:['Kalkulator AI factory',15],seg:['Lab 5 · Segmentasi jaringan zero trust',30],soc:['Lab 6 · Triase SOC',30],slo:['Lab 7 · SLO dan error budget',25],dec:['Lab 8 · Keputusan di bawah tekanan',35]};
+/* Jalur lanjutan: peta jalan dan progres sendiri, terpisah dari persiapan 1 Desember */
+var ROAD2=[
+{k:'Alur end-to-end',t:'Alur kerja end-to-end AI data center',d:'Minggu 1–2',goal:'Bisa menjelaskan perjalanan dari megawatt sampai token, dan di mana tiap masalah operasi lahir.',s:[
+ ['les','c20',0],['les','c20',1],['les','c20',2],['les','c20',3],['les','c20',4],['quiz','c20'],
+ ['task','u1','Artefak L1: peta alur end-to-end satu halaman','Tujuh tahap, pemilik tiap tahap, dan tiga titik serah terima paling rawan di lokasi Anda.']]},
+{k:'Keamanan desain',t:'Keamanan desain: fasilitas, jaringan, platform (NIST)',d:'Minggu 3–4',goal:'Bisa meninjau rancangan zona dan menjawab pertanyaan keamanan klien dengan bahasa NIST.',s:[
+ ['les','c21',0],['les','c21',1],['les','c21',2],['lab','seg'],['les','c21',3],['les','c21',4],['quiz','c21'],
+ ['task','u2','Artefak L2: matriks zona dan aliran untuk satu rak GPU','Zona, aliran yang diizinkan, perantaranya, dan kontrol SP 800-53 yang menjadi dasar.']]},
+{k:'SOC dan SOC 2',t:'SOC: operasi keamanan dan laporan SOC 2',d:'Minggu 5',goal:'Bisa bekerja berdampingan dengan SOC dan menghasilkan bukti audit dari kerja harian.',s:[
+ ['les','c22',0],['les','c22',1],['lab','soc'],['les','c22',2],['les','c22',3],['quiz','c22'],
+ ['task','u3','Artefak L3: daftar 10 bukti SOC 2 dari kerja harian','Kontrol, bukti, tempat penyimpanan, dan pemiliknya.']]},
+{k:'Engineering management',t:'Engineering management untuk tim operasi',d:'Minggu 6–7',goal:'Bisa merancang cara kerja tim, memakai SLO untuk memutuskan, dan melapor ke pimpinan.',s:[
+ ['les','c23',0],['les','c23',1],['les','c23',2],['lab','slo'],['les','c23',3],['les','c23',4],['quiz','c23'],
+ ['task','u4','Artefak L4: ulasan operasi mingguan satu halaman','Empat ukuran, insiden, change, tiga risiko, satu permintaan.']]},
+{k:'Strategi dan keputusan',t:'Strategi dan pengambilan keputusan',d:'Minggu 8–9',goal:'Bisa menyusun strategi tim, memutuskan dengan angka, dan menuliskannya untuk disetujui.',s:[
+ ['les','c24',0],['les','c24',1],['les','c24',2],['lab','dec'],['les','c24',3],['les','c24',4],['quiz','c24'],
+ ['task','u5','Artefak L5: decision record dan business case','Satu perbaikan operasi di lokasi Anda, dengan nilai dalam GPU-jam.']]}
+];
 var KIND={les:['Pelajaran','lvM'],quiz:['Kuis','lvL'],vid:['Video','lvA'],an:['Anatomi','lvA'],lab:['Lab','lvL'],task:['Tugas',''],read:['Baca',''],prac:['Uji','lvL']};
 function info(st){var s=S(),k=st[0];
   if(k==='les'){var c=COURSES[st[1]],l=c.L[st[2]];return {k:k,t:l.t,sub:c.t,r:'lesson-'+st[1]+'-'+st[2],m:l.min,done:!!s.done[st[1]+'.'+st[2]]};}
   if(k==='quiz'){var c2=COURSES[st[1]];return {k:k,t:'Kuis: '+c2.t,sub:c2.quiz.length+' soal, lulus minimal 2 benar',r:'quiz-'+st[1],m:5,done:(s.quiz[st[1]]||0)>=2};}
   if(k==='vid'){var v=VID.filter(function(x){return x.id===st[1];})[0];return {k:k,t:v.t,sub:v.sub,r:'vid-'+v.id,m:2,done:!!s.vid[v.id]};}
-  if(k==='an'){var a=ANAT.filter(function(x){return x.id===st[1];})[0];return {k:k,t:a.t,sub:a.parts.length+' bagian, ketuk semuanya atau selesaikan mode tebak',r:'anat-'+a.id,m:8,done:!!s.an[a.id]};}
+  if(k==='an'){var a=ANAT.filter(function(x){return x.id===st[1];})[0];return {k:k,t:a.t,sub:a.parts.length+' bagian · selesai bila '+Math.ceil(a.parts.length*0.6)+' bagian dibuka atau mode tebak tuntas',r:'anat-'+a.id,m:8,done:!!s.an[a.id]};}
   if(k==='lab'){return {k:k,t:LABN[st[1]][0],sub:'Simulasi di dalam aplikasi',r:'lab-'+st[1],m:LABN[st[1]][1],done:!!(s.labs[st[1]]&&s.labs[st[1]].done)};}
   if(k==='task'){return {k:k,t:st[2],sub:st[3],r:'road',m:60,done:!!s.rt[st[1]],task:st[1]};}
   if(k==='prac'){return {k:k,t:'Kuis kesiapan penuh',sub:'Target 80% atau lebih'+(s.best?' · terbaik '+s.best+'%':''),r:'practice',m:15,done:(s.best||0)>=80};}
   return {k:k,t:st[2],sub:'',r:st[1],m:st[3],done:!!s.rd[st[1]]};}
-function flat(){var out=[];ROAD.forEach(function(m,mi){m.s.forEach(function(st){var x=info(st);x.mi=mi;out.push(x);});});return out;}
-function nextStep(){var f=flat();for(var i=0;i<f.length;i++)if(!f[i].done){f[i].n=i+1;f[i].tot=f.length;return f[i];}return null;}
-function after(){var f=flat(),h=location.hash.slice(1),idx=-1,k;for(k=0;k<f.length;k++)if(f[k].r===h&&!f[k].task){idx=k;break;}for(k=idx+1;k<f.length;k++)if(!f[k].done)return f[k].task?'#road':'#'+f[k].r;var n=nextStep();return n?(n.task?'#road':'#'+n.r):'#road';}
-function inRoad(cid){return ROAD.some(function(m){return m.s.some(function(st){return (st[0]==='les'||st[0]==='quiz')&&st[1]===cid;});});}
-function pace(){var t=C.today(),mi=0;for(var i=0;i<ROAD.length;i++)if(t>=ROAD[i].s0)mi=i;var f=flat(),n=nextStep();if(!n)return 'Semua langkah selesai.';
-  if(n.mi<mi)return 'Anda masih di tahap '+(n.mi+1)+', sedangkan kalender sudah di tahap '+(mi+1)+'. Tidak apa-apa: lanjutkan berurutan, jangan melompat.';
+/* Langkah = semua butir peta jalan kecuali tugas artefak. Tugas dicatat terpisah dan tidak menahan alur. */
+function flat(R){var out=[];(R||ROAD).forEach(function(m,mi){m.s.forEach(function(st){if(st[0]==='task')return;var x=info(st);x.mi=mi;x.n=out.length+1;out.push(x);});});out.forEach(function(x){x.tot=out.length;});return out;}
+function tasks(R){var out=[];(R||ROAD).forEach(function(m,mi){m.s.forEach(function(st){if(st[0]==='task'){var x=info(st);x.mi=mi;out.push(x);}});});return out;}
+/* Posisi belajar = langkah setelah langkah terjauh yang sudah selesai. Langkah belum selesai di belakangnya = terlewat. */
+function front(R){var f=flat(R),last=-1,i,sk=[],nx=null;for(i=0;i<f.length;i++)if(f[i].done)last=i;
+  for(i=0;i<last;i++)if(!f[i].done){f[i].skip=1;sk.push(f[i]);}
+  var tail=last+1>=f.length;if(!tail)nx=f[last+1];else if(sk.length)nx=sk[0];
+  return {f:f,next:nx,skipped:sk,last:last,tail:tail,dn:f.filter(function(x){return x.done;}).length};}
+function nextStep(){return front().next;}
+function trackOf(h){var f=flat(),k;for(k=0;k<f.length;k++)if(f[k].r===h)return ROAD;f=flat(ROAD2);for(k=0;k<f.length;k++)if(f[k].r===h)return ROAD2;return null;}
+function after(){var h=location.hash.slice(1),R=trackOf(h)||ROAD,F=front(R),f=F.f,idx=-1,k;for(k=0;k<f.length;k++)if(f[k].r===h){idx=k;break;}
+  if(idx>-1)for(k=idx+1;k<f.length;k++)if(!f[k].done)return '#'+f[k].r;
+  for(k=0;k<f.length;k++)if(!f[k].done&&f[k].r!==h)return '#'+f[k].r;
+  return R===ROAD2?'#adv':'#road';}
+function inRoad(cid){return ROAD.concat(ROAD2).some(function(m){return m.s.some(function(st){return (st[0]==='les'||st[0]==='quiz')&&st[1]===cid;});});}
+function pace(F){F=F||front();var t=C.today(),mi=0;for(var i=0;i<ROAD.length;i++)if(t>=ROAD[i].s0)mi=i;var n=F.next;if(!n)return 'Semua langkah selesai.';
+  if(F.tail)return 'Jalur utama sudah sampai ujung. Tinggal menuntaskan langkah yang terlewat.';
+  if(n.mi<mi)return 'Anda di tahap '+(n.mi+1)+', kalender sudah di tahap '+(mi+1)+'. Lanjutkan berurutan.';
   if(n.mi>mi)return 'Anda lebih cepat dari jadwal.';return 'Anda sesuai jadwal tahap '+(mi+1)+'.';}
-function homeCard(){var n=nextStep(),f=flat(),dn=f.filter(function(x){return x.done;}).length;
+function skipList(sk,max){return '<ul class="skl">'+sk.slice(0,max).map(function(x){return '<li><a href="#'+x.r+'"><span class="chip '+KIND[x.k][1]+'">'+KIND[x.k][0]+'</span> '+esc(x.t)+'</a></li>';}).join('')+'</ul>'+(sk.length>max?'<p class="note" style="margin:.3rem 0 0">dan '+(sk.length-max)+' lainnya, bertanda kuning di <a href="#road">Peta jalan</a>.</p>':'');}
+function homeCard(){var F=front(),n=F.next,f=F.f,dn=F.dn,sk=F.skipped,pc=Math.round(dn/f.length*100);
   var h='<div class="sec"><h2>Langkah berikutnya</h2><a href="#road">Peta jalan</a></div><section class="hcard nextc">';
-  if(!n)return h+'<h3>Peta jalan selesai</h3><p>Lanjutkan kartu angka dan kuis kilat setiap hari sampai 1 Desember.</p></section>';
-  h+='<div class="when"><span class="pill t">Langkah '+n.n+' dari '+n.tot+'</span><span class="pill">Tahap '+(n.mi+1)+' · '+esc(ROAD[n.mi].k)+'</span><span class="pill">± '+n.m+' mnt</span></div><div class="chips"><span class="chip '+KIND[n.k][1]+'">'+KIND[n.k][0]+'</span></div><h3>'+esc(n.t)+'</h3>'+(n.sub?'<p>'+esc(n.sub)+'</p>':'')+
-   '<div class="rprog"><i style="width:'+Math.round(dn/f.length*100)+'%"></i></div><div class="btnrow"><a class="btn" style="min-height:56px;font-size:1.05rem" href="'+(n.task?'#road':'#'+n.r)+'">'+(dn?'Lanjutkan':'Mulai')+'</a></div><p class="note" style="margin:0">'+esc(pace())+'</p></section>';
-  return h;}
-function vRoad(){var f=flat(),n=nextStep(),dn=f.filter(function(x){return x.done;}).length,idx=0;
-  var h='<div class="sec" style="margin-top:.4rem"><h2>Peta jalan belajar</h2></div><p class="lead">Satu jalur, '+f.length+' langkah, 4 tahap. Kerjakan berurutan dari atas ke bawah. Setiap selesai satu langkah, aplikasi membawa Anda ke langkah berikutnya.</p>';
-  h+='<section class="hcard" style="margin:.8rem 0"><div class="tm"><span class="n">'+dn+'/'+f.length+'</span><span class="t"><b>langkah selesai</b>'+esc(pace())+'</span></div><div class="rprog"><i style="width:'+Math.round(dn/f.length*100)+'%"></i></div>'+(n?'<div class="btnrow"><a class="btn" href="'+(n.task?'#rs'+n.n:'#'+n.r)+'" id="gonext">Lanjutkan: '+esc(n.t)+'</a></div>':'')+'</section>';
-  ROAD.forEach(function(m,mi){var ms=m.s.map(info),d=ms.filter(function(x){return x.done;}).length;
+  if(!n)h+='<h3>Peta jalan selesai</h3><p>Semua '+f.length+' langkah tuntas. Lanjutkan kartu angka dan kuis kilat setiap hari sampai 1 Desember.</p><div class="rprog"><i style="width:100%"></i></div>';
+  else{h+='<div class="when"><span class="pill t">Langkah '+n.n+' dari '+n.tot+'</span><span class="pill">Tahap '+(n.mi+1)+' · '+esc(ROAD[n.mi].k)+'</span><span class="pill">± '+n.m+' mnt</span></div><div class="chips"><span class="chip '+KIND[n.k][1]+'">'+KIND[n.k][0]+'</span>'+(F.tail?'<span class="chip lvL">Terlewat</span>':'')+'</div><h3>'+esc(n.t)+'</h3>'+(n.sub?'<p>'+esc(n.sub)+'</p>':'')+
+   '<div class="rprog"><i style="width:'+pc+'%"></i></div><div class="btnrow"><a class="btn" style="min-height:56px;font-size:1.05rem" href="#'+n.r+'">'+(dn?'Lanjutkan':'Mulai')+'</a></div><p class="note" style="margin:0">'+dn+' dari '+f.length+' langkah selesai ('+pc+'%). '+esc(pace(F))+'</p>';}
+  var lr=C.lastRoute?C.lastRoute():null,lx=null;if(lr)f.forEach(function(x){if(x.r===lr)lx=x;});
+  if(lx&&(!n||lx.r!==n.r))h+='<p class="note lastp">Terakhir dibuka: <a href="#'+lx.r+'">'+esc(lx.t)+'</a></p>';
+  h+='</section>';
+  if(sk.length)h+='<section class="skipbox"><b>'+sk.length+' langkah terlewat</b><p>Langkah ini sudah Anda lewati tetapi belum tercatat selesai (kuis belum lulus, lab belum tuntas, atau pelajaran belum ditandai). Progres baru 100% setelah semuanya tuntas.</p>'+skipList(sk,4)+'</section>';
+  return h+advCard();}
+function vRoad(){var F=front(),f=F.f,n=F.next,dn=F.dn,sk=F.skipped,tk=tasks(),td=tk.filter(function(x){return x.done;}).length,idx=0;
+  var h=trackSeg('road')+'<div class="sec" style="margin-top:.4rem"><h2>Peta jalan belajar</h2></div><p class="lead">Satu jalur, '+f.length+' langkah, 4 tahap. Kerjakan berurutan dari atas ke bawah. Langkah tercatat selesai bila pelajaran ditandai selesai, kuis lulus (minimal 2 benar), lab tuntas semua misinya, dan anatomi dijelajahi. Empat tugas artefak dicatat terpisah dan tidak menahan langkah berikutnya.</p>';
+  h+='<section class="hcard" style="margin:.8rem 0"><div class="tm"><span class="n">'+dn+'/'+f.length+'</span><span class="t"><b>langkah selesai · artefak '+td+'/'+tk.length+'</b>'+esc(pace(F))+'</span></div><div class="rprog"><i style="width:'+Math.round(dn/f.length*100)+'%"></i></div>'+(sk.length?'<p class="note" style="margin:.5rem 0 0"><b>'+sk.length+' langkah terlewat</b>, bertanda kuning di bawah. Ketuk untuk menuntaskannya.</p>':'')+(n?'<div class="btnrow"><a class="btn" href="#'+n.r+'">Lanjutkan: '+esc(n.t)+'</a></div>':'')+'</section>';
+  ROAD.forEach(function(m,mi){var ms=f.filter(function(x){return x.mi===mi;}),d=ms.filter(function(x){return x.done;}).length,mt=tk.filter(function(x){return x.mi===mi;});
     h+='<div class="rstage"><div class="rsh"><span class="rno">'+(mi+1)+'</span><div><b>'+esc(m.t)+'</b><small>'+m.d+' · '+d+'/'+ms.length+' selesai</small></div></div><p class="note" style="margin:.2rem 0 .6rem">Sasaran: '+esc(m.goal)+'</p><ol class="rsteps">';
-    ms.forEach(function(x){idx++;var isN=n&&idx===n.n;
-      h+='<li class="'+(x.done?'done':'')+(isN?' next':'')+'" id="rs'+idx+'"><span class="rdot">'+(x.done?'✓':idx)+'</span><div class="rbody"><div class="chips"><span class="chip '+KIND[x.k][1]+'">'+KIND[x.k][0]+'</span><span class="chip">± '+x.m+' mnt</span>'+(isN?'<span class="chip prio">Anda di sini</span>':'')+'</div>'+
-        (x.task?'<b>'+esc(x.t)+'</b><small>'+esc(x.sub)+'</small><button type="button" class="btn '+(x.done?'ghost ':'')+'sm" data-task="'+x.task+'" style="margin-top:.4rem">'+(x.done?'Batalkan tanda selesai':'Tandai selesai')+'</button>'
-               :'<a href="#'+x.r+'"><b>'+esc(x.t)+'</b>'+(x.sub?'<small>'+esc(x.sub)+'</small>':'')+'</a>')+'</div></li>';});
-    h+='</ol></div>';});
-  h+='<div class="box" style="margin-top:1rem"><h3>Di luar jalur utama</h3><p class="note" style="margin:.2rem 0 .5rem">Setiap hari, di luar peta jalan: kartu angka dan kuis kilat di Beranda. Materi lain tetap tersedia, tapi kerjakan setelah jalur utama.</p><div class="devchips"><a href="#learn-courses">Semua 15 kursus</a><a href="#learn-plan">Kalender harian</a><a href="#learn-cops">Persiapan Ops</a><a href="#glos">Glosarium</a></div></div>';
+    ms.forEach(function(x){idx++;var isN=n&&x.n===n.n;
+      h+='<li class="'+(x.done?'done':'')+(isN?' next':'')+(x.skip?' skip':'')+'" id="rs'+idx+'"><span class="rdot">'+(x.done?'✓':(x.skip?'!':idx))+'</span><div class="rbody"><div class="chips"><span class="chip '+KIND[x.k][1]+'">'+KIND[x.k][0]+'</span><span class="chip">± '+x.m+' mnt</span>'+(isN?'<span class="chip prio">Anda di sini</span>':'')+(x.skip?'<span class="chip lvL">Terlewat</span>':'')+'</div>'+
+        '<a href="#'+x.r+'"><b>'+esc(x.t)+'</b>'+(x.sub?'<small>'+esc(x.sub)+'</small>':'')+'</a></div></li>';});
+    h+='</ol>';
+    if(mt.length)h+='<div class="rtasks"><small>Tugas artefak tahap ini · di luar hitungan langkah</small>'+mt.map(function(x){return '<div class="rtask'+(x.done?' done':'')+'"><b>'+esc(x.t)+'</b><small>'+esc(x.sub)+'</small><button type="button" class="btn '+(x.done?'ghost ':'')+'sm" data-task="'+x.task+'">'+(x.done?'Batalkan tanda selesai':'Tandai selesai')+'</button></div>';}).join('')+'</div>';
+    h+='</div>';});
+  h+='<div class="box" style="margin-top:1rem"><h3>Di luar jalur utama</h3><p class="note" style="margin:.2rem 0 .5rem">Setiap hari, di luar peta jalan: kartu angka dan kuis kilat di Beranda. Materi lain tetap tersedia, tapi kerjakan setelah jalur utama.</p><div class="devchips"><a href="#learn-courses">Semua kursus</a><a href="#learn-plan">Kalender harian</a><a href="#learn-cops">Persiapan Ops</a><a href="#glos">Glosarium</a></div></div>';
   app.innerHTML=h;
-  app.querySelectorAll('[data-task]').forEach(function(b){b.addEventListener('click',function(){var k=b.getAttribute('data-task');if(S().rt[k])delete S().rt[k];else{S().rt[k]=1;C.markSeen();C.toast('Tugas ditandai selesai');}C.save();var y=window.scrollY;vRoad();window.scrollTo(0,y);});});
-  var gn=document.getElementById('gonext');if(gn&&n&&n.task)gn.addEventListener('click',function(e){e.preventDefault();var el=document.getElementById('rs'+n.n);if(el)el.scrollIntoView({block:'center',behavior:'smooth'});});
+  app.querySelectorAll('[data-task]').forEach(function(b){b.addEventListener('click',function(){var k=b.getAttribute('data-task');if(S().rt[k])S().rt[k]=0;else{S().rt[k]=1;C.markSeen();C.toast('Tugas ditandai selesai');}C.save();var y=window.scrollY;vRoad();window.scrollTo(0,y);});});
   if(n&&!vRoad._s){vRoad._s=1;setTimeout(function(){var el=document.getElementById('rs'+n.n);if(el&&n.n>4)el.scrollIntoView({block:'center'});},60);}}
+
+/* ================= JALUR LANJUTAN ================= */
+function trackSeg(cur){return '<div class="seg" role="group" aria-label="Pilih jalur"><a href="#road" class="'+(cur==='road'?'on':'')+'">Persiapan 1 Des</a><a href="#adv" class="'+(cur==='adv'?'on':'')+'">Jalur lanjutan</a></div>';}
+function advCard(){var F=front(ROAD2),n=F.next,f=F.f,pc=Math.round(F.dn/f.length*100);
+  return '<div class="sec"><h2>Jalur lanjutan</h2><a href="#adv">Lihat jalur</a></div><section class="hcard advc"><div class="chips"><span class="chip lvA">Setelah onboarding</span><span class="chip">'+F.dn+' dari '+f.length+' langkah</span></div><p>Alur end-to-end, keamanan desain berbasis NIST, SOC, engineering management, strategi dan keputusan. Progresnya dihitung terpisah dari persiapan 1 Desember.</p><div class="rprog"><i style="width:'+pc+'%"></i></div>'+(n?'<div class="btnrow"><a class="btn ghost" href="#'+n.r+'">'+(F.dn?'Lanjutkan':'Mulai')+': '+esc(n.t)+'</a></div>':'<p class="note" style="margin:.5rem 0 0">Semua langkah jalur lanjutan selesai.</p>')+'</section>';}
+function vAdv(){var F=front(ROAD2),f=F.f,n=F.next,dn=F.dn,sk=F.skipped,tk=tasks(ROAD2),td=tk.filter(function(x){return x.done;}).length,idx=0;
+  var h=trackSeg('adv')+'<div class="sec" style="margin-top:.4rem"><h2>Jalur lanjutan</h2></div><p class="lead">Dari ops engineer menuju engineering manager. '+f.length+' langkah dalam 5 tahap: alur end-to-end, keamanan desain, SOC, manajemen, lalu strategi dan keputusan. Jalur ini terpisah dari persiapan 1 Desember dan progresnya dihitung sendiri. Kerjakan setelah onboarding, kira-kira empat langkah per minggu.</p>';
+  h+='<section class="hcard" style="margin:.8rem 0"><div class="tm"><span class="n">'+dn+'/'+f.length+'</span><span class="t"><b>langkah selesai · artefak '+td+'/'+tk.length+'</b>'+(n?(F.tail?'Tinggal menuntaskan langkah yang terlewat.':'Anda di tahap '+(n.mi+1)+' · '+esc(ROAD2[n.mi].k)):'Semua langkah selesai.')+'</span></div><div class="rprog"><i style="width:'+Math.round(dn/f.length*100)+'%"></i></div>'+(sk.length?'<p class="note" style="margin:.5rem 0 0"><b>'+sk.length+' langkah terlewat</b>, bertanda kuning di bawah.</p>':'')+(n?'<div class="btnrow"><a class="btn" href="#'+n.r+'">'+(dn?'Lanjutkan':'Mulai')+': '+esc(n.t)+'</a></div>':'')+'</section>';
+  ROAD2.forEach(function(m,mi){var ms=f.filter(function(x){return x.mi===mi;}),d=ms.filter(function(x){return x.done;}).length,mt=tk.filter(function(x){return x.mi===mi;});
+    h+='<div class="rstage"><div class="rsh"><span class="rno">'+(mi+1)+'</span><div><b>'+esc(m.t)+'</b><small>'+m.d+' · '+d+'/'+ms.length+' selesai</small></div></div><p class="note" style="margin:.2rem 0 .6rem">Sasaran: '+esc(m.goal)+'</p><ol class="rsteps">';
+    ms.forEach(function(x){idx++;var isN=n&&x.n===n.n;
+      h+='<li class="'+(x.done?'done':'')+(isN?' next':'')+(x.skip?' skip':'')+'" id="as'+idx+'"><span class="rdot">'+(x.done?'✓':(x.skip?'!':idx))+'</span><div class="rbody"><div class="chips"><span class="chip '+KIND[x.k][1]+'">'+KIND[x.k][0]+'</span><span class="chip">± '+x.m+' mnt</span>'+(isN?'<span class="chip prio">Anda di sini</span>':'')+(x.skip?'<span class="chip lvL">Terlewat</span>':'')+'</div><a href="#'+x.r+'"><b>'+esc(x.t)+'</b>'+(x.sub?'<small>'+esc(x.sub)+'</small>':'')+'</a></div></li>';});
+    h+='</ol>';
+    if(mt.length)h+='<div class="rtasks"><small>Tugas artefak tahap ini · di luar hitungan langkah</small>'+mt.map(function(x){return '<div class="rtask'+(x.done?' done':'')+'"><b>'+esc(x.t)+'</b><small>'+esc(x.sub)+'</small><button type="button" class="btn '+(x.done?'ghost ':'')+'sm" data-task="'+x.task+'">'+(x.done?'Batalkan tanda selesai':'Tandai selesai')+'</button></div>';}).join('')+'</div>';
+    h+='</div>';});
+  h+='<div class="box" style="margin-top:1rem"><h3>Cara memakai jalur ini</h3><p class="note" style="margin:.2rem 0 0">Materi di sini adalah bahan belajar, bukan prosedur resmi perusahaan. Cocokkan dengan kebijakan dan standar yang berlaku di tempat kerja Anda, dan verifikasi angka terbaru ke sumber resminya sebelum dipakai untuk keputusan.</p></div>';
+  app.innerHTML=h;
+  app.querySelectorAll('[data-task]').forEach(function(b){b.addEventListener('click',function(){var k=b.getAttribute('data-task');if(S().rt[k])S().rt[k]=0;else{S().rt[k]=1;C.markSeen();C.toast('Tugas ditandai selesai');}C.save();var y=window.scrollY;vAdv();window.scrollTo(0,y);});});}
 
 /* ================= CADANGAN PROGRES ================= */
 function vBackup(){var st=C.sync();
@@ -2367,15 +3025,16 @@ function vBackup(){var st=C.sync();
     catch(e){m.textContent='Kode tidak dikenali. Pastikan seluruh kode tersalin, diawali AC1.';}});}
 
 /* ================= Dok navigasi langkah + glosarium di semua materi ================= */
-function dock(h){var el=document.getElementById('dock');if(!el)return;var f=flat(),idx=-1,prev=null,next=null,mid,mh='#road',k;
-  for(k=0;k<f.length;k++)if(f[k].r===h&&!f[k].task){idx=k;break;}
-  if(idx>-1){for(k=idx-1;k>=0;k--)if(!f[k].task){prev=f[k].r;break;}for(k=idx+1;k<f.length;k++)if(!f[k].task){next=f[k].r;break;}mid='Langkah '+(idx+1)+' / '+f.length;}
+function dock(h){var el=document.getElementById('dock');if(!el)return;var R=trackOf(h)||ROAD,f=flat(R),idx=-1,prev=null,next=null,mid,mh=R===ROAD2?'#adv':'#road',k;
+  for(k=0;k<f.length;k++)if(f[k].r===h){idx=k;break;}
+  if(idx>-1){prev=idx>0?f[idx-1].r:null;next=idx<f.length-1?f[idx+1].r:null;mid='Langkah '+(idx+1)+' / '+f.length;}
   else{var m=h.match(/^(lesson|quiz)-(c\d+)(?:-(\d+))?$/);if(!m||!COURSES[m[2]]){el.hidden=true;document.body.classList.remove('instep');return;}
     var id=m[2],n=COURSES[id].L.length,i=m[1]==='quiz'?n:+m[3];prev=i>0?'lesson-'+id+'-'+(i-1):null;next=i<n-1?'lesson-'+id+'-'+(i+1):(i===n-1?'quiz-'+id:null);mid='Daftar isi kursus';mh='#course-'+id;}
   el.hidden=false;document.body.classList.add('instep');
   var lm=h.match(/^lesson-(c\d+)-(\d+)$/);
-  el.innerHTML=(prev?'<a class="dk" href="#'+prev+'"><i>‹</i><span>Sebelumnya</span></a>':'<span class="dk off"><i>‹</i><span>Sebelumnya</span></span>')+'<a class="dk mid" href="'+mh+'"><b>'+mid+'</b><span>'+(mh==='#road'?'Peta jalan':'Kursus')+'</span></a>'+(next?'<a class="dk" href="#'+next+'"><span>Berikutnya</span><i>›</i></a>':'<span class="dk off"><span>Berikutnya</span><i>›</i></span>');
-  if(lm){var nx=el.querySelector('a.dk:last-child');if(nx&&!nx.classList.contains('mid'))nx.addEventListener('click',function(){var k=lm[1]+'.'+lm[2];if(!S().done[k]){S().done[k]=1;C.markSeen();C.save();}});}}
+  el.innerHTML=(prev?'<a class="dk" href="#'+prev+'"><i>‹</i><span>Sebelumnya</span></a>':'<span class="dk off"><i>‹</i><span>Sebelumnya</span></span>')+'<a class="dk mid" href="'+mh+'"><b>'+mid+'</b><span>'+(mh==='#road'?'Peta jalan':(mh==='#adv'?'Jalur lanjutan':'Kursus'))+'</span></a>'+(next?'<a class="dk" href="#'+next+'"><span>Berikutnya</span><i>›</i></a>':'<span class="dk off"><span>Berikutnya</span><i>›</i></span>');
+  if(lm){var nx=el.querySelector('a.dk:last-child');if(nx&&!nx.classList.contains('mid'))nx.addEventListener('click',function(){var k=lm[1]+'.'+lm[2];if(!S().done[k]){S().done[k]=1;C.markSeen();C.save();}});}
+  else if(idx>-1&&next){var nb=el.querySelector('a.dk:last-child');if(nb)nb.addEventListener('click',function(){var g=flat(R)[idx];if(g&&!g.done)C.toast('Langkah ini belum selesai. Tercatat sebagai terlewat sampai dituntaskan.');});}}
 function post(v,p,h){dock(h);
   if(/^(course|assess|swot|peta|strategi|scen|day1)$/.test(v))glossify(app,'.body,.box,.lead,.mg');
   else if(/^(vid|anat|lab)$/.test(v)){var t=app.textContent;if(v==='vid'){var vv=VID.filter(function(x){return x.id===p[1];})[0];if(vv)t+=' '+vidText(vv);}
@@ -2388,24 +3047,24 @@ var DOW=['Min','Sen','Sel','Rab','Kam','Jum','Sab'],BLN=['Jan','Feb','Mar','Apr'
 function fd(d){var x=new Date(d+'T00:00:00Z');return DOW[x.getUTCDay()]+' '+x.getUTCDate()+' '+BLN[x.getUTCMonth()];}
 function schedule(){var out=[],no=0;ROAD.forEach(function(m,mi){var items=m.s.map(info),n=0,d=m.days[0],days=[];while(d<=m.days[1]){days.push(d);d=addD(d,1);}
   var tot=items.reduce(function(a,x){return a+x.m;},0),per=tot/days.length,acc=0,di=0,bucket=[];
-  items.forEach(function(x,k){no++;x.no=no;bucket.push(x);acc+=x.m;var last=k===items.length-1;
+  items.forEach(function(x,k){if(!x.task){no++;x.no=no;}bucket.push(x);acc+=x.m;var last=k===items.length-1;
     if(last||(acc>=per*(di+1)&&di<days.length-1)){out.push({d:days[di],mi:mi,steps:bucket});bucket=[];di++;}});
   while(di<days.length){out.push({d:days[di],mi:mi,steps:[]});di++;}});return out;}
 function planHtml(){var t=C.today(),sc=schedule(),h='<p class="lead">Jadwal harian ini dibagi otomatis dari peta jalan. Pagi untuk materi, sore untuk lab, kartu, dan kuis. Tombol kalender membuka Google Calendar dengan acara yang sudah terisi.</p>';
   var cur=-1;ROAD.forEach(function(m,mi){h+='<div class="wk"><h3>Tahap '+(mi+1)+' · '+esc(m.k)+'</h3><small>'+m.d+'</small></div>';
-    sc.filter(function(x){return x.mi===mi;}).forEach(function(day){var dn=day.steps.length&&day.steps.every(function(x){return x.done;}),mins=day.steps.reduce(function(a,x){return a+x.m;},0);
-      var first=day.steps.filter(function(x){return !x.done;})[0]||day.steps[0];
-      var title=day.steps.length?('Langkah '+day.steps[0].no+(day.steps.length>1?'–'+day.steps[day.steps.length-1].no:'')):'Hari cadangan';
+    sc.filter(function(x){return x.mi===mi;}).forEach(function(day){var core=day.steps.filter(function(x){return !x.task;}),dn=core.length&&core.every(function(x){return x.done;}),mins=day.steps.reduce(function(a,x){return a+x.m;},0);
+      var first=core.filter(function(x){return !x.done;})[0]||core[0]||day.steps[0];
+      var title=core.length?('Langkah '+core[0].no+(core.length>1?'–'+core[core.length-1].no:'')):(day.steps.length?'Tugas artefak':'Hari cadangan');
       var desc=day.steps.map(function(x){return x.t;}).join(' · ');
       h+='<div class="pday'+(day.d===t?' today':'')+(dn?' done':'')+'" id="d'+day.d+'"><span class="chk" aria-hidden="true">'+(dn?'✓':'')+'</span><div><span class="d">'+fd(day.d)+(mins?' · ± '+mins+' mnt':'')+(day.d===t?' · hari ini':'')+'</span><b>'+title+'</b>'+
-        (day.steps.length?'<ul class="dsteps">'+day.steps.map(function(x){return '<li class="'+(x.done?'ok':'')+'">'+(x.done?'✓ ':'')+esc(x.t)+'</li>';}).join('')+'</ul>':'<p>Untuk mengejar langkah yang tertinggal, atau istirahat.</p>')+
+        (day.steps.length?'<ul class="dsteps">'+day.steps.map(function(x){return '<li class="'+(x.done?'ok':'')+'">'+(x.done?'✓ ':'')+(x.task?'Tugas: ':'')+esc(x.t)+'</li>';}).join('')+'</ul>':'<p>Untuk mengejar langkah yang tertinggal, atau istirahat.</p>')+
         '<div class="acts">'+(first?'<a class="go" href="'+(first.task?'#road':'#'+first.r)+'">Buka</a>':'')+'<a target="_blank" rel="noopener" href="'+C.gcal('Belajar Ops: '+title,desc,day.d,'0630','0730')+'">+ Pagi</a><a target="_blank" rel="noopener" href="'+C.gcal('Latihan Ops: lab, kartu, kuis',desc,day.d,'1730','1830')+'">+ Sore</a></div></div></div>';});});
   return h;}
-function curStage(){var n=nextStep();return n?n.mi:ROAD.length-1;}
-function stageBars(){var t=C.today(),cm=curStage();return '<div class="ms">'+ROAD.map(function(m,mi){var ms=m.s.map(info),d=ms.filter(function(x){return x.done;}).length,pc=Math.round(d/ms.length*100);
+function curStage(){var F=front();return F.next&&!F.tail?F.next.mi:ROAD.length-1;}
+function stageBars(){var t=C.today(),cm=curStage(),fl=flat();return '<div class="ms">'+ROAD.map(function(m,mi){var ms=fl.filter(function(x){return x.mi===mi;}),d=ms.filter(function(x){return x.done;}).length,pc=Math.round(d/ms.length*100);
   return '<div class="'+(mi===cm?'now':'')+'"><i><b style="width:'+pc+'%"></b></i>'+esc(m.k)+' '+pc+'%</div>';}).join('')+'</div>';}
 function courseOpen(cid){var cm=curStage(),open=false;ROAD.forEach(function(m,mi){if(mi<=cm)m.s.forEach(function(st){if((st[0]==='les'||st[0]==='quiz')&&st[1]===cid)open=true;});});return open;}
-function vMore2(){var G2=[['Belajar',[['road','Peta jalan','Satu jalur 76 langkah'],['learn-plan','Jadwal harian dan pengingat','Dibagi dari peta jalan, tombol Google Calendar'],['learn-courses','Semua kursus','17 kursus dengan tingkat keahlian'],['glos','Glosarium','Arti singkatan dan fungsinya'],['practice','Kuis kesiapan','15 soal acak, target 80%']]],
+function vMore2(){var G2=[['Belajar',[['road','Peta jalan','Persiapan 1 Desember, '+flat().length+' langkah'],['adv','Jalur lanjutan','Manajemen, strategi, keamanan desain, '+flat(ROAD2).length+' langkah'],['learn-plan','Jadwal harian dan pengingat','Dibagi dari peta jalan, tombol Google Calendar'],['learn-courses','Semua kursus',Object.keys(COURSES).length+' kursus dengan tingkat keahlian'],['glos','Glosarium','Arti singkatan dan fungsinya'],['practice','Kuis kesiapan','15 soal acak, target 80%']]],
   ['Perangkat',[['anatomy','Anatomi interaktif','Rak NVL72, compute tray, CDU'],['gallery','Foto perangkat asli','20 foto dengan atribusi'],['devs','Skema teknis','11 skema dari Akademi']]],
   ['Persiapan Ops',[['learn-cops','Cara dinilai, SWOT, strategi','Sudut pandang dan rencana'],['qbank','Bank pertanyaan','Untuk diskusi dengan tim dan atasan'],['scen','Latihan skenario','Tiga tabletop: CDU, daya, ToR'],['day1','Hari pertama','Checklist dan perkenalan 60 detik'],['notes','Log bukti dan kinerja','Catatan pribadi']]],
   ['Akun dan referensi',[['backup','Simpan dan pulihkan progres','Status sinkron dan kode cadangan'],['progress','Progres dan lencana','Statistik dan sertifikasi'],['lib','Pustaka sumber','Sumber Akademi'],['credits','Kredit foto','Lisensi Wikimedia Commons']]]];
@@ -2413,15 +3072,23 @@ function vMore2(){var G2=[['Belajar',[['road','Peta jalan','Satu jalur 76 langka
 /* ================= API ================= */
 window.PLUS={
   init:function(ctx){C=ctx;app=ctx.app;},
-  route:function(v,p){switch(v){case 'more':vMore2();return true;case 'road':vRoad();return true;case 'videos':vVideos();return true;case 'vid':vVideo(p[1]);return true;case 'anatomy':vAnatomy();return true;case 'anat':vAnat(p[1]);return true;case 'glos':vGloss();return true;case 'backup':vBackup();return true;}return false;},
-  tab:function(v){return v==='road'?'road':(/^(videos|vid|anatomy|anat|glos|backup)$/.test(v)?'more':null);},
+  route:function(v,p){switch(v){case 'more':vMore2();return true;case 'road':vRoad();return true;case 'adv':vAdv();return true;case 'videos':vVideos();return true;case 'vid':vVideo(p[1]);return true;case 'anatomy':vAnatomy();return true;case 'anat':vAnat(p[1]);return true;case 'glos':vGloss();return true;case 'backup':vBackup();return true;}return false;},
+  tab:function(v){return (v==='road'||v==='adv')?'road':(/^(videos|vid|anatomy|anat|glos|backup)$/.test(v)?'more':null);},
   planHtml:planHtml,stageBars:stageBars,curStage:curStage,courseOpen:courseOpen,
   gloss:G,glossify:glossify,homeCard:homeCard,after:after,inRoad:inRoad,post:post,lessonTop:lessonTop,lessonMid:lessonMid,wireLesson:wireLesson,
   lessonTerms:function(id,i){var x=LX[id+'.'+i];if(!x||!x.v)return '';return vidText(VID.filter(function(q){return q.id===x.v;})[0]);},
   visited:function(h){var hit=false;ROAD.forEach(function(m){m.s.forEach(function(st){if(st[0]==='read'&&st[1]===h)hit=true;});});if(hit&&!S().rd[h]){S().rd[h]=1;C.save();}},
   related:function(cid){var out='';VID.forEach(function(v){if(v.c.indexOf(cid)>-1)out+='<a href="#vid-'+v.id+'">▶ Video: '+esc(v.t)+'</a>';});ANAT.forEach(function(a){if(a.c.indexOf(cid)>-1)out+='<a href="#anat-'+a.id+'">Anatomi: '+esc(a.t)+'</a>';});
     return out?'<div class="rs"><h4>Lihat cara kerjanya</h4><div class="devchips">'+out+'</div></div>':'';},
-  stats:function(){var f=flat();return [f.filter(function(x){return x.done;}).length,f.length];}
+  stats:function(){var F=front();return [F.dn,F.f.length];},
+  advStats:function(){var F=front(ROAD2),f=F.f,tk=tasks(ROAD2);return {done:F.dn,tot:f.length,pct:Math.round(F.dn/f.length*100),
+    stages:ROAD2.map(function(m,mi){var a=f.filter(function(x){return x.mi===mi;});return [m.k,a.filter(function(x){return x.done;}).length,a.length];}),
+    tasks:[tk.filter(function(x){return x.done;}).length,tk.length]};},
+  roadStats:function(){var F=front(),f=F.f,tk=tasks(),G=[['Pelajaran',['les']],['Kuis kursus',['quiz']],['Lab simulasi',['lab']],['Anatomi perangkat',['an']],['Bacaan dan uji kesiapan',['read','prac']]];
+    return {done:F.dn,tot:f.length,pct:Math.round(F.dn/f.length*100),skipped:F.skipped.length,
+      kinds:G.map(function(g){var a=f.filter(function(x){return g[1].indexOf(x.k)>-1;});return [g[0],a.filter(function(x){return x.done;}).length,a.length];}),
+      tasks:[tk.filter(function(x){return x.done;}).length,tk.length],
+      open:(F.skipped.length?F.skipped:f.filter(function(x){return !x.done;})).map(function(x){return {r:x.r,t:x.t,kl:KIND[x.k][0],kc:KIND[x.k][1]};})};}
 };
 })();
 </script>
@@ -2431,12 +3098,14 @@ var root=document.documentElement, app=document.getElementById('app');
 
 /* ================= Status & penyimpanan ================= */
 var KEY='akademi-ops-v1';
-function blank(){return {done:{},quiz:{},last:null,certs:{},theme:null,fs:100,plan:{},lt:{},qs:{},labs:{},stars:{},ev:null,perf:null,ck:{},seen:{},unlock:{},vid:{},an:{},rt:{},rd:{},best:0,ts:0};}
+function blank(){return {done:{},quiz:{},last:null,certs:{},theme:null,fs:100,plan:{},lt:{},qs:{},labs:{},stars:{},ev:null,perf:null,ck:{},seen:{},unlock:{},vid:{},an:{},anp:{},rt:{},rd:{},best:0,ts:0};}
 var S=blank();
 function mergeState(a,b){
   if(!b||typeof b!=='object')return a;
   var o=blank(),newer=(b.ts||0)>(a.ts||0);
   ['done','plan','ck','stars','seen','unlock','certs','vid','an','rt','rd'].forEach(function(k){o[k]={};[a[k],b[k]].forEach(function(m){if(m)for(var x in m)if(m[x])o[k][x]=m[x];});});
+  var nw=newer?b:a;if(nw.rt)for(var z in nw.rt)if(nw.rt[z]===0)o.rt[z]=0;
+  o.anp={};[a.anp,b.anp].forEach(function(m){if(m)for(var x in m){o.anp[x]=o.anp[x]||{};for(var y in m[x])if(m[x][y])o.anp[x][y]=1;}});
   ['certs','stars','ck'].forEach(function(k){var src=newer?b:a;if(src[k])o[k]=JSON.parse(JSON.stringify(src[k]));});
   o.quiz={};[a.quiz,b.quiz].forEach(function(m){if(m)for(var x in m)o.quiz[x]=Math.max(o.quiz[x]||0,m[x]||0);});
   ['lt','qs','labs'].forEach(function(k){o[k]={};[a[k],b[k]].forEach(function(m){if(m)for(var x in m){var cur=o[k][x];if(!cur||((m[x]&&m[x].t)||0)>=((cur&&cur.t)||0))o[k][x]=m[x];}});});
@@ -2464,7 +3133,7 @@ function initSync(){
       var dref=db.collection('data/users/'+id).doc('progress');
       return dref.get().then(function(snap){
         clearTimeout(timer);ref=dref;var remoteTs=0;
-        if(snap.exists){var d=snap.data()||{};remoteTs=d.ts||0;try{var rs=JSON.parse(d.state||'null');if(rs){S=mergeState(S,rs);try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}applyPrefs();route();}}catch(e){}}
+        if(snap.exists){var d=snap.data()||{};remoteTs=d.ts||0;try{var rs=JSON.parse(d.state||'null');if(rs){S=mergeState(S,rs);try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}applyPrefs();var cv=(location.hash||'#home').slice(1).split('-')[0];if(/^(home|road|progress|learn|cards|labs|more|course|)$/.test(cv))route();}}catch(e){}}
         setSync('on');
         if((S.ts||0)>remoteTs&&S.ts){dirty=true;push();}
       });
@@ -2516,19 +3185,21 @@ var QPOOL=[];(function(){var seen={};
   CQZ.forEach(function(q,i){if(!seen[q[0]])QPOOL.push({id:'k'+i,q:q[0],o:q[1],a:q[2],e:q[3],src:'Kesiapan Ops',c:null});});})();
 function courseUnlocked(cid){if(!cid)return true;if(cdone(cid)>0)return true;if(window.PLUS&&PLUS.courseOpen)return PLUS.courseOpen(cid);var t=today();
   for(var i=0;i<PLAN.length;i++){if(PLAN[i][0]<=t&&PLAN[i][6].indexOf('-'+cid+'-')>-1)return true;}return t>=MS[3].s;}
-function pickQ(n,all){var pool=QPOOL.filter(function(q){return all||courseUnlocked(q.c);});
+function pickQ(n,all){var pool=QPOOL.filter(function(q){if(q.c&&window.ADV&&ADV[q.c])return cdone(q.c)>0;return all||courseUnlocked(q.c);});
   if(pool.length<n)pool=QPOOL.slice();
   var sc=pool.map(function(q){var s=S.qs[q.id];var w=Math.random();if(!s)w+=2;else{if(s.w>s.r)w+=3;w+=Math.min(2,(Date.now()-s.t)/864e5/3);}return [w,q];});
   sc.sort(function(a,b){return b[0]-a[0];});return sc.slice(0,n).map(function(x){return x[1];});}
 function recordQ(id,ok){var s=S.qs[id]||{r:0,w:0,t:0};if(ok)s.r++;else s.w++;s.t=Date.now();S.qs[id]=s;markSeen();save();}
+function shuf(n){var a=[],i,j,t;for(i=0;i<n;i++)a.push(i);for(i=n-1;i>0;i--){j=Math.floor(Math.random()*(i+1));t=a[i];a[i]=a[j];a[j]=t;}return a;}
 function quizBlock(qs,hostId,onDone){
-  var h='';qs.forEach(function(q,qi){h+='<div class="qq" data-i="'+qi+'"><span class="src">'+esc(q.src)+'</span><p>'+esc(q.q)+'</p><div class="opts">'+q.o.map(function(o,oi){return '<button type="button" class="opt" data-o="'+oi+'">'+esc(o)+'</button>';}).join('')+'</div><div class="expl" hidden></div></div>';});
+  var h='';qs.forEach(function(q,qi){h+='<div class="qq" data-i="'+qi+'"><span class="src">'+esc(q.src)+'</span><p>'+esc(q.q)+'</p><div class="opts">'+shuf(q.o.length).map(function(oi){return '<button type="button" class="opt" data-o="'+oi+'">'+esc(q.o[oi])+'</button>';}).join('')+'</div><div class="expl" hidden></div></div>';});
   var host=document.getElementById(hostId);host.innerHTML=h;var answered=0,right=0;
-  host.addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b||b.disabled)return;var box=b.closest('.qq');var q=qs[+box.getAttribute('data-i')];var o=+b.getAttribute('data-o');
-    box.querySelectorAll('.opt').forEach(function(x,j){x.disabled=true;if(j===q.a)x.classList.add('right');});
+  /* satu handler saja per host: handler lama diganti, tidak ditumpuk */
+  host.onclick=function(e){var b=e.target.closest('.opt');if(!b||b.disabled)return;var box=b.closest('.qq');var q=qs[+box.getAttribute('data-i')];var o=+b.getAttribute('data-o');
+    box.querySelectorAll('.opt').forEach(function(x){x.disabled=true;if(+x.getAttribute('data-o')===q.a)x.classList.add('right');});
     if(o!==q.a)b.classList.add('wrong');else right++;answered++;recordQ(q.id,o===q.a);
-    var ex=box.querySelector('.expl');ex.hidden=false;ex.textContent=(o===q.a?'Benar. ':'Belum tepat. ')+q.e;
-    if(answered===qs.length&&onDone)onDone(right,qs.length);});
+    var ex=box.querySelector('.expl');ex.hidden=false;ex.textContent=(o===q.a?'Benar. ':'Belum tepat. Jawaban yang benar: '+q.o[q.a]+'. ')+q.e;
+    if(answered===qs.length&&onDone)onDone(right,qs.length);};
 }
 /* Kartu Leitner */
 var BOXDAYS=[0,1,2,4,8,16];
@@ -2601,7 +3272,7 @@ function devChips(ids){if(!ids||!ids.length)return '';return '<div class="devchi
 function srcLink(k){var s=SRC[k];if(!s)return '';var online=/^https?:/.test(s.f);
   return online?'<a href="'+s.f+'" target="_blank" rel="noopener">'+s.t+'</a>':'<span>'+s.t+'</span><code>'+s.f+'</code><small style="display:block;color:var(--muted)">Dokumen lokal, tidak disertakan di situs ini.</small>';}
 function vCourse(id){var c=COURSES[id];if(!c){vLearn('courses');return;}
-  var h='<a class="crumb" href="#learn-courses">Kursus</a><section class="chero">'+thumb(c)+'<div class="in"><div class="chips">'+(PRIO[id]?'<span class="chip prio">Prioritas 1 Des</span>':'')+'<span class="chip '+lvc(c.lvl)+'">'+c.lvl+'</span><span class="chip">'+c.min+' menit</span><span class="chip">'+c.L.length+' pelajaran</span></div><h1>'+c.t+'</h1><p>'+cpct(id)+'% selesai'+(S.quiz[id]!==undefined?', kuis '+S.quiz[id]+'/'+c.quiz.length:'')+'</p>';
+  var h='<a class="crumb" href="#learn-courses">Kursus</a><section class="chero">'+thumb(c)+'<div class="in"><div class="chips">'+(PRIO[id]?'<span class="chip prio">Prioritas 1 Des</span>':'')+(window.ADV&&ADV[id]?'<span class="chip lvA">Jalur lanjutan</span>':'')+'<span class="chip '+lvc(c.lvl)+'">'+c.lvl+'</span><span class="chip">'+c.min+' menit</span><span class="chip">'+c.L.length+' pelajaran</span></div><h1>'+c.t+'</h1><p>'+cpct(id)+'% selesai'+(S.quiz[id]!==undefined?', kuis '+S.quiz[id]+'/'+c.quiz.length:'')+'</p>';
   var n=null;for(var i=0;i<c.L.length;i++){if(!S.done[id+'.'+i]){n=i;break;}}
   h+='<div style="margin-top:.7rem"><a class="btn wide" href="#lesson-'+id+'-'+(n===null?0:n)+'">'+(n===null?'Ulangi kursus':(n===0?'Mulai kursus':'Lanjutkan pelajaran '+(n+1)))+'</a></div></div></section>';
   h+='<div class="box why"><h3>Mengapa penting untuk keputusan</h3><p style="margin:0">'+c.why+'</p></div>';
@@ -2628,19 +3299,23 @@ function vLesson(id,i){var c=COURSES[id];if(!c||!c.L[i]){vLearn('courses');retur
   h+='<div class="pager">'+(i>0?'<a class="btn ghost" href="#lesson-'+id+'-'+(i-1)+'">Sebelumnya</a>':'')+'<button class="btn" id="mark" type="button">'+(last?'Selesai, lanjut ke kuis':(isDone?'Pelajaran berikutnya':'Tandai selesai dan lanjut'))+'</button></div></article>';
   app.innerHTML=h;if(window.animInit)window.animInit(app);PLUS.glossify(app);PLUS.wireLesson(id,i);
   document.getElementById('mark').addEventListener('click',function(){if(!S.done[id+'.'+i]){S.done[id+'.'+i]=1;markSeen();save();toast('Pelajaran ditandai selesai');}location.hash=PLUS.inRoad(id)?PLUS.after():(last?'#quiz-'+id:'#lesson-'+id+'-'+(i+1));});}
-function vQuiz(id){var c=COURSES[id];if(!c){vLearn('courses');return;}
-  var h='<article class="reader"><a class="crumb" href="#course-'+id+'">'+c.t+'</a><h1>Kuis penutup</h1><p class="lead">Jawab semua soal, lalu periksa. Lulus bila minimal 2 benar.</p><div style="margin-top:1rem">';
-  c.quiz.forEach(function(q,qi){h+='<div class="q" data-q="'+qi+'"><b>'+(qi+1)+'. '+q.q+'</b>'+q.o.map(function(o,oi){return '<label><input type="radio" name="q'+qi+'" value="'+oi+'"> <span>'+o+'</span></label>';}).join('')+'<div class="ex">'+q.e+'</div></div>';});
-  h+='</div><div class="score" id="score"></div><div class="pager"><button class="btn" id="check" type="button">Periksa jawaban</button></div></article>';
+function vQuiz(id){var c=COURSES[id];if(!c){vLearn('courses');return;}var n=c.quiz.length;
+  var h='<article class="reader"><a class="crumb" href="#course-'+id+'">'+c.t+'</a><h1>Kuis penutup</h1><p class="lead">Jawab semua soal, lalu periksa. Lulus bila minimal 2 dari '+n+' benar. Urutan pilihan diacak setiap kali kuis dibuka.'+((S.quiz[id]||0)>=2?' Anda sudah lulus kuis ini dengan skor terbaik '+S.quiz[id]+' dari '+n+'.':'')+'</p><div style="margin-top:1rem">';
+  c.quiz.forEach(function(q,qi){h+='<div class="q" data-q="'+qi+'"><b>'+(qi+1)+'. '+q.q+'</b>'+shuf(q.o.length).map(function(oi){return '<label><input type="radio" name="q'+qi+'" value="'+oi+'"> <span>'+q.o[oi]+'</span></label>';}).join('')+'<div class="ex">'+q.e+'</div></div>';});
+  h+='</div><div class="score" id="score"></div><div class="pager" id="qpg"><button class="btn" id="check" type="button">Periksa jawaban</button></div></article>';
   app.innerHTML=h;
-  document.getElementById('check').addEventListener('click',function(){var sc=0;
-    c.quiz.forEach(function(q,qi){var box=app.querySelector('.q[data-q="'+qi+'"]');var sel=box.querySelector('input:checked');box.classList.add('shown');
-      box.querySelectorAll('label').forEach(function(lb,oi){lb.classList.remove('right','wrong');if(oi===q.a)lb.classList.add('right');else if(sel&&+sel.value===oi)lb.classList.add('wrong');});
-      if(sel){recordQ(id+'.'+qi,+sel.value===q.a);if(+sel.value===q.a)sc++;}});
-    S.quiz[id]=Math.max(S.quiz[id]||0,sc);markSeen();save();
-    document.getElementById('score').textContent='Skor '+sc+' dari '+c.quiz.length+(sc>=2?'. Lulus.':'. Ulangi pelajaran yang relevan lalu coba lagi.');
-    if(PLUS.inRoad(id)&&sc>=2){this.outerHTML='<a class="btn" href="'+PLUS.after()+'">Lanjut ke langkah berikutnya</a>';return;}
-    var nx=ORDER[ORDER.indexOf(id)+1];this.outerHTML=nx?'<a class="btn" href="#course-'+nx+'">Kursus berikutnya: '+COURSES[nx].t+'</a>':'<a class="btn" href="#progress">Lihat progres</a>';});}
+  document.getElementById('check').addEventListener('click',function(){var sc=0,miss=0;
+    c.quiz.forEach(function(q,qi){if(!app.querySelector('.q[data-q="'+qi+'"] input:checked'))miss++;});
+    if(miss){toast('Masih ada '+miss+' soal yang belum dijawab');return;}
+    c.quiz.forEach(function(q,qi){var box=app.querySelector('.q[data-q="'+qi+'"]');var v=+box.querySelector('input:checked').value;box.classList.add('shown');
+      box.querySelectorAll('label').forEach(function(lb){var inp=lb.querySelector('input'),oi=+inp.value;inp.disabled=true;lb.classList.remove('right','wrong');if(oi===q.a)lb.classList.add('right');else if(oi===v)lb.classList.add('wrong');});
+      recordQ(id+'.'+qi,v===q.a);if(v===q.a)sc++;});
+    S.quiz[id]=Math.max(S.quiz[id]||0,sc);markSeen();save();var pass=sc>=2,ever=S.quiz[id]>=2;
+    document.getElementById('score').textContent='Skor '+sc+' dari '+n+(pass?'. Lulus.':'. Belum lulus. Baca penjelasan di tiap soal, lalu coba lagi.');
+    var nx=ORDER[ORDER.indexOf(id)+1];
+    var go=PLUS.inRoad(id)?'<a class="btn" href="'+PLUS.after()+'">Lanjut ke langkah berikutnya</a>':(nx?'<a class="btn" href="#course-'+nx+'">Kursus berikutnya: '+COURSES[nx].t+'</a>':'<a class="btn" href="#progress">Lihat progres</a>');
+    document.getElementById('qpg').innerHTML=pass?('<button class="btn ghost" id="retry" type="button">Ulangi kuis</button>'+go):('<a class="btn ghost" href="#course-'+id+'">Buka lagi pelajarannya</a><button class="btn" id="retry" type="button">Coba lagi</button>'+(ever?go:''));
+    document.getElementById('retry').addEventListener('click',function(){vQuiz(id);window.scrollTo(0,0);});});}
 
 /* ================= Kartu ================= */
 function vCards(){var due=dueCards().length,bx=boxCount();
@@ -2674,8 +3349,8 @@ function vPractice(){var qs=pickQ(15,true);
 
 /* ================= Lab ================= */
 function vLabs(){var h='<div class="sec" style="margin-top:.4rem"><h2>Lab simulasi</h2></div><p class="lead">Semua lab berjalan di dalam halaman ini. Tidak perlu Docker, server, atau GPU sungguhan. Data yang dipakai sintetis.</p><div class="mlist" style="margin-top:.8rem">';
-  LABS.forEach(function(l){var k=l[0].slice(4),st=S.labs[k];h+='<a href="#'+l[0]+'"><span><b>'+l[1]+'</b><small>'+l[2]+'</small><span class="chips" style="margin-top:4px">'+lvChip(l[3])+(st&&st.done?'<span class="chip lvD">Selesai'+(st.score!==undefined?' · '+st.score:'')+'</span>':'')+'</span></span></a>';});
-  h+='</div><div class="box" style="margin-top:1rem"><h3>Padanan di dunia nyata</h3><ul><li>Lab 1 meniru triase di container Linux: <code>grep</code>, <code>awk</code>, <code>journalctl</code>, <code>dmesg</code>.</li><li>Lab 2 meniru aturan alert Prometheus dan dashboard Grafana.</li><li>Lab 3 meniru pembacaan telemetri GPU ala DCGM pada satu rak NVL72.</li><li>Lab 4 meniru tiket insiden dan catatan handover shift di NOC.</li></ul></div>';
+  LABS.forEach(function(l,li){var k=l[0].slice(4),st=S.labs[k];if(l[4]==='adv'&&LABS[li-1][4]!=='adv')h+='</div><h3 class="mhd">Lab lanjutan · bagian dari Jalur lanjutan</h3><div class="mlist">';h+='<a href="#'+l[0]+'"><span><b>'+l[1]+'</b><small>'+l[2]+'</small><span class="chips" style="margin-top:4px">'+lvChip(l[3])+(st&&st.done?'<span class="chip lvD">Selesai'+(st.score!==undefined?' · '+st.score:'')+'</span>':'')+'</span></span></a>';});
+  h+='</div><div class="box" style="margin-top:1rem"><h3>Padanan di dunia nyata</h3><ul><li>Lab 1 meniru triase di container Linux: <code>grep</code>, <code>awk</code>, <code>journalctl</code>, <code>dmesg</code>.</li><li>Lab 2 meniru aturan alert Prometheus dan dashboard Grafana.</li><li>Lab 3 meniru pembacaan telemetri GPU ala DCGM pada satu rak NVL72.</li><li>Lab 4 meniru tiket insiden dan catatan handover shift di NOC.</li><li>Lab 5 sampai 8 meniru tinjauan aturan antarzona, antrean alert SOC, dashboard SLO, dan rapat keputusan.</li></ul></div>';
   app.innerHTML=h;}
 function vLab(k){var f=window.LAB_IMPL&&window.LAB_IMPL[k];if(!f){vLabs();return;}
   f(app,{S:S,save:save,toast:toast,esc:esc,markSeen:markSeen,done:function(score){S.labs[k]={done:1,score:score,t:Date.now()};markSeen();save();var d=document.createElement('div');d.className='btnrow';d.style.marginTop='1rem';d.innerHTML='<a class="btn" href="'+PLUS.after()+'">Lanjut ke langkah berikutnya</a>';app.appendChild(d);}});}
@@ -2763,10 +3438,14 @@ function vLib(){var groups={},used={};
   var h='<div class="lib"><div class="sec" style="margin-top:.4rem"><h2>Pustaka sumber</h2></div><p class="lead">Sumber online bisa langsung dibuka. Dokumen lokal tidak disertakan di situs ini.</p>';
   Object.keys(groups).sort().forEach(function(g){h+='<h3>'+(names[g]||g)+'</h3><ul>';groups[g].forEach(function(k){var s=SRC[k];h+='<li>'+(/^https?:/.test(s.f)?'<a href="'+s.f+'" target="_blank" rel="noopener">'+s.t+'</a>':'<span>'+s.t+'</span><small>'+s.f+'</small>')+(used[k]?'<div class="used">Dipakai di: '+used[k].map(function(cid){return '<a href="#course-'+cid+'">'+COURSES[cid].t+'</a>';}).join('')+'</div>':'')+'</li>';});h+='</ul>';});
   h+='<p class="note">Standar berbayar (TIA-942-C, BICSI 002, ASHRAE, IEC 62443, ISO/IEC) tidak disertakan.</p></div>';app.innerHTML=h;}
-function vProgress(){var tl=0,td=0,cc=0;Object.keys(COURSES).forEach(function(id){tl+=COURSES[id].L.length;td+=cdone(id);if(ccomplete(id))cc++;});
+function vProgress(){var RS=PLUS.roadStats(),tl=0,td=0,cc=0;Object.keys(COURSES).forEach(function(id){tl+=COURSES[id].L.length;td+=cdone(id);if(ccomplete(id))cc++;});
   var qr=0,qw=0;Object.keys(S.qs).forEach(function(k){qr+=S.qs[k].r;qw+=S.qs[k].w;});var mast=0;Object.keys(S.lt).forEach(function(k){if(S.lt[k].b>=4)mast++;});
-  var h='<div class="sec" style="margin-top:.4rem"><h2>Progres Anda</h2></div><div class="stats"><div class="stat"><b>'+Math.round(td/tl*100)+'%</b><small>pelajaran selesai</small></div><div class="stat"><b>'+PLUS.stats()[0]+'/'+PLUS.stats()[1]+'</b><small>langkah peta jalan</small></div><div class="stat"><b>'+(qr+qw?Math.round(qr/(qr+qw)*100):0)+'%</b><small>akurasi kuis</small></div></div>';
-  h+='<div class="stats" style="margin-top:.5rem"><div class="stat"><b>'+mast+'/'+NCARDS.length+'</b><small>kartu hampir hafal</small></div><div class="stat"><b>'+labDone()+'/5</b><small>lab selesai</small></div><div class="stat"><b>'+(S.best||0)+'%</b><small>kuis kesiapan terbaik</small></div></div>';
+  var h='<div class="sec" style="margin-top:.4rem"><h2>Progres Anda</h2></div><div class="stats"><div class="stat"><b>'+RS.pct+'%</b><small>peta jalan selesai</small></div><div class="stat"><b>'+RS.done+'/'+RS.tot+'</b><small>langkah peta jalan</small></div><div class="stat"><b>'+(qr+qw?Math.round(qr/(qr+qw)*100):0)+'%</b><small>akurasi kuis</small></div></div>';
+  h+='<div class="stats" style="margin-top:.5rem"><div class="stat"><b>'+mast+'/'+NCARDS.length+'</b><small>kartu hampir hafal</small></div><div class="stat"><b>'+labDone()+'/5</b><small>lab persiapan selesai</small></div><div class="stat"><b>'+(S.best||0)+'%</b><small>kuis kesiapan terbaik</small></div></div>';
+  h+='<div class="box"><h3>Rincian peta jalan</h3><p class="note" style="margin:.1rem 0 .6rem">Angka di Beranda, Peta jalan, dan halaman ini memakai hitungan yang sama: '+RS.tot+' langkah. Pelajaran selesai saat ditandai, kuis saat lulus, lab saat semua misinya tuntas.</p>'+RS.kinds.map(function(k){var p=k[2]?Math.round(k[1]/k[2]*100):0;return '<div class="skill"><div class="h"><span>'+k[0]+'</span><span>'+k[1]+'/'+k[2]+'</span></div><div class="pb"><i style="width:'+p+'%"></i></div></div>';}).join('')+'<div class="skill"><div class="h"><span>Tugas artefak (di luar hitungan langkah)</span><span>'+RS.tasks[0]+'/'+RS.tasks[1]+'</span></div></div>';
+  if(RS.open.length)h+='<h4 style="margin:.9rem 0 .3rem">'+(RS.skipped?RS.skipped+' langkah terlewat':'Langkah yang belum selesai')+'</h4><ul class="skl">'+RS.open.slice(0,12).map(function(x){return '<li><a href="#'+x.r+'"><span class="chip '+x.kc+'">'+x.kl+'</span> '+esc(x.t)+'</a></li>';}).join('')+'</ul>'+(RS.open.length>12?'<p class="note" style="margin:.3rem 0 0">dan '+(RS.open.length-12)+' lainnya di <a href="#road">Peta jalan</a>.</p>':'');
+  h+='<p class="note" style="margin:.8rem 0 0">Pelajaran di seluruh '+Object.keys(COURSES).length+' kursus, termasuk yang di luar peta jalan: '+td+' dari '+tl+'.</p></div>';
+  var AV=PLUS.advStats();h+='<div class="box"><h3>Jalur lanjutan</h3><p class="note" style="margin:.1rem 0 .6rem">Dihitung terpisah dari persiapan 1 Desember: '+AV.done+' dari '+AV.tot+' langkah ('+AV.pct+'%).</p>'+AV.stages.map(function(k){var p=k[2]?Math.round(k[1]/k[2]*100):0;return '<div class="skill"><div class="h"><span>'+k[0]+'</span><span>'+k[1]+'/'+k[2]+'</span></div><div class="pb"><i style="width:'+p+'%"></i></div></div>';}).join('')+'<div class="skill"><div class="h"><span>Tugas artefak lanjutan</span><span>'+AV.tasks[0]+'/'+AV.tasks[1]+'</span></div></div><div class="btnrow"><a class="btn ghost" href="#adv">Buka jalur lanjutan</a></div></div>';
   h+='<div class="box"><h3>Kompetensi</h3>';Object.keys(SKILLS).forEach(function(sk){var t=0,d=0;Object.keys(COURSES).forEach(function(id){if(COURSES[id].skill===sk){t+=COURSES[id].L.length;d+=cdone(id);}});var p=t?Math.round(d/t*100):0;h+='<div class="skill"><div class="h"><span>'+SKILLS[sk]+'</span><span>'+p+'%</span></div><div class="pb"><i style="width:'+p+'%"></i></div></div>';});
   h+='</div><div class="box"><h3>Lencana kursus ('+cc+'/'+Object.keys(COURSES).length+')</h3><div class="badges">'+ORDER.map(function(id){var c=COURSES[id];return '<a class="badge '+(ccomplete(id)?'on':'')+'" href="#course-'+id+'" style="text-decoration:none"><div class="bd">'+icon(c.ic)+'</div>'+c.t+'</a>';}).join('')+'</div></div>';
   h+='<div class="box cert"><h3>Rencana sertifikasi</h3>'+CERTS.map(function(c){return '<label><input type="checkbox" data-c="'+c.id+'" '+(S.certs[c.id]?'checked':'')+'> <span>'+c.t+'</span><small>'+c.q+'</small></label>';}).join('')+'<p class="note">Biaya, prasyarat, dan jadwal dapat berubah. Verifikasi di halaman resmi sebelum mendaftar.</p></div>';
@@ -2796,8 +3475,8 @@ function applyPrefs(){if(S.theme)root.setAttribute('data-theme',S.theme);root.st
 applyPrefs();
 document.getElementById('theme').addEventListener('click',function(){var c=root.getAttribute('data-theme');var d=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches;S.theme=d?'light':'dark';root.setAttribute('data-theme',S.theme);save();});
 document.getElementById('fsz').addEventListener('click',function(){var o=[100,112,125];var i=o.indexOf(S.fs||100);S.fs=o[(i+1)%o.length];applyPrefs();save();toast('Ukuran huruf '+S.fs+'%');});
-PLUS.init({gcal:gcal,S:function(){return S;},save:save,toast:toast,esc:esc,app:app,today:today,markSeen:markSeen,sync:function(){return syncState;},restore:function(o){S=mergeState(S,o);save();applyPrefs();}});
-try{if(!location.hash){var lr=JSON.parse(localStorage.getItem('akademi-ops-route')||'null');if(lr&&Date.now()-lr.t<432e5&&/^(lesson|lab|vid|anat|quiz|review)/.test(lr.h))location.hash=lr.h;}}catch(e){}
+PLUS.init({gcal:gcal,S:function(){return S;},save:save,toast:toast,esc:esc,app:app,today:today,markSeen:markSeen,sync:function(){return syncState;},lastRoute:function(){try{var lr=JSON.parse(localStorage.getItem('akademi-ops-route')||'null');return lr&&Date.now()-lr.t<6048e5?lr.h:null;}catch(e){return null;}},restore:function(o){S=mergeState(S,o);save();applyPrefs();}});
+try{if(!location.hash){var lr=JSON.parse(localStorage.getItem('akademi-ops-route')||'null');if(lr&&Date.now()-lr.t<12e5&&/^(lesson|lab|anat|quiz)/.test(lr.h))location.hash=lr.h;}}catch(e){}
 document.addEventListener('visibilitychange',function(){if(document.hidden){if(ref&&dirty){clearTimeout(pushT);push();}}else if(!ref&&syncState!=='wait')initSync();});
 try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist();}catch(e){}
 window.addEventListener('hashchange',route);
@@ -2827,7 +3506,7 @@ var IDX=null;
 function build(){IDX=[];Object.keys(COURSES).forEach(function(id){var c=COURSES[id];IDX.push(['Kursus',c.t,c.L.length+' pelajaran','course-'+id]);c.L.forEach(function(l,i){IDX.push(['Pelajaran',l.t,c.t,'lesson-'+id+'-'+i,(l.key||[]).join(' ')]);});});
   (PLUS.gloss||[]).forEach(function(g){IDX.push(['Istilah',g[0]+' · '+g[1],g[2],'glos',(g[3]||[]).join(' ')]);});
   (window.LABS||[]).forEach(function(l){IDX.push(['Lab',l[1],l[2],l[0]]);});
-  [['Anatomi','Rak NVL72 (tampak depan)','10 bagian','anat-rack'],['Anatomi','Compute tray (tampak atas)','18 bagian','anat-tray'],['Anatomi','CDU dan loop pendinginan','9 bagian','anat-cdu'],['Halaman','Peta jalan','76 langkah','road'],['Halaman','Kartu angka','Pengulangan berjarak','cards'],['Halaman','Bank pertanyaan','Untuk diskusi tim','qbank'],['Halaman','Latihan skenario','Tiga tabletop','scen'],['Halaman','Hari pertama','Checklist dan perkenalan','day1'],['Halaman','Simpan dan pulihkan progres','Kode cadangan','backup'],['Halaman','Jadwal harian','Pengingat kalender','learn-plan']].forEach(function(x){IDX.push(x);});}
+  [['Anatomi','Rak NVL72 (tampak depan)','10 bagian','anat-rack'],['Anatomi','Compute tray (tampak atas)','18 bagian','anat-tray'],['Anatomi','CDU dan loop pendinginan','9 bagian','anat-cdu'],['Halaman','Peta jalan','Persiapan 1 Desember','road'],['Halaman','Jalur lanjutan','Manajemen, strategi, keamanan desain, SOC','adv'],['Halaman','Kartu angka','Pengulangan berjarak','cards'],['Halaman','Bank pertanyaan','Untuk diskusi tim','qbank'],['Halaman','Latihan skenario','Tiga tabletop','scen'],['Halaman','Hari pertama','Checklist dan perkenalan','day1'],['Halaman','Simpan dan pulihkan progres','Kode cadangan','backup'],['Halaman','Jadwal harian','Pengingat kalender','learn-plan']].forEach(function(x){IDX.push(x);});}
 var ov=document.createElement('div');ov.className='sov';ov.innerHTML='<div class="sbox" role="dialog" aria-label="Pencarian"><header><input id="sq" type="search" placeholder="Cari pelajaran, istilah, lab…" aria-label="Cari"><button type="button" class="ib" id="sx" aria-label="Tutup">✕</button></header><div class="sres" id="sr"></div></div>';document.body.appendChild(ov);
 function draw(q){q=q.trim().toLowerCase();var sr=document.getElementById('sr');if(!q){sr.innerHTML='<p>Ketik kata kunci, misalnya CDU, checkpoint, atau handover.</p>';return;}
   var res=IDX.filter(function(x){return (x[1]+' '+x[2]+' '+(x[4]||'')).toLowerCase().indexOf(q)>-1;}).sort(function(a,b){return (a[1].toLowerCase().indexOf(q)<0)-(b[1].toLowerCase().indexOf(q)<0);}).slice(0,30);
